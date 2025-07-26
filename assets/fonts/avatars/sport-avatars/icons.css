@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "sport-avatars";
+  src: url("./sport-avatars.eot");
+  src: url("./sport-avatars.eot?#iefix") format("embedded-opentype"),
+       url("./sport-avatars.woff") format("woff"),
+       url("./sport-avatars.ttf") format("truetype"),
+       url("./sport-avatars.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="cyb-a-sa-"]:before, [class*=" cyb-a-sa-"]:before,
+[class^="cyb-a-sa-"]:after, [class*=" cyb-a-sa-"]:after {   
+font-family: "sport-avatars" !important;
+font-size: 20px;
+font-style: normal !important;
+font-weight: normal !important;
+font-variant: normal !important;
+text-transform: none !important;
+text-align: center;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+.cyb-a-sa-american-football-player:before { content: "\f100"; }
+.cyb-a-sa-american-football-player-1:before { content: "\f101"; }
+.cyb-a-sa-baseball-player:before { content: "\f102"; }
+.cyb-a-sa-basketball-player:before { content: "\f103"; }
+.cyb-a-sa-bodybuilder:before { content: "\f104"; }
+.cyb-a-sa-cricket-player:before { content: "\f105"; }
+.cyb-a-sa-cyclist:before { content: "\f106"; }
+.cyb-a-sa-cyclist-1:before { content: "\f107"; }
+.cyb-a-sa-fencer:before { content: "\f108"; }
+.cyb-a-sa-football-player:before { content: "\f109"; }
+.cyb-a-sa-formula-1:before { content: "\f10a"; }
+.cyb-a-sa-golfer:before { content: "\f10b"; }
+.cyb-a-sa-gymnast:before { content: "\f10c"; }
+.cyb-a-sa-hockey-player:before { content: "\f10d"; }
+.cyb-a-sa-horsewoman:before { content: "\f10e"; }
+.cyb-a-sa-karate:before { content: "\f10f"; }
+.cyb-a-sa-kickboxer:before { content: "\f110"; }
+.cyb-a-sa-kudo:before { content: "\f111"; }
+.cyb-a-sa-motorcyclist:before { content: "\f112"; }
+.cyb-a-sa-pilot:before { content: "\f113"; }
+.cyb-a-sa-rowing:before { content: "\f114"; }
+.cyb-a-sa-shooter:before { content: "\f115"; }
+.cyb-a-sa-skier:before { content: "\f116"; }
+.cyb-a-sa-skier-1:before { content: "\f117"; }
+.cyb-a-sa-sumotori:before { content: "\f118"; }
+.cyb-a-sa-swimmer:before { content: "\f119"; }
+.cyb-a-sa-taekwondo:before { content: "\f11a"; }
+.cyb-a-sa-tennis-player:before { content: "\f11b"; }
+.cyb-a-sa-volleyball-player:before { content: "\f11c"; }
+.cyb-a-sa-weightlifter:before { content: "\f11d"; }

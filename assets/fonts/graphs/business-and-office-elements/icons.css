@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "business-and-office-elements";
+  src: url("./business-and-office-elements.eot");
+  src: url("./business-and-office-elements.eot?#iefix") format("embedded-opentype"),
+       url("./business-and-office-elements.woff") format("woff"),
+       url("./business-and-office-elements.ttf") format("truetype"),
+       url("./business-and-office-elements.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="cyb-g-baoe-"]:before, [class*=" cyb-g-baoe-"]:before,
+[class^="cyb-g-baoe-"]:after, [class*=" cyb-g-baoe-"]:after {   
+font-family: "business-and-office-elements" !important;
+font-size: 20px;
+font-style: normal !important;
+font-weight: normal !important;
+font-variant: normal !important;
+text-transform: none !important;
+text-align: center;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+.cyb-g-baoe-briefcase:before { content: "\f100"; }
+.cyb-g-baoe-building:before { content: "\f101"; }
+.cyb-g-baoe-calendar:before { content: "\f102"; }
+.cyb-g-baoe-clock:before { content: "\f103"; }
+.cyb-g-baoe-coin:before { content: "\f104"; }
+.cyb-g-baoe-document:before { content: "\f105"; }
+.cyb-g-baoe-document-1:before { content: "\f106"; }
+.cyb-g-baoe-email:before { content: "\f107"; }
+.cyb-g-baoe-file:before { content: "\f108"; }
+.cyb-g-baoe-folders:before { content: "\f109"; }
+.cyb-g-baoe-garbage:before { content: "\f10a"; }
+.cyb-g-baoe-growth:before { content: "\f10b"; }
+.cyb-g-baoe-id-card:before { content: "\f10c"; }
+.cyb-g-baoe-idea:before { content: "\f10d"; }
+.cyb-g-baoe-laptop:before { content: "\f10e"; }
+.cyb-g-baoe-megaphone:before { content: "\f10f"; }
+.cyb-g-baoe-money:before { content: "\f110"; }
+.cyb-g-baoe-note:before { content: "\f111"; }
+.cyb-g-baoe-padlock:before { content: "\f112"; }
+.cyb-g-baoe-phonebook:before { content: "\f113"; }
+.cyb-g-baoe-phonebook-1:before { content: "\f114"; }
+.cyb-g-baoe-pie-chart:before { content: "\f115"; }
+.cyb-g-baoe-presentation:before { content: "\f116"; }
+.cyb-g-baoe-projector:before { content: "\f117"; }
+.cyb-g-baoe-push-pin:before { content: "\f118"; }
+.cyb-g-baoe-settings:before { content: "\f119"; }
+.cyb-g-baoe-stamp:before { content: "\f11a"; }
+.cyb-g-baoe-target:before { content: "\f11b"; }
+.cyb-g-baoe-tie:before { content: "\f11c"; }
+.cyb-g-baoe-user:before { content: "\f11d"; }

@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "abstract-glyph";
+  src: url("./abstract-glyph.eot");
+  src: url("./abstract-glyph.eot?#iefix") format("embedded-opentype"),
+       url("./abstract-glyph.woff") format("woff"),
+       url("./abstract-glyph.ttf") format("truetype"),
+       url("./abstract-glyph.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="cyb-gs-ag-"]:before, [class*=" cyb-gs-ag-"]:before,
+[class^="cyb-gs-ag-"]:after, [class*=" cyb-gs-ag-"]:after {   
+font-family: "abstract-glyph" !important;
+font-size: 20px;
+font-style: normal !important;
+font-weight: normal !important;
+font-variant: normal !important;
+text-transform: none !important;
+text-align: center;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+.cyb-gs-ag-abstract:before { content: "\f100"; }
+.cyb-gs-ag-abstract-1:before { content: "\f101"; }
+.cyb-gs-ag-abstract-2:before { content: "\f102"; }
+.cyb-gs-ag-bars:before { content: "\f103"; }
+.cyb-gs-ag-column:before { content: "\f104"; }
+.cyb-gs-ag-connection:before { content: "\f105"; }
+.cyb-gs-ag-copy:before { content: "\f106"; }
+.cyb-gs-ag-cross:before { content: "\f107"; }
+.cyb-gs-ag-cross-1:before { content: "\f108"; }
+.cyb-gs-ag-cross-2:before { content: "\f109"; }
+.cyb-gs-ag-curve:before { content: "\f10a"; }
+.cyb-gs-ag-hexagon:before { content: "\f10b"; }
+.cyb-gs-ag-hexagon-1:before { content: "\f10c"; }
+.cyb-gs-ag-hexagons:before { content: "\f10d"; }
+.cyb-gs-ag-rectangles:before { content: "\f10e"; }
+.cyb-gs-ag-rhombus:before { content: "\f10f"; }
+.cyb-gs-ag-shield:before { content: "\f110"; }
+.cyb-gs-ag-square:before { content: "\f111"; }
+.cyb-gs-ag-square-1:before { content: "\f112"; }
+.cyb-gs-ag-star:before { content: "\f113"; }
+.cyb-gs-ag-target:before { content: "\f114"; }
+.cyb-gs-ag-triangle:before { content: "\f115"; }
+.cyb-gs-ag-triangle-1:before { content: "\f116"; }
+.cyb-gs-ag-triangle-2:before { content: "\f117"; }
+.cyb-gs-ag-triangle-3:before { content: "\f118"; }

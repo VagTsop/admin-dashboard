@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "database-and-servers";
+  src: url("./database-and-servers.eot");
+  src: url("./database-and-servers.eot?#iefix") format("embedded-opentype"),
+       url("./database-and-servers.woff") format("woff"),
+       url("./database-and-servers.ttf") format("truetype"),
+       url("./database-and-servers.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="cyb-s-das-"]:before, [class*=" cyb-s-das-"]:before,
+[class^="cyb-s-das-"]:after, [class*=" cyb-s-das-"]:after {   
+font-family: "database-and-servers" !important;
+font-size: 20px;
+font-style: normal !important;
+font-weight: normal !important;
+font-variant: normal !important;
+text-transform: none !important;
+text-align: center;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+.cyb-s-das-001-server-15:before { content: "\f100"; }
+.cyb-s-das-002-server-14:before { content: "\f101"; }
+.cyb-s-das-003-folder-4:before { content: "\f102"; }
+.cyb-s-das-004-cloud-computing-2:before { content: "\f103"; }
+.cyb-s-das-005-hard-disk:before { content: "\f104"; }
+.cyb-s-das-006-laptop-2:before { content: "\f105"; }
+.cyb-s-das-007-responsive-2:before { content: "\f106"; }
+.cyb-s-das-008-funnel:before { content: "\f107"; }
+.cyb-s-das-009-sql:before { content: "\f108"; }
+.cyb-s-das-010-server-13:before { content: "\f109"; }
+.cyb-s-das-011-error-404:before { content: "\f10a"; }
+.cyb-s-das-012-diagram:before { content: "\f10b"; }
+.cyb-s-das-013-smartphone-2:before { content: "\f10c"; }
+.cyb-s-das-014-television:before { content: "\f10d"; }
+.cyb-s-das-015-cpu:before { content: "\f10e"; }
+.cyb-s-das-016-email-1:before { content: "\f10f"; }
+.cyb-s-das-017-smartphone-1:before { content: "\f110"; }
+.cyb-s-das-018-server-12:before { content: "\f111"; }
+.cyb-s-das-019-image:before { content: "\f112"; }
+.cyb-s-das-020-printer:before { content: "\f113"; }
+.cyb-s-das-021-settings:before { content: "\f114"; }
+.cyb-s-das-022-folder-3:before { content: "\f115"; }
+.cyb-s-das-023-monitor:before { content: "\f116"; }
+.cyb-s-das-024-server-11:before { content: "\f117"; }
+.cyb-s-das-025-cloud-computing-1:before { content: "\f118"; }
+.cyb-s-das-026-folder-2:before { content: "\f119"; }
+.cyb-s-das-027-folder-1:before { content: "\f11a"; }
+.cyb-s-das-028-laptop-1:before { content: "\f11b"; }
+.cyb-s-das-029-server-10:before { content: "\f11c"; }
+.cyb-s-das-030-responsive-1:before { content: "\f11d"; }
+.cyb-s-das-031-responsive:before { content: "\f11e"; }
+.cyb-s-das-032-computer:before { content: "\f11f"; }
+.cyb-s-das-033-worldwide:before { content: "\f120"; }
+.cyb-s-das-034-file:before { content: "\f121"; }
+.cyb-s-das-035-laptop:before { content: "\f122"; }
+.cyb-s-das-036-smartphone:before { content: "\f123"; }
+.cyb-s-das-037-server-9:before { content: "\f124"; }
+.cyb-s-das-038-server-8:before { content: "\f125"; }
+.cyb-s-das-039-server-7:before { content: "\f126"; }
+.cyb-s-das-040-server-6:before { content: "\f127"; }
+.cyb-s-das-041-email:before { content: "\f128"; }
+.cyb-s-das-042-folder:before { content: "\f129"; }
+.cyb-s-das-043-server-5:before { content: "\f12a"; }
+.cyb-s-das-044-server-4:before { content: "\f12b"; }
+.cyb-s-das-045-cloud-computing:before { content: "\f12c"; }
+.cyb-s-das-046-server-3:before { content: "\f12d"; }
+.cyb-s-das-047-laptops:before { content: "\f12e"; }
+.cyb-s-das-048-server-2:before { content: "\f12f"; }
+.cyb-s-das-049-server-1:before { content: "\f130"; }
+.cyb-s-das-050-server:before { content: "\f131"; }

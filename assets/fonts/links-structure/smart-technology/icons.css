@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "smart-technology";
+  src: url("./smart-technology.eot");
+  src: url("./smart-technology.eot?#iefix") format("embedded-opentype"),
+       url("./smart-technology.woff") format("woff"),
+       url("./smart-technology.ttf") format("truetype"),
+       url("./smart-technology.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="cyb-ls-st-"]:before, [class*=" cyb-ls-st-"]:before,
+[class^="cyb-ls-st-"]:after, [class*=" cyb-ls-st-"]:after {   
+font-family: "smart-technology" !important;
+font-size: 20px;
+font-style: normal !important;
+font-weight: normal !important;
+font-variant: normal !important;
+text-transform: none !important;
+text-align: center;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+.cyb-ls-st-001-zero-emission:before { content: "\f100"; }
+.cyb-ls-st-002-wireless-1:before { content: "\f101"; }
+.cyb-ls-st-003-wireless:before { content: "\f102"; }
+.cyb-ls-st-004-windmill:before { content: "\f103"; }
+.cyb-ls-st-005-water:before { content: "\f104"; }
+.cyb-ls-st-006-remote-control-1:before { content: "\f105"; }
+.cyb-ls-st-007-virtual-reality:before { content: "\f106"; }
+.cyb-ls-st-008-video-recording:before { content: "\f107"; }
+.cyb-ls-st-009-traffic-control:before { content: "\f108"; }
+.cyb-ls-st-010-temperature-3:before { content: "\f109"; }
+.cyb-ls-st-011-temperature-2:before { content: "\f10a"; }
+.cyb-ls-st-012-temperature-1:before { content: "\f10b"; }
+.cyb-ls-st-013-temperature:before { content: "\f10c"; }
+.cyb-ls-st-014-petrol-station:before { content: "\f10d"; }
+.cyb-ls-st-015-smartwatch-17:before { content: "\f10e"; }
+.cyb-ls-st-016-window:before { content: "\f10f"; }
+.cyb-ls-st-017-smartwatch-16:before { content: "\f110"; }
+.cyb-ls-st-018-smartwatch-15:before { content: "\f111"; }
+.cyb-ls-st-019-smartwatch-14:before { content: "\f112"; }
+.cyb-ls-st-020-smartwatch-13:before { content: "\f113"; }
+.cyb-ls-st-021-smartwatch-12:before { content: "\f114"; }
+.cyb-ls-st-022-smartwatch-11:before { content: "\f115"; }
+.cyb-ls-st-023-smartwatch-10:before { content: "\f116"; }
+.cyb-ls-st-024-smartwatch-9:before { content: "\f117"; }
+.cyb-ls-st-025-smartwatch-8:before { content: "\f118"; }
+.cyb-ls-st-026-smartwatch-7:before { content: "\f119"; }
+.cyb-ls-st-027-smartwatch-6:before { content: "\f11a"; }
+.cyb-ls-st-028-smartwatch-5:before { content: "\f11b"; }
+.cyb-ls-st-029-smartwatch-4:before { content: "\f11c"; }
+.cyb-ls-st-030-smartwatch-3:before { content: "\f11d"; }
+.cyb-ls-st-031-smartwatch-2:before { content: "\f11e"; }
+.cyb-ls-st-032-smartwatch-1:before { content: "\f11f"; }
+.cyb-ls-st-033-smartwatch:before { content: "\f120"; }
+.cyb-ls-st-034-smart-tv:before { content: "\f121"; }
+.cyb-ls-st-035-protection:before { content: "\f122"; }
+.cyb-ls-st-036-mobile-phone-1:before { content: "\f123"; }
+.cyb-ls-st-037-power:before { content: "\f124"; }
+.cyb-ls-st-038-lock:before { content: "\f125"; }
+.cyb-ls-st-039-smart-home-10:before { content: "\f126"; }
+.cyb-ls-st-040-smart-home-9:before { content: "\f127"; }
+.cyb-ls-st-041-smart-home-8:before { content: "\f128"; }
+.cyb-ls-st-042-smart-home-7:before { content: "\f129"; }
+.cyb-ls-st-043-smart-home-6:before { content: "\f12a"; }
+.cyb-ls-st-044-smart-home-5:before { content: "\f12b"; }
+.cyb-ls-st-045-smart-home-4:before { content: "\f12c"; }
+.cyb-ls-st-046-smart-home-3:before { content: "\f12d"; }
+.cyb-ls-st-047-smart-home-2:before { content: "\f12e"; }
+.cyb-ls-st-048-smart-home-1:before { content: "\f12f"; }
+.cyb-ls-st-049-smart-home:before { content: "\f130"; }
+.cyb-ls-st-050-smart-glasses:before { content: "\f131"; }
+.cyb-ls-st-051-home-automation-1:before { content: "\f132"; }
+.cyb-ls-st-052-smart-fridge:before { content: "\f133"; }
+.cyb-ls-st-053-door-lock-1:before { content: "\f134"; }
+.cyb-ls-st-054-door-lock:before { content: "\f135"; }
+.cyb-ls-st-055-contact-lens:before { content: "\f136"; }
+.cyb-ls-st-056-cloud:before { content: "\f137"; }
+.cyb-ls-st-057-smart-city:before { content: "\f138"; }
+.cyb-ls-st-058-access:before { content: "\f139"; }
+.cyb-ls-st-059-city:before { content: "\f13a"; }
+.cyb-ls-st-060-robotic-arm:before { content: "\f13b"; }
+.cyb-ls-st-061-renewable-energy:before { content: "\f13c"; }
+.cyb-ls-st-062-remote-control:before { content: "\f13d"; }
+.cyb-ls-st-063-laptop:before { content: "\f13e"; }
+.cyb-ls-st-064-mobile-phone:before { content: "\f13f"; }
+.cyb-ls-st-065-computer:before { content: "\f140"; }
+.cyb-ls-st-066-sim:before { content: "\f141"; }
+.cyb-ls-st-067-light-bulb:before { content: "\f142"; }
+.cyb-ls-st-068-light:before { content: "\f143"; }
+.cyb-ls-st-069-intercom:before { content: "\f144"; }
+.cyb-ls-st-070-intelligent:before { content: "\f145"; }
+.cyb-ls-st-071-human-1:before { content: "\f146"; }
+.cyb-ls-st-072-human:before { content: "\f147"; }
+.cyb-ls-st-073-house:before { content: "\f148"; }
+.cyb-ls-st-074-hologram:before { content: "\f149"; }
+.cyb-ls-st-075-gdpr-2:before { content: "\f14a"; }
+.cyb-ls-st-076-gdpr-1:before { content: "\f14b"; }
+.cyb-ls-st-077-gdpr:before { content: "\f14c"; }
+.cyb-ls-st-078-freeze:before { content: "\f14d"; }
+.cyb-ls-st-079-fan:before { content: "\f14e"; }
+.cyb-ls-st-080-face-scan:before { content: "\f14f"; }
+.cyb-ls-st-081-facial-recognition-8:before { content: "\f150"; }
+.cyb-ls-st-082-facial-recognition-7:before { content: "\f151"; }
+.cyb-ls-st-083-facial-recognition-6:before { content: "\f152"; }
+.cyb-ls-st-084-facial-recognition-5:before { content: "\f153"; }
+.cyb-ls-st-085-facial-recognition-4:before { content: "\f154"; }
+.cyb-ls-st-086-facial-recognition-3:before { content: "\f155"; }
+.cyb-ls-st-087-facial-recognition-2:before { content: "\f156"; }
+.cyb-ls-st-088-facial-recognition-1:before { content: "\f157"; }
+.cyb-ls-st-089-facial-recognition:before { content: "\f158"; }
+.cyb-ls-st-090-drone:before { content: "\f159"; }
+.cyb-ls-st-091-conveyor:before { content: "\f15a"; }
+.cyb-ls-st-092-coffee-maker:before { content: "\f15b"; }
+.cyb-ls-st-093-co2:before { content: "\f15c"; }
+.cyb-ls-st-094-car:before { content: "\f15d"; }
+.cyb-ls-st-095-brightness:before { content: "\f15e"; }
+.cyb-ls-st-096-autonomous-car:before { content: "\f15f"; }
+.cyb-ls-st-097-home-automation:before { content: "\f160"; }
+.cyb-ls-st-098-audio:before { content: "\f161"; }
+.cyb-ls-st-099-alarm:before { content: "\f162"; }
+.cyb-ls-st-100-footprint:before { content: "\f163"; }

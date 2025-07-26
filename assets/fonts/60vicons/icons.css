@@ -1,0 +1,277 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "60vicons";
+  src: url('60vicons.eot?5km1tg');
+  src: url('60vicons.eot?#iefix5km1tg') format('embedded-opentype'),
+    url('60vicons.ttf?5km1tg') format('truetype'),
+    url('60vicons.woff?5km1tg') format('woff'),
+    url('60vicons.svg?5km1tg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "60vicons" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="cyb-6v-"]:before,
+[class*=" cyb-6v-"]:before {
+  font-family: "60vicons" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.cyb-6v-box:before {
+  content: "\e900";
+}
+
+.cyb-6v-write:before {
+  content: "\e901";
+}
+
+.cyb-6v-clock:before {
+  content: "\e902";
+}
+
+.cyb-6v-reply:before {
+  content: "\e903";
+}
+
+.cyb-6v-reply-all:before {
+  content: "\e904";
+}
+
+.cyb-6v-forward:before {
+  content: "\e905";
+}
+
+.cyb-6v-flag:before {
+  content: "\e906";
+}
+
+.cyb-6v-search:before {
+  content: "\e907";
+}
+
+.cyb-6v-trash:before {
+  content: "\e908";
+}
+
+.cyb-6v-envelope:before {
+  content: "\e909";
+}
+
+.cyb-6v-bubble:before {
+  content: "\e90a";
+}
+
+.cyb-6v-bubbles:before {
+  content: "\e90b";
+}
+
+.cyb-6v-user:before {
+  content: "\e90c";
+}
+
+.cyb-6v-users:before {
+  content: "\e90d";
+}
+
+.cyb-6v-cloud:before {
+  content: "\e90e";
+}
+
+.cyb-6v-download:before {
+  content: "\e90f";
+}
+
+.cyb-6v-upload:before {
+  content: "\e910";
+}
+
+.cyb-6v-rain:before {
+  content: "\e911";
+}
+
+.cyb-6v-sun:before {
+  content: "\e912";
+}
+
+.cyb-6v-moon:before {
+  content: "\e913";
+}
+
+.cyb-6v-bell:before {
+  content: "\e914";
+}
+
+.cyb-6v-folder:before {
+  content: "\e915";
+}
+
+.cyb-6v-pin:before {
+  content: "\e916";
+}
+
+.cyb-6v-sound:before {
+  content: "\e917";
+}
+
+.cyb-6v-microphone:before {
+  content: "\e918";
+}
+
+.cyb-6v-camera:before {
+  content: "\e919";
+}
+
+.cyb-6v-image:before {
+  content: "\e91a";
+}
+
+.cyb-6v-cog:before {
+  content: "\e91b";
+}
+
+.cyb-6v-calendar:before {
+  content: "\e91c";
+}
+
+.cyb-6v-book:before {
+  content: "\e91d";
+}
+
+.cyb-6v-map-marker:before {
+  content: "\e91e";
+}
+
+.cyb-6v-store:before {
+  content: "\e91f";
+}
+
+.cyb-6v-support:before {
+  content: "\e920";
+}
+
+.cyb-6v-tag:before {
+  content: "\e921";
+}
+
+.cyb-6v-heart:before {
+  content: "\e922";
+}
+
+.cyb-6v-video-camera:before {
+  content: "\e923";
+}
+
+.cyb-6v-trophy:before {
+  content: "\e924";
+}
+
+.cyb-6v-cart:before {
+  content: "\e925";
+}
+
+.cyb-6v-eye:before {
+  content: "\e926";
+}
+
+.cyb-6v-cancel:before {
+  content: "\e927";
+}
+
+.cyb-6v-chart:before {
+  content: "\e928";
+}
+
+.cyb-6v-target:before {
+  content: "\e929";
+}
+
+.cyb-6v-printer:before {
+  content: "\e92a";
+}
+
+.cyb-6v-location:before {
+  content: "\e92b";
+}
+
+.cyb-6v-bookmark:before {
+  content: "\e92c";
+}
+
+.cyb-6v-monitor:before {
+  content: "\e92d";
+}
+
+.cyb-6v-cross:before {
+  content: "\e92e";
+}
+
+.cyb-6v-plus:before {
+  content: "\e92f";
+}
+
+.cyb-6v-left:before {
+  content: "\e930";
+}
+
+.cyb-6v-up:before {
+  content: "\e931";
+}
+
+.cyb-6v-browser:before {
+  content: "\e932";
+}
+
+.cyb-6v-windows:before {
+  content: "\e933";
+}
+
+.cyb-6v-switch:before {
+  content: "\e934";
+}
+
+.cyb-6v-dashboard:before {
+  content: "\e935";
+}
+
+.cyb-6v-play:before {
+  content: "\e936";
+}
+
+.cyb-6v-fast-forward:before {
+  content: "\e937";
+}
+
+.cyb-6v-next:before {
+  content: "\e938";
+}
+
+.cyb-6v-refresh:before {
+  content: "\e939";
+}
+
+.cyb-6v-film:before {
+  content: "\e93a";
+}
+
+.cyb-6v-home:before {
+  content: "\e93b";
+}

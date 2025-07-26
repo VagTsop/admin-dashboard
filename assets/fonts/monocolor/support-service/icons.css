@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "support-service";
+  src: url("./support-service.eot");
+  src: url("./support-service.eot?#iefix") format("embedded-opentype"),
+       url("./support-service.woff") format("woff"),
+       url("./support-service.ttf") format("truetype"),
+       url("./support-service.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="cyb-mc-ss-"]:before, [class*=" cyb-mc-ss-"]:before,
+[class^="cyb-mc-ss-"]:after, [class*=" cyb-mc-ss-"]:after {   
+font-family: "support-service" !important;
+font-size: 20px;
+font-style: normal !important;
+font-weight: normal !important;
+font-variant: normal !important;
+text-transform: none !important;
+text-align: center;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+.cyb-mc-ss-001-support-5:before { content: "\f100"; }
+.cyb-mc-ss-002-support-4:before { content: "\f101"; }
+.cyb-mc-ss-003-agenda:before { content: "\f102"; }
+.cyb-mc-ss-004-list:before { content: "\f103"; }
+.cyb-mc-ss-005-chat:before { content: "\f104"; }
+.cyb-mc-ss-006-smartphone:before { content: "\f105"; }
+.cyb-mc-ss-007-settings-1:before { content: "\f106"; }
+.cyb-mc-ss-008-call:before { content: "\f107"; }
+.cyb-mc-ss-009-information:before { content: "\f108"; }
+.cyb-mc-ss-010-support-3:before { content: "\f109"; }
+.cyb-mc-ss-011-support-2:before { content: "\f10a"; }
+.cyb-mc-ss-012-support-1:before { content: "\f10b"; }
+.cyb-mc-ss-013-settings:before { content: "\f10c"; }
+.cyb-mc-ss-014-help:before { content: "\f10d"; }
+.cyb-mc-ss-015-24-hours:before { content: "\f10e"; }
+.cyb-mc-ss-016-support:before { content: "\f10f"; }

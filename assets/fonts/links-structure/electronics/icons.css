@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "electronics";
+  src: url("./electronics.eot");
+  src: url("./electronics.eot?#iefix") format("embedded-opentype"),
+       url("./electronics.woff") format("woff"),
+       url("./electronics.ttf") format("truetype"),
+       url("./electronics.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="cyb-ls-e-"]:before, [class*=" cyb-ls-e-"]:before,
+[class^="cyb-ls-e-"]:after, [class*=" cyb-ls-e-"]:after {   
+font-family: "electronics" !important;
+font-size: 20px;
+font-style: normal !important;
+font-weight: normal !important;
+font-variant: normal !important;
+text-transform: none !important;
+text-align: center;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+.cyb-ls-e-001-lightbulb:before { content: "\f100"; }
+.cyb-ls-e-002-sim-card:before { content: "\f101"; }
+.cyb-ls-e-003-chip-1:before { content: "\f102"; }
+.cyb-ls-e-004-mobile:before { content: "\f103"; }
+.cyb-ls-e-005-chip:before { content: "\f104"; }
+.cyb-ls-e-006-component:before { content: "\f105"; }
+.cyb-ls-e-007-power:before { content: "\f106"; }
+.cyb-ls-e-008-connection:before { content: "\f107"; }
+.cyb-ls-e-009-cpu-2:before { content: "\f108"; }
+.cyb-ls-e-010-cpu-1:before { content: "\f109"; }
+.cyb-ls-e-011-cloud:before { content: "\f10a"; }
+.cyb-ls-e-012-circuit:before { content: "\f10b"; }
+.cyb-ls-e-013-battery:before { content: "\f10c"; }
+.cyb-ls-e-014-artificial-intelligence:before { content: "\f10d"; }
+.cyb-ls-e-015-cpu:before { content: "\f10e"; }
+.cyb-ls-e-016-board:before { content: "\f10f"; }

@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "wireless-network";
+  src: url("./wireless-network.eot");
+  src: url("./wireless-network.eot?#iefix") format("embedded-opentype"),
+       url("./wireless-network.woff") format("woff"),
+       url("./wireless-network.ttf") format("truetype"),
+       url("./wireless-network.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="cyb-ls-wn-"]:before, [class*=" cyb-ls-wn-"]:before,
+[class^="cyb-ls-wn-"]:after, [class*=" cyb-ls-wn-"]:after {   
+font-family: "wireless-network" !important;
+font-size: 20px;
+font-style: normal !important;
+font-weight: normal !important;
+font-variant: normal !important;
+text-transform: none !important;
+text-align: center;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+.cyb-ls-wn-house:before { content: "\f100"; }
+.cyb-ls-wn-house-with-wifi:before { content: "\f101"; }
+.cyb-ls-wn-house-with-wifi-1:before { content: "\f102"; }
+.cyb-ls-wn-house-with-wifi-2:before { content: "\f103"; }
+.cyb-ls-wn-mobile-phone:before { content: "\f104"; }
+.cyb-ls-wn-modem:before { content: "\f105"; }
+.cyb-ls-wn-modem-1:before { content: "\f106"; }
+.cyb-ls-wn-modem-2:before { content: "\f107"; }
+.cyb-ls-wn-modem-3:before { content: "\f108"; }
+.cyb-ls-wn-modem-4:before { content: "\f109"; }
+.cyb-ls-wn-monitor:before { content: "\f10a"; }
+.cyb-ls-wn-television:before { content: "\f10b"; }
+.cyb-ls-wn-wifi:before { content: "\f10c"; }
+.cyb-ls-wn-wifi-1:before { content: "\f10d"; }
+.cyb-ls-wn-wifi-10:before { content: "\f10e"; }
+.cyb-ls-wn-wifi-11:before { content: "\f10f"; }
+.cyb-ls-wn-wifi-12:before { content: "\f110"; }
+.cyb-ls-wn-wifi-2:before { content: "\f111"; }
+.cyb-ls-wn-wifi-3:before { content: "\f112"; }
+.cyb-ls-wn-wifi-4:before { content: "\f113"; }
+.cyb-ls-wn-wifi-5:before { content: "\f114"; }
+.cyb-ls-wn-wifi-6:before { content: "\f115"; }
+.cyb-ls-wn-wifi-7:before { content: "\f116"; }
+.cyb-ls-wn-wifi-8:before { content: "\f117"; }
+.cyb-ls-wn-wifi-9:before { content: "\f118"; }
+.cyb-ls-wn-wifi-antenna:before { content: "\f119"; }
+.cyb-ls-wn-wifi-antenna-1:before { content: "\f11a"; }
+.cyb-ls-wn-wifi-button:before { content: "\f11b"; }
+.cyb-ls-wn-wifi-notification:before { content: "\f11c"; }
+.cyb-ls-wn-wireless-mouse:before { content: "\f11d"; }

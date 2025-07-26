@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "city";
+  src: url("./city.eot");
+  src: url("./city.eot?#iefix") format("embedded-opentype"),
+       url("./city.woff") format("woff"),
+       url("./city.ttf") format("truetype"),
+       url("./city.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="cyb-b-c-"]:before, [class*=" cyb-b-c-"]:before,
+[class^="cyb-b-c-"]:after, [class*=" cyb-b-c-"]:after {   
+font-family: "city" !important;
+font-size: 20px;
+font-style: normal !important;
+font-weight: normal !important;
+font-variant: normal !important;
+text-transform: none !important;
+text-align: center;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+.cyb-b-c-001-street-light-1:before { content: "\f100"; }
+.cyb-b-c-002-street-light:before { content: "\f101"; }
+.cyb-b-c-003-traffic-light-1:before { content: "\f102"; }
+.cyb-b-c-004-traffic-light:before { content: "\f103"; }
+.cyb-b-c-005-signpost:before { content: "\f104"; }
+.cyb-b-c-006-no-entry:before { content: "\f105"; }
+.cyb-b-c-007-parking:before { content: "\f106"; }
+.cyb-b-c-008-parking-meter:before { content: "\f107"; }
+.cyb-b-c-009-clock:before { content: "\f108"; }
+.cyb-b-c-010-map:before { content: "\f109"; }
+.cyb-b-c-011-tree-2:before { content: "\f10a"; }
+.cyb-b-c-012-tree-1:before { content: "\f10b"; }
+.cyb-b-c-013-tree:before { content: "\f10c"; }
+.cyb-b-c-014-fountain-2:before { content: "\f10d"; }
+.cyb-b-c-015-fountain-1:before { content: "\f10e"; }
+.cyb-b-c-016-fountain:before { content: "\f10f"; }
+.cyb-b-c-017-hydrant:before { content: "\f110"; }
+.cyb-b-c-018-bench:before { content: "\f111"; }
+.cyb-b-c-019-postbox:before { content: "\f112"; }
+.cyb-b-c-020-phone-booth:before { content: "\f113"; }
+.cyb-b-c-021-bus-stop:before { content: "\f114"; }
+.cyb-b-c-022-bus:before { content: "\f115"; }
+.cyb-b-c-023-taxi:before { content: "\f116"; }
+.cyb-b-c-024-metro:before { content: "\f117"; }
+.cyb-b-c-025-tram:before { content: "\f118"; }
+.cyb-b-c-026-ticket-machine:before { content: "\f119"; }
+.cyb-b-c-027-container:before { content: "\f11a"; }
+.cyb-b-c-028-crane:before { content: "\f11b"; }
+.cyb-b-c-029-electric-pole:before { content: "\f11c"; }
+.cyb-b-c-030-garden:before { content: "\f11d"; }
+.cyb-b-c-031-handrail:before { content: "\f11e"; }
+.cyb-b-c-032-sewer:before { content: "\f11f"; }
+.cyb-b-c-033-stall:before { content: "\f120"; }
+.cyb-b-c-034-vending-machine-1:before { content: "\f121"; }
+.cyb-b-c-035-vending-machine:before { content: "\f122"; }
+.cyb-b-c-036-poster:before { content: "\f123"; }
+.cyb-b-c-037-billboard:before { content: "\f124"; }
+.cyb-b-c-038-advertising:before { content: "\f125"; }
+.cyb-b-c-039-bin-1:before { content: "\f126"; }
+.cyb-b-c-040-bin:before { content: "\f127"; }
+.cyb-b-c-041-street-name:before { content: "\f128"; }
+.cyb-b-c-042-cone:before { content: "\f129"; }
+.cyb-b-c-043-barrier-1:before { content: "\f12a"; }
+.cyb-b-c-044-barrier:before { content: "\f12b"; }
+.cyb-b-c-045-bollard:before { content: "\f12c"; }
+.cyb-b-c-046-street-food:before { content: "\f12d"; }
+.cyb-b-c-047-ferris-wheel:before { content: "\f12e"; }
+.cyb-b-c-048-skate-park:before { content: "\f12f"; }
+.cyb-b-c-049-swing:before { content: "\f130"; }
+.cyb-b-c-050-tent:before { content: "\f131"; }
+.cyb-b-c-051-bridge-1:before { content: "\f132"; }
+.cyb-b-c-052-bridge:before { content: "\f133"; }
+.cyb-b-c-053-stand:before { content: "\f134"; }
+.cyb-b-c-054-kiosk:before { content: "\f135"; }
+.cyb-b-c-055-public-toilet:before { content: "\f136"; }
+.cyb-b-c-056-obelisk:before { content: "\f137"; }
+.cyb-b-c-057-gates:before { content: "\f138"; }
+.cyb-b-c-058-arc-de-triomphe:before { content: "\f139"; }
+.cyb-b-c-059-castle:before { content: "\f13a"; }
+.cyb-b-c-060-synagogue:before { content: "\f13b"; }
+.cyb-b-c-061-mosque:before { content: "\f13c"; }
+.cyb-b-c-062-church:before { content: "\f13d"; }
+.cyb-b-c-063-stadium:before { content: "\f13e"; }
+.cyb-b-c-064-tower:before { content: "\f13f"; }
+.cyb-b-c-065-water-tower:before { content: "\f140"; }
+.cyb-b-c-066-brewery:before { content: "\f141"; }
+.cyb-b-c-067-factory:before { content: "\f142"; }
+.cyb-b-c-068-gym:before { content: "\f143"; }
+.cyb-b-c-069-bakery:before { content: "\f144"; }
+.cyb-b-c-070-mall:before { content: "\f145"; }
+.cyb-b-c-071-garage-1:before { content: "\f146"; }
+.cyb-b-c-072-gas-station:before { content: "\f147"; }
+.cyb-b-c-073-garage:before { content: "\f148"; }
+.cyb-b-c-074-pub:before { content: "\f149"; }
+.cyb-b-c-075-restaurant:before { content: "\f14a"; }
+.cyb-b-c-076-market:before { content: "\f14b"; }
+.cyb-b-c-077-pharmacy:before { content: "\f14c"; }
+.cyb-b-c-078-hospital:before { content: "\f14d"; }
+.cyb-b-c-079-cinema:before { content: "\f14e"; }
+.cyb-b-c-080-library:before { content: "\f14f"; }
+.cyb-b-c-081-museum-1:before { content: "\f150"; }
+.cyb-b-c-082-museum:before { content: "\f151"; }
+.cyb-b-c-083-college:before { content: "\f152"; }
+.cyb-b-c-084-school:before { content: "\f153"; }
+.cyb-b-c-085-prison:before { content: "\f154"; }
+.cyb-b-c-086-fire-station:before { content: "\f155"; }
+.cyb-b-c-087-police-station:before { content: "\f156"; }
+.cyb-b-c-088-post-office:before { content: "\f157"; }
+.cyb-b-c-089-city-hall:before { content: "\f158"; }
+.cyb-b-c-090-house-2:before { content: "\f159"; }
+.cyb-b-c-091-house-1:before { content: "\f15a"; }
+.cyb-b-c-092-house:before { content: "\f15b"; }
+.cyb-b-c-093-hotel:before { content: "\f15c"; }
+.cyb-b-c-094-hostel:before { content: "\f15d"; }
+.cyb-b-c-095-building-4:before { content: "\f15e"; }
+.cyb-b-c-096-warehouse:before { content: "\f15f"; }
+.cyb-b-c-097-building-3:before { content: "\f160"; }
+.cyb-b-c-098-building-2:before { content: "\f161"; }
+.cyb-b-c-099-building-1:before { content: "\f162"; }
+.cyb-b-c-100-building:before { content: "\f163"; }

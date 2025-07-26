@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "b-buildings";
+  src: url("./b-buildings.eot");
+  src: url("./b-buildings.eot?#iefix") format("embedded-opentype"),
+       url("./b-buildings.woff") format("woff"),
+       url("./b-buildings.ttf") format("truetype"),
+       url("./b-buildings.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="cyb-b-bb-"]:before, [class*=" cyb-b-bb-"]:before,
+[class^="cyb-b-bb-"]:after, [class*=" cyb-b-bb-"]:after {   
+font-family: "b-buildings" !important;
+font-size: 20px;
+font-style: normal !important;
+font-weight: normal !important;
+font-variant: normal !important;
+text-transform: none !important;
+text-align: center;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+.cyb-b-bb-3d-building:before { content: "\f100"; }
+.cyb-b-bb-3d-building-1:before { content: "\f101"; }
+.cyb-b-bb-3d-building-2:before { content: "\f102"; }
+.cyb-b-bb-3d-building-3:before { content: "\f103"; }
+.cyb-b-bb-3d-building-4:before { content: "\f104"; }
+.cyb-b-bb-3d-building-5:before { content: "\f105"; }
+.cyb-b-bb-3d-buildings:before { content: "\f106"; }
+.cyb-b-bb-3d-house:before { content: "\f107"; }
+.cyb-b-bb-3d-house-1:before { content: "\f108"; }
+.cyb-b-bb-3d-house-2:before { content: "\f109"; }
+.cyb-b-bb-big-building:before { content: "\f10a"; }
+.cyb-b-bb-house-with-sloping-roof:before { content: "\f10b"; }
+.cyb-b-bb-modern-house:before { content: "\f10c"; }
+.cyb-b-bb-mountain-house:before { content: "\f10d"; }
+.cyb-b-bb-office-block:before { content: "\f10e"; }
+.cyb-b-bb-office-blocks:before { content: "\f10f"; }
+.cyb-b-bb-skyscraper:before { content: "\f110"; }
+.cyb-b-bb-sloping-roof-buildings:before { content: "\f111"; }
+.cyb-b-bb-stepped-building:before { content: "\f112"; }
+.cyb-b-bb-stepped-building-1:before { content: "\f113"; }
+.cyb-b-bb-stepped-building-2:before { content: "\f114"; }
+.cyb-b-bb-tower-block:before { content: "\f115"; }
+.cyb-b-bb-tower-block-1:before { content: "\f116"; }
+.cyb-b-bb-tower-block-2:before { content: "\f117"; }
+.cyb-b-bb-tower-block-3:before { content: "\f118"; }

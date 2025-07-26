@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "graph";
+  src: url("./graph.eot");
+  src: url("./graph.eot?#iefix") format("embedded-opentype"),
+       url("./graph.woff") format("woff"),
+       url("./graph.ttf") format("truetype"),
+       url("./graph.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="cyb-g-g-"]:before, [class*=" cyb-g-g-"]:before,
+[class^="cyb-g-g-"]:after, [class*=" cyb-g-g-"]:after {   
+font-family: "graph" !important;
+font-size: 20px;
+font-style: normal !important;
+font-weight: normal !important;
+font-variant: normal !important;
+text-transform: none !important;
+text-align: center;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+.cyb-g-g-001-analytics-35:before { content: "\f100"; }
+.cyb-g-g-002-analytics-34:before { content: "\f101"; }
+.cyb-g-g-003-analytics-33:before { content: "\f102"; }
+.cyb-g-g-004-analytics-32:before { content: "\f103"; }
+.cyb-g-g-005-analytics-31:before { content: "\f104"; }
+.cyb-g-g-006-analytics-30:before { content: "\f105"; }
+.cyb-g-g-007-analytics-29:before { content: "\f106"; }
+.cyb-g-g-008-analytics-28:before { content: "\f107"; }
+.cyb-g-g-009-analytics-27:before { content: "\f108"; }
+.cyb-g-g-010-analytics-26:before { content: "\f109"; }
+.cyb-g-g-011-analytics-25:before { content: "\f10a"; }
+.cyb-g-g-012-analytics-24:before { content: "\f10b"; }
+.cyb-g-g-013-analytics-23:before { content: "\f10c"; }
+.cyb-g-g-014-analytics-22:before { content: "\f10d"; }
+.cyb-g-g-015-analytics-21:before { content: "\f10e"; }
+.cyb-g-g-016-analytics-20:before { content: "\f10f"; }
+.cyb-g-g-017-analytics-19:before { content: "\f110"; }
+.cyb-g-g-018-analytics-18:before { content: "\f111"; }
+.cyb-g-g-019-analytics-17:before { content: "\f112"; }
+.cyb-g-g-020-analytics-16:before { content: "\f113"; }
+.cyb-g-g-021-analytics-15:before { content: "\f114"; }
+.cyb-g-g-022-analytics-14:before { content: "\f115"; }
+.cyb-g-g-023-analytics-13:before { content: "\f116"; }
+.cyb-g-g-024-analytics-12:before { content: "\f117"; }
+.cyb-g-g-025-analytics-11:before { content: "\f118"; }
+.cyb-g-g-026-analytics-10:before { content: "\f119"; }
+.cyb-g-g-027-analytics-9:before { content: "\f11a"; }
+.cyb-g-g-028-analytics-8:before { content: "\f11b"; }
+.cyb-g-g-029-analytics-7:before { content: "\f11c"; }
+.cyb-g-g-030-analytics-6:before { content: "\f11d"; }
+.cyb-g-g-031-analytics-5:before { content: "\f11e"; }
+.cyb-g-g-032-analytics-4:before { content: "\f11f"; }
+.cyb-g-g-033-analytics-3:before { content: "\f120"; }
+.cyb-g-g-034-analytics-2:before { content: "\f121"; }
+.cyb-g-g-035-analytics-1:before { content: "\f122"; }
+.cyb-g-g-036-analytics:before { content: "\f123"; }

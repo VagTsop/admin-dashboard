@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "controls";
+  src: url("./controls.eot");
+  src: url("./controls.eot?#iefix") format("embedded-opentype"),
+       url("./controls.woff") format("woff"),
+       url("./controls.ttf") format("truetype"),
+       url("./controls.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="cyb-gs-c-"]:before, [class*=" cyb-gs-c-"]:before,
+[class^="cyb-gs-c-"]:after, [class*=" cyb-gs-c-"]:after {   
+font-family: "controls" !important;
+font-size: 20px;
+font-style: normal !important;
+font-weight: normal !important;
+font-variant: normal !important;
+text-transform: none !important;
+text-align: center;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+.cyb-gs-c-crop:before { content: "\f100"; }
+.cyb-gs-c-curve:before { content: "\f101"; }
+.cyb-gs-c-curved-arrow:before { content: "\f102"; }
+.cyb-gs-c-curved-arrow-1:before { content: "\f103"; }
+.cyb-gs-c-infinity:before { content: "\f104"; }
+.cyb-gs-c-infinity-1:before { content: "\f105"; }
+.cyb-gs-c-infinity-2:before { content: "\f106"; }
+.cyb-gs-c-loop:before { content: "\f107"; }
+.cyb-gs-c-power-button:before { content: "\f108"; }
+.cyb-gs-c-power-button-1:before { content: "\f109"; }
+.cyb-gs-c-repeat:before { content: "\f10a"; }
+.cyb-gs-c-shuffle:before { content: "\f10b"; }
+.cyb-gs-c-shuffle-1:before { content: "\f10c"; }
+.cyb-gs-c-sync:before { content: "\f10d"; }
+.cyb-gs-c-zig-zag:before { content: "\f10e"; }

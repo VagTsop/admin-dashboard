@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "medical";
+  src: url("./medical.eot");
+  src: url("./medical.eot?#iefix") format("embedded-opentype"),
+       url("./medical.woff") format("woff"),
+       url("./medical.ttf") format("truetype"),
+       url("./medical.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="cyb-mc-m-"]:before, [class*=" cyb-mc-m-"]:before,
+[class^="cyb-mc-m-"]:after, [class*=" cyb-mc-m-"]:after {   
+font-family: "medical" !important;
+font-size: 20px;
+font-style: normal !important;
+font-weight: normal !important;
+font-variant: normal !important;
+text-transform: none !important;
+text-align: center;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+.cyb-mc-m-001-wheelchair:before { content: "\f100"; }
+.cyb-mc-m-002-hospital-6:before { content: "\f101"; }
+.cyb-mc-m-003-walker:before { content: "\f102"; }
+.cyb-mc-m-004-waiting-room-1:before { content: "\f103"; }
+.cyb-mc-m-005-tablets-1:before { content: "\f104"; }
+.cyb-mc-m-006-tablets:before { content: "\f105"; }
+.cyb-mc-m-007-syringes-1:before { content: "\f106"; }
+.cyb-mc-m-008-syringes:before { content: "\f107"; }
+.cyb-mc-m-009-surgery-2:before { content: "\f108"; }
+.cyb-mc-m-010-surgery-1:before { content: "\f109"; }
+.cyb-mc-m-011-surgery:before { content: "\f10a"; }
+.cyb-mc-m-012-healthcare-2:before { content: "\f10b"; }
+.cyb-mc-m-013-stethoscope:before { content: "\f10c"; }
+.cyb-mc-m-014-siren:before { content: "\f10d"; }
+.cyb-mc-m-015-science-1:before { content: "\f10e"; }
+.cyb-mc-m-016-reports:before { content: "\f10f"; }
+.cyb-mc-m-017-report-4:before { content: "\f110"; }
+.cyb-mc-m-018-pills-3:before { content: "\f111"; }
+.cyb-mc-m-019-pills-2:before { content: "\f112"; }
+.cyb-mc-m-020-pills-1:before { content: "\f113"; }
+.cyb-mc-m-021-pills:before { content: "\f114"; }
+.cyb-mc-m-022-physics:before { content: "\f115"; }
+.cyb-mc-m-023-petri-dish:before { content: "\f116"; }
+.cyb-mc-m-024-first-aid-kit:before { content: "\f117"; }
+.cyb-mc-m-025-report-3:before { content: "\f118"; }
+.cyb-mc-m-026-donation-1:before { content: "\f119"; }
+.cyb-mc-m-027-donation:before { content: "\f11a"; }
+.cyb-mc-m-028-operation:before { content: "\f11b"; }
+.cyb-mc-m-029-healthcare-1:before { content: "\f11c"; }
+.cyb-mc-m-030-nurse-1:before { content: "\f11d"; }
+.cyb-mc-m-031-nurse:before { content: "\f11e"; }
+.cyb-mc-m-032-neuron:before { content: "\f11f"; }
+.cyb-mc-m-033-needle:before { content: "\f120"; }
+.cyb-mc-m-034-microscope-1:before { content: "\f121"; }
+.cyb-mc-m-035-microscope:before { content: "\f122"; }
+.cyb-mc-m-036-medication-3:before { content: "\f123"; }
+.cyb-mc-m-037-medication-2:before { content: "\f124"; }
+.cyb-mc-m-038-medication-1:before { content: "\f125"; }
+.cyb-mc-m-039-medication:before { content: "\f126"; }
+.cyb-mc-m-040-medical:before { content: "\f127"; }
+.cyb-mc-m-041-science:before { content: "\f128"; }
+.cyb-mc-m-042-research:before { content: "\f129"; }
+.cyb-mc-m-043-report-2:before { content: "\f12a"; }
+.cyb-mc-m-044-report-1:before { content: "\f12b"; }
+.cyb-mc-m-045-report:before { content: "\f12c"; }
+.cyb-mc-m-046-hospital-5:before { content: "\f12d"; }
+.cyb-mc-m-047-hospital-4:before { content: "\f12e"; }
+.cyb-mc-m-048-book:before { content: "\f12f"; }
+.cyb-mc-m-049-bag:before { content: "\f130"; }
+.cyb-mc-m-050-medical-app-1:before { content: "\f131"; }
+.cyb-mc-m-051-medical-app:before { content: "\f132"; }
+.cyb-mc-m-052-document-1:before { content: "\f133"; }
+.cyb-mc-m-053-tag:before { content: "\f134"; }
+.cyb-mc-m-054-maternity:before { content: "\f135"; }
+.cyb-mc-m-055-magnifying-glass:before { content: "\f136"; }
+.cyb-mc-m-056-iv:before { content: "\f137"; }
+.cyb-mc-m-057-hospital-3:before { content: "\f138"; }
+.cyb-mc-m-058-hospital-2:before { content: "\f139"; }
+.cyb-mc-m-059-healthcare:before { content: "\f13a"; }
+.cyb-mc-m-060-medical-equipment:before { content: "\f13b"; }
+.cyb-mc-m-061-hospital-bed:before { content: "\f13c"; }
+.cyb-mc-m-062-hospital-1:before { content: "\f13d"; }
+.cyb-mc-m-063-hospital:before { content: "\f13e"; }
+.cyb-mc-m-064-document:before { content: "\f13f"; }
+.cyb-mc-m-065-card-1:before { content: "\f140"; }
+.cyb-mc-m-066-file-1:before { content: "\f141"; }
+.cyb-mc-m-067-card:before { content: "\f142"; }
+.cyb-mc-m-068-health-1:before { content: "\f143"; }
+.cyb-mc-m-069-health:before { content: "\f144"; }
+.cyb-mc-m-070-germs:before { content: "\f145"; }
+.cyb-mc-m-071-emergency:before { content: "\f146"; }
+.cyb-mc-m-072-drug:before { content: "\f147"; }
+.cyb-mc-m-073-clinic:before { content: "\f148"; }
+.cyb-mc-m-074-waiting-room:before { content: "\f149"; }
+.cyb-mc-m-075-doctor-2:before { content: "\f14a"; }
+.cyb-mc-m-076-sign:before { content: "\f14b"; }
+.cyb-mc-m-077-doctor-1:before { content: "\f14c"; }
+.cyb-mc-m-078-doctor:before { content: "\f14d"; }
+.cyb-mc-m-079-dentist:before { content: "\f14e"; }
+.cyb-mc-m-080-teeth:before { content: "\f14f"; }
+.cyb-mc-m-081-bouquet:before { content: "\f150"; }
+.cyb-mc-m-082-blood-bag-2:before { content: "\f151"; }
+.cyb-mc-m-083-blood-bag-1:before { content: "\f152"; }
+.cyb-mc-m-084-blood-bag:before { content: "\f153"; }
+.cyb-mc-m-085-bed:before { content: "\f154"; }
+.cyb-mc-m-086-bandage-2:before { content: "\f155"; }
+.cyb-mc-m-087-bandage-1:before { content: "\f156"; }
+.cyb-mc-m-088-bandage:before { content: "\f157"; }
+.cyb-mc-m-089-bacteria-1:before { content: "\f158"; }
+.cyb-mc-m-090-bacteria:before { content: "\f159"; }
+.cyb-mc-m-091-file:before { content: "\f15a"; }
+.cyb-mc-m-092-antiseptic-2:before { content: "\f15b"; }
+.cyb-mc-m-093-antiseptic-1:before { content: "\f15c"; }
+.cyb-mc-m-094-antiseptic:before { content: "\f15d"; }
+.cyb-mc-m-095-antibiotics-2:before { content: "\f15e"; }
+.cyb-mc-m-096-antibiotics-1:before { content: "\f15f"; }
+.cyb-mc-m-097-antibiotics:before { content: "\f160"; }
+.cyb-mc-m-098-ambulance-1:before { content: "\f161"; }
+.cyb-mc-m-099-ambulance:before { content: "\f162"; }
+.cyb-mc-m-100-pin:before { content: "\f163"; }

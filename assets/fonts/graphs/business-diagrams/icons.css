@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "business-diagrams";
+  src: url("./business-diagrams.eot");
+  src: url("./business-diagrams.eot?#iefix") format("embedded-opentype"),
+       url("./business-diagrams.woff") format("woff"),
+       url("./business-diagrams.ttf") format("truetype"),
+       url("./business-diagrams.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="cyb-g-bd-"]:before, [class*=" cyb-g-bd-"]:before,
+[class^="cyb-g-bd-"]:after, [class*=" cyb-g-bd-"]:after {   
+font-family: "business-diagrams" !important;
+font-size: 20px;
+font-style: normal !important;
+font-weight: normal !important;
+font-variant: normal !important;
+text-transform: none !important;
+text-align: center;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+.cyb-g-bd-analytics:before { content: "\f100"; }
+.cyb-g-bd-analytics-1:before { content: "\f101"; }
+.cyb-g-bd-analytics-10:before { content: "\f102"; }
+.cyb-g-bd-analytics-11:before { content: "\f103"; }
+.cyb-g-bd-analytics-12:before { content: "\f104"; }
+.cyb-g-bd-analytics-13:before { content: "\f105"; }
+.cyb-g-bd-analytics-14:before { content: "\f106"; }
+.cyb-g-bd-analytics-15:before { content: "\f107"; }
+.cyb-g-bd-analytics-16:before { content: "\f108"; }
+.cyb-g-bd-analytics-17:before { content: "\f109"; }
+.cyb-g-bd-analytics-18:before { content: "\f10a"; }
+.cyb-g-bd-analytics-19:before { content: "\f10b"; }
+.cyb-g-bd-analytics-2:before { content: "\f10c"; }
+.cyb-g-bd-analytics-20:before { content: "\f10d"; }
+.cyb-g-bd-analytics-21:before { content: "\f10e"; }
+.cyb-g-bd-analytics-22:before { content: "\f10f"; }
+.cyb-g-bd-analytics-23:before { content: "\f110"; }
+.cyb-g-bd-analytics-24:before { content: "\f111"; }
+.cyb-g-bd-analytics-25:before { content: "\f112"; }
+.cyb-g-bd-analytics-26:before { content: "\f113"; }
+.cyb-g-bd-analytics-27:before { content: "\f114"; }
+.cyb-g-bd-analytics-28:before { content: "\f115"; }
+.cyb-g-bd-analytics-29:before { content: "\f116"; }
+.cyb-g-bd-analytics-3:before { content: "\f117"; }
+.cyb-g-bd-analytics-30:before { content: "\f118"; }
+.cyb-g-bd-analytics-31:before { content: "\f119"; }
+.cyb-g-bd-analytics-32:before { content: "\f11a"; }
+.cyb-g-bd-analytics-33:before { content: "\f11b"; }
+.cyb-g-bd-analytics-34:before { content: "\f11c"; }
+.cyb-g-bd-analytics-35:before { content: "\f11d"; }
+.cyb-g-bd-analytics-36:before { content: "\f11e"; }
+.cyb-g-bd-analytics-37:before { content: "\f11f"; }
+.cyb-g-bd-analytics-38:before { content: "\f120"; }
+.cyb-g-bd-analytics-39:before { content: "\f121"; }
+.cyb-g-bd-analytics-4:before { content: "\f122"; }
+.cyb-g-bd-analytics-40:before { content: "\f123"; }
+.cyb-g-bd-analytics-41:before { content: "\f124"; }
+.cyb-g-bd-analytics-42:before { content: "\f125"; }
+.cyb-g-bd-analytics-43:before { content: "\f126"; }
+.cyb-g-bd-analytics-5:before { content: "\f127"; }
+.cyb-g-bd-analytics-6:before { content: "\f128"; }
+.cyb-g-bd-analytics-7:before { content: "\f129"; }
+.cyb-g-bd-analytics-8:before { content: "\f12a"; }
+.cyb-g-bd-analytics-9:before { content: "\f12b"; }
+.cyb-g-bd-gear:before { content: "\f12c"; }
+.cyb-g-bd-hierarchical-structure:before { content: "\f12d"; }
+.cyb-g-bd-loss:before { content: "\f12e"; }
+.cyb-g-bd-profits:before { content: "\f12f"; }
+.cyb-g-bd-sitemap:before { content: "\f130"; }
+.cyb-g-bd-timeline:before { content: "\f131"; }

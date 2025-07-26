@@ -1,0 +1,38 @@
+body.app-dark {
+  background-color: #383339;
+
+  .mat-mdc-card {
+    background-color: #1a1a1a !important;
+  }
+
+  .card-title {
+    color: #ffffff;
+  }
+
+  .amcharts-XYChart text {
+    fill: #ffffff;
+  }
+
+  .amcharts-PieChart text {
+    fill: #000000 !important;
+  }
+}
+
+body.light-theme {
+  background-color: white;
+
+  .mat-mdc-card {
+    background-color: #ffffff !important;
+  }
+  .card-title {
+    color: #000000;
+  }
+
+  .amcharts-XYChart text {
+    fill: #000000;
+  }
+
+  .amcharts-PieChart text {
+    fill: #ffffff !important;
+  }
+}

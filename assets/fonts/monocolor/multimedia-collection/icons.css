@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "multimedia-collection";
+  src: url("./multimedia-collection.eot");
+  src: url("./multimedia-collection.eot?#iefix") format("embedded-opentype"),
+       url("./multimedia-collection.woff") format("woff"),
+       url("./multimedia-collection.ttf") format("truetype"),
+       url("./multimedia-collection.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="cyb-mc-mc-"]:before, [class*=" cyb-mc-mc-"]:before,
+[class^="cyb-mc-mc-"]:after, [class*=" cyb-mc-mc-"]:after {   
+font-family: "multimedia-collection" !important;
+font-size: 20px;
+font-style: normal !important;
+font-weight: normal !important;
+font-variant: normal !important;
+text-transform: none !important;
+text-align: center;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+.cyb-mc-mc-avatar:before { content: "\f100"; }
+.cyb-mc-mc-avatar-1:before { content: "\f101"; }
+.cyb-mc-mc-back:before { content: "\f102"; }
+.cyb-mc-mc-book:before { content: "\f103"; }
+.cyb-mc-mc-cancel:before { content: "\f104"; }
+.cyb-mc-mc-chat:before { content: "\f105"; }
+.cyb-mc-mc-chat-1:before { content: "\f106"; }
+.cyb-mc-mc-chat-2:before { content: "\f107"; }
+.cyb-mc-mc-copy:before { content: "\f108"; }
+.cyb-mc-mc-dislike:before { content: "\f109"; }
+.cyb-mc-mc-download:before { content: "\f10a"; }
+.cyb-mc-mc-download-1:before { content: "\f10b"; }
+.cyb-mc-mc-edit:before { content: "\f10c"; }
+.cyb-mc-mc-envelope:before { content: "\f10d"; }
+.cyb-mc-mc-folder:before { content: "\f10e"; }
+.cyb-mc-mc-garbage:before { content: "\f10f"; }
+.cyb-mc-mc-glasses:before { content: "\f110"; }
+.cyb-mc-mc-hand:before { content: "\f111"; }
+.cyb-mc-mc-headphones:before { content: "\f112"; }
+.cyb-mc-mc-heart:before { content: "\f113"; }
+.cyb-mc-mc-house:before { content: "\f114"; }
+.cyb-mc-mc-like:before { content: "\f115"; }
+.cyb-mc-mc-link:before { content: "\f116"; }
+.cyb-mc-mc-logout:before { content: "\f117"; }
+.cyb-mc-mc-magnifying-glass:before { content: "\f118"; }
+.cyb-mc-mc-monitor:before { content: "\f119"; }
+.cyb-mc-mc-musical-note:before { content: "\f11a"; }
+.cyb-mc-mc-next:before { content: "\f11b"; }
+.cyb-mc-mc-next-1:before { content: "\f11c"; }
+.cyb-mc-mc-padlock:before { content: "\f11d"; }
+.cyb-mc-mc-paper-plane:before { content: "\f11e"; }
+.cyb-mc-mc-phone-call:before { content: "\f11f"; }
+.cyb-mc-mc-photo-camera:before { content: "\f120"; }
+.cyb-mc-mc-pie-chart:before { content: "\f121"; }
+.cyb-mc-mc-piggy-bank:before { content: "\f122"; }
+.cyb-mc-mc-placeholder:before { content: "\f123"; }
+.cyb-mc-mc-printer:before { content: "\f124"; }
+.cyb-mc-mc-reload:before { content: "\f125"; }
+.cyb-mc-mc-settings:before { content: "\f126"; }
+.cyb-mc-mc-settings-1:before { content: "\f127"; }
+.cyb-mc-mc-share:before { content: "\f128"; }
+.cyb-mc-mc-shopping-bag:before { content: "\f129"; }
+.cyb-mc-mc-shopping-cart:before { content: "\f12a"; }
+.cyb-mc-mc-shuffle:before { content: "\f12b"; }
+.cyb-mc-mc-speaker:before { content: "\f12c"; }
+.cyb-mc-mc-star:before { content: "\f12d"; }
+.cyb-mc-mc-tag:before { content: "\f12e"; }
+.cyb-mc-mc-upload:before { content: "\f12f"; }
+.cyb-mc-mc-upload-1:before { content: "\f130"; }
+.cyb-mc-mc-vector:before { content: "\f131"; }

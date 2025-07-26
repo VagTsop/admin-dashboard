@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "printing";
+  src: url("./printing.eot");
+  src: url("./printing.eot?#iefix") format("embedded-opentype"),
+       url("./printing.woff") format("woff"),
+       url("./printing.ttf") format("truetype"),
+       url("./printing.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="cyb-s-p-"]:before, [class*=" cyb-s-p-"]:before,
+[class^="cyb-s-p-"]:after, [class*=" cyb-s-p-"]:after {   
+font-family: "printing" !important;
+font-size: 20px;
+font-style: normal !important;
+font-weight: normal !important;
+font-variant: normal !important;
+text-transform: none !important;
+text-align: center;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+.cyb-s-p-001-printer:before { content: "\f100"; }
+.cyb-s-p-002-cartridge:before { content: "\f101"; }
+.cyb-s-p-003-drop:before { content: "\f102"; }
+.cyb-s-p-004-paint-roller:before { content: "\f103"; }
+.cyb-s-p-005-box:before { content: "\f104"; }
+.cyb-s-p-006-mug:before { content: "\f105"; }
+.cyb-s-p-007-filament:before { content: "\f106"; }
+.cyb-s-p-008-pen:before { content: "\f107"; }
+.cyb-s-p-009-vector:before { content: "\f108"; }
+.cyb-s-p-010-glass:before { content: "\f109"; }
+.cyb-s-p-011-printing-test:before { content: "\f10a"; }
+.cyb-s-p-012-printer-1:before { content: "\f10b"; }
+.cyb-s-p-013-inks:before { content: "\f10c"; }
+.cyb-s-p-014-shirt:before { content: "\f10d"; }
+.cyb-s-p-015-package:before { content: "\f10e"; }
+.cyb-s-p-016-pen-1:before { content: "\f10f"; }
+.cyb-s-p-017-calendar:before { content: "\f110"; }
+.cyb-s-p-018-transformation:before { content: "\f111"; }
+.cyb-s-p-019-printer-2:before { content: "\f112"; }
+.cyb-s-p-020-book:before { content: "\f113"; }
+.cyb-s-p-021-palette:before { content: "\f114"; }
+.cyb-s-p-022-paper:before { content: "\f115"; }
+.cyb-s-p-023-dropper:before { content: "\f116"; }
+.cyb-s-p-024-ink:before { content: "\f117"; }
+.cyb-s-p-025-trifold:before { content: "\f118"; }
+.cyb-s-p-026-printer-3:before { content: "\f119"; }
+.cyb-s-p-027-stamp:before { content: "\f11a"; }
+.cyb-s-p-028-dvd:before { content: "\f11b"; }
+.cyb-s-p-029-densitometer:before { content: "\f11c"; }
+.cyb-s-p-030-guillotine:before { content: "\f11d"; }
+.cyb-s-p-031-plotter:before { content: "\f11e"; }
+.cyb-s-p-032-text:before { content: "\f11f"; }
+.cyb-s-p-033-paper-roll:before { content: "\f120"; }
+.cyb-s-p-034-text-1:before { content: "\f121"; }
+.cyb-s-p-035-cartridge-1:before { content: "\f122"; }
+.cyb-s-p-036-crop:before { content: "\f123"; }
+.cyb-s-p-037-drop-1:before { content: "\f124"; }
+.cyb-s-p-038-flyer:before { content: "\f125"; }
+.cyb-s-p-039-sticker:before { content: "\f126"; }
+.cyb-s-p-040-spray:before { content: "\f127"; }
+.cyb-s-p-041-palette-1:before { content: "\f128"; }
+.cyb-s-p-042-bucket:before { content: "\f129"; }
+.cyb-s-p-043-scanner:before { content: "\f12a"; }
+.cyb-s-p-044-shopping-bag:before { content: "\f12b"; }
+.cyb-s-p-045-binding:before { content: "\f12c"; }
+.cyb-s-p-046-ruler:before { content: "\f12d"; }
+.cyb-s-p-047-stamp-1:before { content: "\f12e"; }
+.cyb-s-p-048-drops:before { content: "\f12f"; }
+.cyb-s-p-049-ecologism:before { content: "\f130"; }
+.cyb-s-p-050-silkscreen:before { content: "\f131"; }

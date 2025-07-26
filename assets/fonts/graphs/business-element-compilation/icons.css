@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "business-element-compilation";
+  src: url("./business-element-compilation.eot");
+  src: url("./business-element-compilation.eot?#iefix") format("embedded-opentype"),
+       url("./business-element-compilation.woff") format("woff"),
+       url("./business-element-compilation.ttf") format("truetype"),
+       url("./business-element-compilation.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="cyb-g-bec-"]:before, [class*=" cyb-g-bec-"]:before,
+[class^="cyb-g-bec-"]:after, [class*=" cyb-g-bec-"]:after {   
+font-family: "business-element-compilation" !important;
+font-size: 20px;
+font-style: normal !important;
+font-weight: normal !important;
+font-variant: normal !important;
+text-transform: none !important;
+text-align: center;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+.cyb-g-bec-alarm-clock:before { content: "\f100"; }
+.cyb-g-bec-avatar:before { content: "\f101"; }
+.cyb-g-bec-bank-terminal:before { content: "\f102"; }
+.cyb-g-bec-bar-chart:before { content: "\f103"; }
+.cyb-g-bec-bar-chart-1:before { content: "\f104"; }
+.cyb-g-bec-bar-chart-2:before { content: "\f105"; }
+.cyb-g-bec-bar-chart-3:before { content: "\f106"; }
+.cyb-g-bec-bar-chart-4:before { content: "\f107"; }
+.cyb-g-bec-bar-chart-5:before { content: "\f108"; }
+.cyb-g-bec-bar-chart-6:before { content: "\f109"; }
+.cyb-g-bec-bar-chart-7:before { content: "\f10a"; }
+.cyb-g-bec-bar-chart-8:before { content: "\f10b"; }
+.cyb-g-bec-briefcase:before { content: "\f10c"; }
+.cyb-g-bec-briefcase-1:before { content: "\f10d"; }
+.cyb-g-bec-briefcase-2:before { content: "\f10e"; }
+.cyb-g-bec-briefcase-3:before { content: "\f10f"; }
+.cyb-g-bec-briefcase-4:before { content: "\f110"; }
+.cyb-g-bec-browser:before { content: "\f111"; }
+.cyb-g-bec-browser-1:before { content: "\f112"; }
+.cyb-g-bec-calculator:before { content: "\f113"; }
+.cyb-g-bec-calendar:before { content: "\f114"; }
+.cyb-g-bec-cash-machine:before { content: "\f115"; }
+.cyb-g-bec-cash-machine-1:before { content: "\f116"; }
+.cyb-g-bec-cash-machine-2:before { content: "\f117"; }
+.cyb-g-bec-coins:before { content: "\f118"; }
+.cyb-g-bec-computer:before { content: "\f119"; }
+.cyb-g-bec-credit-card:before { content: "\f11a"; }
+.cyb-g-bec-dollar:before { content: "\f11b"; }
+.cyb-g-bec-dollar-1:before { content: "\f11c"; }
+.cyb-g-bec-dollar-2:before { content: "\f11d"; }
+.cyb-g-bec-edit:before { content: "\f11e"; }
+.cyb-g-bec-email:before { content: "\f11f"; }
+.cyb-g-bec-email-1:before { content: "\f120"; }
+.cyb-g-bec-email-2:before { content: "\f121"; }
+.cyb-g-bec-euro:before { content: "\f122"; }
+.cyb-g-bec-exchange:before { content: "\f123"; }
+.cyb-g-bec-exchange-1:before { content: "\f124"; }
+.cyb-g-bec-exchange-2:before { content: "\f125"; }
+.cyb-g-bec-file:before { content: "\f126"; }
+.cyb-g-bec-fountain-pen:before { content: "\f127"; }
+.cyb-g-bec-gold-ingots:before { content: "\f128"; }
+.cyb-g-bec-hierarchical-structure:before { content: "\f129"; }
+.cyb-g-bec-house:before { content: "\f12a"; }
+.cyb-g-bec-laptop:before { content: "\f12b"; }
+.cyb-g-bec-laptop-1:before { content: "\f12c"; }
+.cyb-g-bec-laptop-2:before { content: "\f12d"; }
+.cyb-g-bec-lifebuoy:before { content: "\f12e"; }
+.cyb-g-bec-like:before { content: "\f12f"; }
+.cyb-g-bec-line-chart:before { content: "\f130"; }
+.cyb-g-bec-line-chart-1:before { content: "\f131"; }
+.cyb-g-bec-line-chart-2:before { content: "\f132"; }
+.cyb-g-bec-line-chart-3:before { content: "\f133"; }
+.cyb-g-bec-line-chart-4:before { content: "\f134"; }
+.cyb-g-bec-line-chart-5:before { content: "\f135"; }
+.cyb-g-bec-list:before { content: "\f136"; }
+.cyb-g-bec-loss:before { content: "\f137"; }
+.cyb-g-bec-loss-1:before { content: "\f138"; }
+.cyb-g-bec-loss-2:before { content: "\f139"; }
+.cyb-g-bec-loss-3:before { content: "\f13a"; }
+.cyb-g-bec-menu:before { content: "\f13b"; }
+.cyb-g-bec-money:before { content: "\f13c"; }
+.cyb-g-bec-money-1:before { content: "\f13d"; }
+.cyb-g-bec-money-2:before { content: "\f13e"; }
+.cyb-g-bec-money-bag:before { content: "\f13f"; }
+.cyb-g-bec-money-bag-1:before { content: "\f140"; }
+.cyb-g-bec-monitor:before { content: "\f141"; }
+.cyb-g-bec-padlock:before { content: "\f142"; }
+.cyb-g-bec-pencil:before { content: "\f143"; }
+.cyb-g-bec-pie-chart:before { content: "\f144"; }
+.cyb-g-bec-pie-chart-1:before { content: "\f145"; }
+.cyb-g-bec-pie-chart-2:before { content: "\f146"; }
+.cyb-g-bec-pie-chart-3:before { content: "\f147"; }
+.cyb-g-bec-pie-chart-4:before { content: "\f148"; }
+.cyb-g-bec-pie-chart-5:before { content: "\f149"; }
+.cyb-g-bec-pie-chart-6:before { content: "\f14a"; }
+.cyb-g-bec-placeholder:before { content: "\f14b"; }
+.cyb-g-bec-pound-sterling:before { content: "\f14c"; }
+.cyb-g-bec-pound-sterling-1:before { content: "\f14d"; }
+.cyb-g-bec-pound-sterling-2:before { content: "\f14e"; }
+.cyb-g-bec-pound-sterling-3:before { content: "\f14f"; }
+.cyb-g-bec-pound-sterling-4:before { content: "\f150"; }
+.cyb-g-bec-profits:before { content: "\f151"; }
+.cyb-g-bec-sale:before { content: "\f152"; }
+.cyb-g-bec-scissors:before { content: "\f153"; }
+.cyb-g-bec-search:before { content: "\f154"; }
+.cyb-g-bec-shopping-bag:before { content: "\f155"; }
+.cyb-g-bec-shopping-bag-1:before { content: "\f156"; }
+.cyb-g-bec-smartphone:before { content: "\f157"; }
+.cyb-g-bec-speech-bubble:before { content: "\f158"; }
+.cyb-g-bec-truck:before { content: "\f159"; }
+.cyb-g-bec-unsecure:before { content: "\f15a"; }
+.cyb-g-bec-user:before { content: "\f15b"; }
+.cyb-g-bec-wallet:before { content: "\f15c"; }
+.cyb-g-bec-worldwide:before { content: "\f15d"; }
+.cyb-g-bec-worldwide-1:before { content: "\f15e"; }
+.cyb-g-bec-wristwatch:before { content: "\f15f"; }
+.cyb-g-bec-yen:before { content: "\f160"; }
+.cyb-g-bec-yen-1:before { content: "\f161"; }
+.cyb-g-bec-yen-2:before { content: "\f162"; }
+.cyb-g-bec-yen-3:before { content: "\f163"; }

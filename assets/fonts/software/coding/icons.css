@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "coding";
+  src: url("./coding.eot");
+  src: url("./coding.eot?#iefix") format("embedded-opentype"),
+       url("./coding.woff") format("woff"),
+       url("./coding.ttf") format("truetype"),
+       url("./coding.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="cyb-s-c-"]:before, [class*=" cyb-s-c-"]:before,
+[class^="cyb-s-c-"]:after, [class*=" cyb-s-c-"]:after {   
+font-family: "coding" !important;
+font-size: 20px;
+font-style: normal !important;
+font-weight: normal !important;
+font-variant: normal !important;
+text-transform: none !important;
+text-align: center;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+.cyb-s-c-001-coding:before { content: "\f100"; }
+.cyb-s-c-002-lifesaver:before { content: "\f101"; }
+.cyb-s-c-003-java:before { content: "\f102"; }
+.cyb-s-c-004-profile:before { content: "\f103"; }
+.cyb-s-c-005-bug:before { content: "\f104"; }
+.cyb-s-c-006-browser:before { content: "\f105"; }
+.cyb-s-c-007-unlock:before { content: "\f106"; }
+.cyb-s-c-008-failed:before { content: "\f107"; }
+.cyb-s-c-009-api:before { content: "\f108"; }
+.cyb-s-c-010-java-script:before { content: "\f109"; }
+.cyb-s-c-011-search:before { content: "\f10a"; }
+.cyb-s-c-012-data:before { content: "\f10b"; }
+.cyb-s-c-013-virus:before { content: "\f10c"; }
+.cyb-s-c-014-password:before { content: "\f10d"; }
+.cyb-s-c-015-analytics:before { content: "\f10e"; }
+.cyb-s-c-016-secure:before { content: "\f10f"; }
+.cyb-s-c-017-c-sharp:before { content: "\f110"; }
+.cyb-s-c-018-seo:before { content: "\f111"; }
+.cyb-s-c-019-database:before { content: "\f112"; }
+.cyb-s-c-020-css-file-format:before { content: "\f113"; }
+.cyb-s-c-021-cloud:before { content: "\f114"; }
+.cyb-s-c-022-development:before { content: "\f115"; }
+.cyb-s-c-023-coding-1:before { content: "\f116"; }
+.cyb-s-c-024-virus-1:before { content: "\f117"; }
+.cyb-s-c-025-coding-2:before { content: "\f118"; }
+.cyb-s-c-026-secure-1:before { content: "\f119"; }
+.cyb-s-c-027-coding-3:before { content: "\f11a"; }
+.cyb-s-c-028-bug-1:before { content: "\f11b"; }
+.cyb-s-c-029-php:before { content: "\f11c"; }
+.cyb-s-c-030-locked:before { content: "\f11d"; }
+.cyb-s-c-031-shield:before { content: "\f11e"; }
+.cyb-s-c-032-transfer:before { content: "\f11f"; }
+.cyb-s-c-033-save:before { content: "\f120"; }
+.cyb-s-c-034-worldwide:before { content: "\f121"; }
+.cyb-s-c-035-website:before { content: "\f122"; }
+.cyb-s-c-036-download:before { content: "\f123"; }
+.cyb-s-c-037-warning:before { content: "\f124"; }
+.cyb-s-c-038-css:before { content: "\f125"; }
+.cyb-s-c-039-php-1:before { content: "\f126"; }
+.cyb-s-c-040-responsive:before { content: "\f127"; }
+.cyb-s-c-041-settings:before { content: "\f128"; }
+.cyb-s-c-042-password-1:before { content: "\f129"; }
+.cyb-s-c-043-binary:before { content: "\f12a"; }
+.cyb-s-c-044-coding-4:before { content: "\f12b"; }
+.cyb-s-c-045-algorithm:before { content: "\f12c"; }
+.cyb-s-c-046-404-error:before { content: "\f12d"; }
+.cyb-s-c-047-unsecure:before { content: "\f12e"; }
+.cyb-s-c-048-upload:before { content: "\f12f"; }
+.cyb-s-c-049-success:before { content: "\f130"; }
+.cyb-s-c-050-bug-2:before { content: "\f131"; }

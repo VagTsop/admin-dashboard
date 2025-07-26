@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "web-hosting";
+  src: url("./web-hosting.eot");
+  src: url("./web-hosting.eot?#iefix") format("embedded-opentype"),
+       url("./web-hosting.woff") format("woff"),
+       url("./web-hosting.ttf") format("truetype"),
+       url("./web-hosting.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="cyb-s-wh-"]:before, [class*=" cyb-s-wh-"]:before,
+[class^="cyb-s-wh-"]:after, [class*=" cyb-s-wh-"]:after {   
+font-family: "web-hosting" !important;
+font-size: 20px;
+font-style: normal !important;
+font-weight: normal !important;
+font-variant: normal !important;
+text-transform: none !important;
+text-align: center;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+.cyb-s-wh-001-bug-1:before { content: "\f100"; }
+.cyb-s-wh-002-error-404:before { content: "\f101"; }
+.cyb-s-wh-003-bandwidth:before { content: "\f102"; }
+.cyb-s-wh-004-servers-10:before { content: "\f103"; }
+.cyb-s-wh-005-servers-9:before { content: "\f104"; }
+.cyb-s-wh-006-cloud:before { content: "\f105"; }
+.cyb-s-wh-007-download:before { content: "\f106"; }
+.cyb-s-wh-008-upload:before { content: "\f107"; }
+.cyb-s-wh-009-devices:before { content: "\f108"; }
+.cyb-s-wh-010-server-6:before { content: "\f109"; }
+.cyb-s-wh-011-globe-2:before { content: "\f10a"; }
+.cyb-s-wh-012-protection:before { content: "\f10b"; }
+.cyb-s-wh-013-database-4:before { content: "\f10c"; }
+.cyb-s-wh-014-calendar:before { content: "\f10d"; }
+.cyb-s-wh-015-shield:before { content: "\f10e"; }
+.cyb-s-wh-016-database-3:before { content: "\f10f"; }
+.cyb-s-wh-017-servers-8:before { content: "\f110"; }
+.cyb-s-wh-018-increase:before { content: "\f111"; }
+.cyb-s-wh-019-uptime:before { content: "\f112"; }
+.cyb-s-wh-020-bug:before { content: "\f113"; }
+.cyb-s-wh-021-browser:before { content: "\f114"; }
+.cyb-s-wh-022-server-5:before { content: "\f115"; }
+.cyb-s-wh-023-database-2:before { content: "\f116"; }
+.cyb-s-wh-024-lifesaver-1:before { content: "\f117"; }
+.cyb-s-wh-025-server-4:before { content: "\f118"; }
+.cyb-s-wh-026-web:before { content: "\f119"; }
+.cyb-s-wh-027-database-1:before { content: "\f11a"; }
+.cyb-s-wh-028-servers-7:before { content: "\f11b"; }
+.cyb-s-wh-029-https:before { content: "\f11c"; }
+.cyb-s-wh-030-ssl-certificate:before { content: "\f11d"; }
+.cyb-s-wh-031-servers-6:before { content: "\f11e"; }
+.cyb-s-wh-032-server-3:before { content: "\f11f"; }
+.cyb-s-wh-033-lifesaver:before { content: "\f120"; }
+.cyb-s-wh-034-server-2:before { content: "\f121"; }
+.cyb-s-wh-035-tech-support:before { content: "\f122"; }
+.cyb-s-wh-036-globe-1:before { content: "\f123"; }
+.cyb-s-wh-037-database:before { content: "\f124"; }
+.cyb-s-wh-038-server-1:before { content: "\f125"; }
+.cyb-s-wh-039-servers-5:before { content: "\f126"; }
+.cyb-s-wh-040-server:before { content: "\f127"; }
+.cyb-s-wh-041-computer:before { content: "\f128"; }
+.cyb-s-wh-042-servers-4:before { content: "\f129"; }
+.cyb-s-wh-043-servers-3:before { content: "\f12a"; }
+.cyb-s-wh-044-globe:before { content: "\f12b"; }
+.cyb-s-wh-045-hosting-1:before { content: "\f12c"; }
+.cyb-s-wh-046-help:before { content: "\f12d"; }
+.cyb-s-wh-047-servers-2:before { content: "\f12e"; }
+.cyb-s-wh-048-hosting:before { content: "\f12f"; }
+.cyb-s-wh-049-servers-1:before { content: "\f130"; }
+.cyb-s-wh-050-servers:before { content: "\f131"; }

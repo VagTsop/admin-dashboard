@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "web-navigation-line-craft";
+  src: url("./web-navigation-line-craft.eot");
+  src: url("./web-navigation-line-craft.eot?#iefix") format("embedded-opentype"),
+       url("./web-navigation-line-craft.woff") format("woff"),
+       url("./web-navigation-line-craft.ttf") format("truetype"),
+       url("./web-navigation-line-craft.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="cyb-mc-wnlc-"]:before, [class*=" cyb-mc-wnlc-"]:before,
+[class^="cyb-mc-wnlc-"]:after, [class*=" cyb-mc-wnlc-"]:after {   
+font-family: "web-navigation-line-craft" !important;
+font-size: 20px;
+font-style: normal !important;
+font-weight: normal !important;
+font-variant: normal !important;
+text-transform: none !important;
+text-align: center;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+.cyb-mc-wnlc-add-button:before { content: "\f100"; }
+.cyb-mc-wnlc-apps:before { content: "\f101"; }
+.cyb-mc-wnlc-at:before { content: "\f102"; }
+.cyb-mc-wnlc-bookmark:before { content: "\f103"; }
+.cyb-mc-wnlc-browser:before { content: "\f104"; }
+.cyb-mc-wnlc-browser-visualization:before { content: "\f105"; }
+.cyb-mc-wnlc-check-square:before { content: "\f106"; }
+.cyb-mc-wnlc-chrome-logo:before { content: "\f107"; }
+.cyb-mc-wnlc-close:before { content: "\f108"; }
+.cyb-mc-wnlc-compass:before { content: "\f109"; }
+.cyb-mc-wnlc-compass-1:before { content: "\f10a"; }
+.cyb-mc-wnlc-compass-2:before { content: "\f10b"; }
+.cyb-mc-wnlc-compass-3:before { content: "\f10c"; }
+.cyb-mc-wnlc-connections:before { content: "\f10d"; }
+.cyb-mc-wnlc-diagonal-enlarge:before { content: "\f10e"; }
+.cyb-mc-wnlc-download:before { content: "\f10f"; }
+.cyb-mc-wnlc-downloading-from-smartphone:before { content: "\f110"; }
+.cyb-mc-wnlc-favorites-button:before { content: "\f111"; }
+.cyb-mc-wnlc-folders:before { content: "\f112"; }
+.cyb-mc-wnlc-glasses:before { content: "\f113"; }
+.cyb-mc-wnlc-high-volume:before { content: "\f114"; }
+.cyb-mc-wnlc-history-button:before { content: "\f115"; }
+.cyb-mc-wnlc-home:before { content: "\f116"; }
+.cyb-mc-wnlc-menu-button:before { content: "\f117"; }
+.cyb-mc-wnlc-microphone:before { content: "\f118"; }
+.cyb-mc-wnlc-mouse:before { content: "\f119"; }
+.cyb-mc-wnlc-multi-tab:before { content: "\f11a"; }
+.cyb-mc-wnlc-mute:before { content: "\f11b"; }
+.cyb-mc-wnlc-new-file:before { content: "\f11c"; }
+.cyb-mc-wnlc-next-page:before { content: "\f11d"; }
+.cyb-mc-wnlc-note:before { content: "\f11e"; }
+.cyb-mc-wnlc-notification:before { content: "\f11f"; }
+.cyb-mc-wnlc-open-book:before { content: "\f120"; }
+.cyb-mc-wnlc-order:before { content: "\f121"; }
+.cyb-mc-wnlc-padlock:before { content: "\f122"; }
+.cyb-mc-wnlc-picture:before { content: "\f123"; }
+.cyb-mc-wnlc-pin:before { content: "\f124"; }
+.cyb-mc-wnlc-play-button:before { content: "\f125"; }
+.cyb-mc-wnlc-play-button-1:before { content: "\f126"; }
+.cyb-mc-wnlc-refresh-button:before { content: "\f127"; }
+.cyb-mc-wnlc-retweet:before { content: "\f128"; }
+.cyb-mc-wnlc-settings:before { content: "\f129"; }
+.cyb-mc-wnlc-shop:before { content: "\f12a"; }
+.cyb-mc-wnlc-side-menu:before { content: "\f12b"; }
+.cyb-mc-wnlc-spider-web:before { content: "\f12c"; }
+.cyb-mc-wnlc-tracker:before { content: "\f12d"; }
+.cyb-mc-wnlc-turn-right:before { content: "\f12e"; }
+.cyb-mc-wnlc-upload-arrow:before { content: "\f12f"; }
+.cyb-mc-wnlc-upload-to-cloud:before { content: "\f130"; }
+.cyb-mc-wnlc-user:before { content: "\f131"; }

@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "c-data-and-graphs";
+  src: url("./c-data-and-graphs.eot");
+  src: url("./c-data-and-graphs.eot?#iefix") format("embedded-opentype"),
+       url("./c-data-and-graphs.woff") format("woff"),
+       url("./c-data-and-graphs.ttf") format("truetype"),
+       url("./c-data-and-graphs.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="cyb-g-cdag-"]:before, [class*=" cyb-g-cdag-"]:before,
+[class^="cyb-g-cdag-"]:after, [class*=" cyb-g-cdag-"]:after {   
+font-family: "c-data-and-graphs" !important;
+font-size: 20px;
+font-style: normal !important;
+font-weight: normal !important;
+font-variant: normal !important;
+text-transform: none !important;
+text-align: center;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+.cyb-g-cdag-001-analytics-19:before { content: "\f100"; }
+.cyb-g-cdag-002-analytics-18:before { content: "\f101"; }
+.cyb-g-cdag-003-analytics-17:before { content: "\f102"; }
+.cyb-g-cdag-004-analytics-16:before { content: "\f103"; }
+.cyb-g-cdag-005-analytics-15:before { content: "\f104"; }
+.cyb-g-cdag-006-analytics-14:before { content: "\f105"; }
+.cyb-g-cdag-007-analytics-13:before { content: "\f106"; }
+.cyb-g-cdag-008-analytics-12:before { content: "\f107"; }
+.cyb-g-cdag-009-analytics-11:before { content: "\f108"; }
+.cyb-g-cdag-010-analytics-10:before { content: "\f109"; }
+.cyb-g-cdag-011-analytics-9:before { content: "\f10a"; }
+.cyb-g-cdag-012-analytics-8:before { content: "\f10b"; }
+.cyb-g-cdag-013-analytics-7:before { content: "\f10c"; }
+.cyb-g-cdag-014-analytics-6:before { content: "\f10d"; }
+.cyb-g-cdag-015-analytics-5:before { content: "\f10e"; }
+.cyb-g-cdag-016-analytics-4:before { content: "\f10f"; }
+.cyb-g-cdag-017-analytics-3:before { content: "\f110"; }
+.cyb-g-cdag-018-analytics-2:before { content: "\f111"; }
+.cyb-g-cdag-019-analytics-1:before { content: "\f112"; }
+.cyb-g-cdag-020-analytics:before { content: "\f113"; }

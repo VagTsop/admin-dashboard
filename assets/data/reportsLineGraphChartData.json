@@ -1,0 +1,39 @@
+[
+  {
+    "date": "2013-01-13",
+    "reports": 0
+  },
+  {
+    "date": "2013-01-14",
+    "reports": 50
+  },
+  {
+    "date": "2013-01-15",
+    "reports": 45
+  },
+  {
+    "date": "2013-01-16",
+    "reports": 35
+  },
+  {
+    "date": "2013-01-17",
+    "reports": 80
+  },
+  {
+    "date": "2013-01-18",
+    "reports": 100
+  },
+  {
+    "date": "2013-01-19",
+    "reports": 150
+  },
+  {
+    "date": "2013-01-20",
+    "reports": 78
+  },
+  {
+    "date": "2013-01-21",
+    "reports": 85,
+    "bulletDisabled": false
+  }
+]

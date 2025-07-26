@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "winter-town";
+  src: url("./winter-town.eot");
+  src: url("./winter-town.eot?#iefix") format("embedded-opentype"),
+       url("./winter-town.woff") format("woff"),
+       url("./winter-town.ttf") format("truetype"),
+       url("./winter-town.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="cyb-b-wt-"]:before, [class*=" cyb-b-wt-"]:before,
+[class^="cyb-b-wt-"]:after, [class*=" cyb-b-wt-"]:after {   
+font-family: "winter-town" !important;
+font-size: 20px;
+font-style: normal !important;
+font-weight: normal !important;
+font-variant: normal !important;
+text-transform: none !important;
+text-align: center;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+.cyb-b-wt-001-fountain:before { content: "\f100"; }
+.cyb-b-wt-002-cable-car-cabin-1:before { content: "\f101"; }
+.cyb-b-wt-003-cable-car-cabin:before { content: "\f102"; }
+.cyb-b-wt-004-cabin:before { content: "\f103"; }
+.cyb-b-wt-005-hydrant:before { content: "\f104"; }
+.cyb-b-wt-006-wind-sign:before { content: "\f105"; }
+.cyb-b-wt-007-skyline:before { content: "\f106"; }
+.cyb-b-wt-008-houses:before { content: "\f107"; }
+.cyb-b-wt-009-night:before { content: "\f108"; }
+.cyb-b-wt-010-snowing-1:before { content: "\f109"; }
+.cyb-b-wt-011-tram:before { content: "\f10a"; }
+.cyb-b-wt-012-icicle:before { content: "\f10b"; }
+.cyb-b-wt-013-window:before { content: "\f10c"; }
+.cyb-b-wt-014-log:before { content: "\f10d"; }
+.cyb-b-wt-015-bank:before { content: "\f10e"; }
+.cyb-b-wt-016-forest:before { content: "\f10f"; }
+.cyb-b-wt-017-fence:before { content: "\f110"; }
+.cyb-b-wt-018-snowman:before { content: "\f111"; }
+.cyb-b-wt-019-bus:before { content: "\f112"; }
+.cyb-b-wt-020-car:before { content: "\f113"; }
+.cyb-b-wt-021-delivery-truck:before { content: "\f114"; }
+.cyb-b-wt-022-stand:before { content: "\f115"; }
+.cyb-b-wt-023-carousel:before { content: "\f116"; }
+.cyb-b-wt-024-traffic-sign:before { content: "\f117"; }
+.cyb-b-wt-025-traffic-light:before { content: "\f118"; }
+.cyb-b-wt-026-street-light-1:before { content: "\f119"; }
+.cyb-b-wt-027-street-light:before { content: "\f11a"; }
+.cyb-b-wt-028-bench:before { content: "\f11b"; }
+.cyb-b-wt-029-shovel:before { content: "\f11c"; }
+.cyb-b-wt-030-market:before { content: "\f11d"; }
+.cyb-b-wt-031-store:before { content: "\f11e"; }
+.cyb-b-wt-032-snowing:before { content: "\f11f"; }
+.cyb-b-wt-033-snowflake:before { content: "\f120"; }
+.cyb-b-wt-034-tree-1:before { content: "\f121"; }
+.cyb-b-wt-035-pine:before { content: "\f122"; }
+.cyb-b-wt-036-tree:before { content: "\f123"; }
+.cyb-b-wt-037-parking:before { content: "\f124"; }
+.cyb-b-wt-038-bridge:before { content: "\f125"; }
+.cyb-b-wt-039-capitol:before { content: "\f126"; }
+.cyb-b-wt-040-chimney:before { content: "\f127"; }
+.cyb-b-wt-041-cathedral:before { content: "\f128"; }
+.cyb-b-wt-042-church:before { content: "\f129"; }
+.cyb-b-wt-043-mall:before { content: "\f12a"; }
+.cyb-b-wt-044-industry:before { content: "\f12b"; }
+.cyb-b-wt-045-building-1:before { content: "\f12c"; }
+.cyb-b-wt-046-building:before { content: "\f12d"; }
+.cyb-b-wt-047-house-3:before { content: "\f12e"; }
+.cyb-b-wt-048-house-2:before { content: "\f12f"; }
+.cyb-b-wt-049-house-1:before { content: "\f130"; }
+.cyb-b-wt-050-house:before { content: "\f131"; }

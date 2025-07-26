@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "a-database-servers";
+  src: url("./a-database-servers.eot");
+  src: url("./a-database-servers.eot?#iefix") format("embedded-opentype"),
+       url("./a-database-servers.woff") format("woff"),
+       url("./a-database-servers.ttf") format("truetype"),
+       url("./a-database-servers.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="cyb-s-ads-"]:before, [class*=" cyb-s-ads-"]:before,
+[class^="cyb-s-ads-"]:after, [class*=" cyb-s-ads-"]:after {   
+font-family: "a-database-servers" !important;
+font-size: 20px;
+font-style: normal !important;
+font-weight: normal !important;
+font-variant: normal !important;
+text-transform: none !important;
+text-align: center;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+.cyb-s-ads-001-templates:before { content: "\f100"; }
+.cyb-s-ads-002-cancel:before { content: "\f101"; }
+.cyb-s-ads-003-multimedia-player:before { content: "\f102"; }
+.cyb-s-ads-004-circular-arrow:before { content: "\f103"; }
+.cyb-s-ads-005-passkey:before { content: "\f104"; }
+.cyb-s-ads-006-telemarketer:before { content: "\f105"; }
+.cyb-s-ads-007-bars-graphic:before { content: "\f106"; }
+.cyb-s-ads-008-data-storage-6:before { content: "\f107"; }
+.cyb-s-ads-009-measuring:before { content: "\f108"; }
+.cyb-s-ads-010-line-graphic:before { content: "\f109"; }
+.cyb-s-ads-011-energies:before { content: "\f10a"; }
+.cyb-s-ads-012-earth-globe:before { content: "\f10b"; }
+.cyb-s-ads-013-computing:before { content: "\f10c"; }
+.cyb-s-ads-014-technological-1:before { content: "\f10d"; }
+.cyb-s-ads-015-finances:before { content: "\f10e"; }
+.cyb-s-ads-016-data-storage-5:before { content: "\f10f"; }
+.cyb-s-ads-017-options:before { content: "\f110"; }
+.cyb-s-ads-018-genealogist:before { content: "\f111"; }
+.cyb-s-ads-019-computer-monitor-3:before { content: "\f112"; }
+.cyb-s-ads-020-web-page-1:before { content: "\f113"; }
+.cyb-s-ads-021-technological:before { content: "\f114"; }
+.cyb-s-ads-022-operating-system:before { content: "\f115"; }
+.cyb-s-ads-023-connectivity:before { content: "\f116"; }
+.cyb-s-ads-024-down-arrow-1:before { content: "\f117"; }
+.cyb-s-ads-025-letter-a-1:before { content: "\f118"; }
+.cyb-s-ads-026-cloud-storage:before { content: "\f119"; }
+.cyb-s-ads-027-computer-monitor-2:before { content: "\f11a"; }
+.cyb-s-ads-028-computer-monitor-1:before { content: "\f11b"; }
+.cyb-s-ads-029-servers-1:before { content: "\f11c"; }
+.cyb-s-ads-030-servers:before { content: "\f11d"; }
+.cyb-s-ads-031-web-page:before { content: "\f11e"; }
+.cyb-s-ads-032-connector-1:before { content: "\f11f"; }
+.cyb-s-ads-033-user-avatar:before { content: "\f120"; }
+.cyb-s-ads-034-browsers:before { content: "\f121"; }
+.cyb-s-ads-035-calculating:before { content: "\f122"; }
+.cyb-s-ads-036-data-storage-4:before { content: "\f123"; }
+.cyb-s-ads-037-data-storage-3:before { content: "\f124"; }
+.cyb-s-ads-038-data-storage-2:before { content: "\f125"; }
+.cyb-s-ads-039-data-storage-1:before { content: "\f126"; }
+.cyb-s-ads-040-down-arrow:before { content: "\f127"; }
+.cyb-s-ads-041-diamond:before { content: "\f128"; }
+.cyb-s-ads-042-letter-a:before { content: "\f129"; }
+.cyb-s-ads-043-connector:before { content: "\f12a"; }
+.cyb-s-ads-044-cloud-computing:before { content: "\f12b"; }
+.cyb-s-ads-045-sort-down:before { content: "\f12c"; }
+.cyb-s-ads-046-browser:before { content: "\f12d"; }
+.cyb-s-ads-047-quake:before { content: "\f12e"; }
+.cyb-s-ads-048-kitchen-pack:before { content: "\f12f"; }
+.cyb-s-ads-049-computer-monitor:before { content: "\f130"; }
+.cyb-s-ads-050-data-storage:before { content: "\f131"; }

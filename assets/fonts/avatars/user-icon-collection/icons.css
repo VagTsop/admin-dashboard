@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "user-icon-collection";
+  src: url("./user-icon-collection.eot");
+  src: url("./user-icon-collection.eot?#iefix") format("embedded-opentype"),
+       url("./user-icon-collection.woff") format("woff"),
+       url("./user-icon-collection.ttf") format("truetype"),
+       url("./user-icon-collection.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="cyb-a-uic-"]:before, [class*=" cyb-a-uic-"]:before,
+[class^="cyb-a-uic-"]:after, [class*=" cyb-a-uic-"]:after {   
+font-family: "user-icon-collection" !important;
+font-size: 20px;
+font-style: normal !important;
+font-weight: normal !important;
+font-variant: normal !important;
+text-transform: none !important;
+text-align: center;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+.cyb-a-uic-group:before { content: "\f100"; }
+.cyb-a-uic-group-1:before { content: "\f101"; }
+.cyb-a-uic-padlock:before { content: "\f102"; }
+.cyb-a-uic-padlock-1:before { content: "\f103"; }
+.cyb-a-uic-padlock-2:before { content: "\f104"; }
+.cyb-a-uic-padlock-3:before { content: "\f105"; }
+.cyb-a-uic-padlock-4:before { content: "\f106"; }
+.cyb-a-uic-padlock-5:before { content: "\f107"; }
+.cyb-a-uic-padlock-6:before { content: "\f108"; }
+.cyb-a-uic-padlock-7:before { content: "\f109"; }
+.cyb-a-uic-padlock-8:before { content: "\f10a"; }
+.cyb-a-uic-padlock-9:before { content: "\f10b"; }
+.cyb-a-uic-user:before { content: "\f10c"; }
+.cyb-a-uic-user-1:before { content: "\f10d"; }
+.cyb-a-uic-user-10:before { content: "\f10e"; }
+.cyb-a-uic-user-11:before { content: "\f10f"; }
+.cyb-a-uic-user-12:before { content: "\f110"; }
+.cyb-a-uic-user-13:before { content: "\f111"; }
+.cyb-a-uic-user-14:before { content: "\f112"; }
+.cyb-a-uic-user-15:before { content: "\f113"; }
+.cyb-a-uic-user-16:before { content: "\f114"; }
+.cyb-a-uic-user-17:before { content: "\f115"; }
+.cyb-a-uic-user-2:before { content: "\f116"; }
+.cyb-a-uic-user-3:before { content: "\f117"; }
+.cyb-a-uic-user-4:before { content: "\f118"; }
+.cyb-a-uic-user-5:before { content: "\f119"; }
+.cyb-a-uic-user-6:before { content: "\f11a"; }
+.cyb-a-uic-user-7:before { content: "\f11b"; }
+.cyb-a-uic-user-8:before { content: "\f11c"; }
+.cyb-a-uic-user-9:before { content: "\f11d"; }

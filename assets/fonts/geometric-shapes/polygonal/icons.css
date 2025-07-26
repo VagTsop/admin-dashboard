@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "polygonal";
+  src: url("./polygonal.eot");
+  src: url("./polygonal.eot?#iefix") format("embedded-opentype"),
+       url("./polygonal.woff") format("woff"),
+       url("./polygonal.ttf") format("truetype"),
+       url("./polygonal.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="cyb-gs-p-"]:before, [class*=" cyb-gs-p-"]:before,
+[class^="cyb-gs-p-"]:after, [class*=" cyb-gs-p-"]:after {   
+font-family: "polygonal" !important;
+font-size: 20px;
+font-style: normal !important;
+font-weight: normal !important;
+font-variant: normal !important;
+text-transform: none !important;
+text-align: center;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+.cyb-gs-p-double-hexagon-of-small-triangles:before { content: "\f100"; }
+.cyb-gs-p-dragon-made-of-small-triangles:before { content: "\f101"; }
+.cyb-gs-p-halloween-polygonal-face:before { content: "\f102"; }
+.cyb-gs-p-heart-made-of-small-triangular-shapes:before { content: "\f103"; }
+.cyb-gs-p-heart-pendant-of-small-triangles:before { content: "\f104"; }
+.cyb-gs-p-lightning-bolt-polygonal-shape-of-small-triangles:before { content: "\f105"; }
+.cyb-gs-p-multiple-triangles-inside-hexagon:before { content: "\f106"; }
+.cyb-gs-p-multiple-triangles-triangle:before { content: "\f107"; }
+.cyb-gs-p-ornamental-rotating-polygonal-shape-with-three-lines-around-an-hexagon-of-small-triangles:before { content: "\f108"; }
+.cyb-gs-p-pendant-of-small-polygonal-shape:before { content: "\f109"; }
+.cyb-gs-p-polygonal-aliens:before { content: "\f10a"; }
+.cyb-gs-p-polygonal-apple-of-small-triangles:before { content: "\f10b"; }
+.cyb-gs-p-polygonal-arrow-up:before { content: "\f10c"; }
+.cyb-gs-p-polygonal-ascendant-signal:before { content: "\f10d"; }
+.cyb-gs-p-polygonal-bat-shape:before { content: "\f10e"; }
+.cyb-gs-p-polygonal-bird:before { content: "\f10f"; }
+.cyb-gs-p-polygonal-bird-1:before { content: "\f110"; }
+.cyb-gs-p-polygonal-bird-of-small-triangles:before { content: "\f111"; }
+.cyb-gs-p-polygonal-boat-of-small-triangles:before { content: "\f112"; }
+.cyb-gs-p-polygonal-bottle:before { content: "\f113"; }
+.cyb-gs-p-polygonal-bowling-bulk-pin:before { content: "\f114"; }
+.cyb-gs-p-polygonal-box:before { content: "\f115"; }
+.cyb-gs-p-polygonal-buildings-of-small-triangles:before { content: "\f116"; }
+.cyb-gs-p-polygonal-butterfly:before { content: "\f117"; }
+.cyb-gs-p-polygonal-cat:before { content: "\f118"; }
+.cyb-gs-p-polygonal-christmas-tree:before { content: "\f119"; }
+.cyb-gs-p-polygonal-coffee-cup:before { content: "\f11a"; }
+.cyb-gs-p-polygonal-crab:before { content: "\f11b"; }
+.cyb-gs-p-polygonal-crocodile:before { content: "\f11c"; }
+.cyb-gs-p-polygonal-cross-of-small-triangles:before { content: "\f11d"; }
+.cyb-gs-p-polygonal-diamond-shape-of-small-triangles:before { content: "\f11e"; }
+.cyb-gs-p-polygonal-dog:before { content: "\f11f"; }
+.cyb-gs-p-polygonal-elephant:before { content: "\f120"; }
+.cyb-gs-p-polygonal-fish-shape-of-small-triangles:before { content: "\f121"; }
+.cyb-gs-p-polygonal-giraffe:before { content: "\f122"; }
+.cyb-gs-p-polygonal-halloween-pumpkin-face-of-small-triangles:before { content: "\f123"; }
+.cyb-gs-p-polygonal-hexagon:before { content: "\f124"; }
+.cyb-gs-p-polygonal-hexagonal-ornament-of-small-triangles-forming-a-six-points-star-and-an-hexagon:before { content: "\f125"; }
+.cyb-gs-p-polygonal-house-or-home-building:before { content: "\f126"; }
+.cyb-gs-p-polygonal-human-figure-of-small-triangles:before { content: "\f127"; }
+.cyb-gs-p-polygonal-jet-aircraft:before { content: "\f128"; }
+.cyb-gs-p-polygonal-jewel:before { content: "\f129"; }
+.cyb-gs-p-polygonal-kite:before { content: "\f12a"; }
+.cyb-gs-p-polygonal-letter-z-of-small-triangles:before { content: "\f12b"; }
+.cyb-gs-p-polygonal-martini-glass-shape:before { content: "\f12c"; }
+.cyb-gs-p-polygonal-megaphone:before { content: "\f12d"; }
+.cyb-gs-p-polygonal-mountains:before { content: "\f12e"; }
+.cyb-gs-p-polygonal-multiple-stars:before { content: "\f12f"; }
+.cyb-gs-p-polygonal-number-eight:before { content: "\f130"; }
+.cyb-gs-p-polygonal-ornament:before { content: "\f131"; }
+.cyb-gs-p-polygonal-ornament-1:before { content: "\f132"; }
+.cyb-gs-p-polygonal-ornament-of-hexagons-and-triangles:before { content: "\f133"; }
+.cyb-gs-p-polygonal-ornament-of-small-triangles:before { content: "\f134"; }
+.cyb-gs-p-polygonal-ornament-of-small-triangles-1:before { content: "\f135"; }
+.cyb-gs-p-polygonal-ornament-of-small-triangles-in-star-and-hexagon-shapes:before { content: "\f136"; }
+.cyb-gs-p-polygonal-ornament-of-triangles:before { content: "\f137"; }
+.cyb-gs-p-polygonal-ornamental-shape:before { content: "\f138"; }
+.cyb-gs-p-polygonal-ornamental-shape-of-triangles:before { content: "\f139"; }
+.cyb-gs-p-polygonal-pants-of-small-triangles:before { content: "\f13a"; }
+.cyb-gs-p-polygonal-pendant:before { content: "\f13b"; }
+.cyb-gs-p-polygonal-pistol:before { content: "\f13c"; }
+.cyb-gs-p-polygonal-pyramid-of-triangles:before { content: "\f13d"; }
+.cyb-gs-p-polygonal-radiation-symbol:before { content: "\f13e"; }
+.cyb-gs-p-polygonal-rat-face:before { content: "\f13f"; }
+.cyb-gs-p-polygonal-rhomb:before { content: "\f140"; }
+.cyb-gs-p-polygonal-scorpion:before { content: "\f141"; }
+.cyb-gs-p-polygonal-sock:before { content: "\f142"; }
+.cyb-gs-p-polygonal-spider-shape:before { content: "\f143"; }
+.cyb-gs-p-polygonal-star-of-six-points:before { content: "\f144"; }
+.cyb-gs-p-polygonal-straight-yin-yang-symbol:before { content: "\f145"; }
+.cyb-gs-p-polygonal-symmetric-ornament-like-butterfly-wings:before { content: "\f146"; }
+.cyb-gs-p-polygonal-symmetrical-ornament-of-small-triangles-lines:before { content: "\f147"; }
+.cyb-gs-p-polygonal-symmetrical-shape-of-small-triangles:before { content: "\f148"; }
+.cyb-gs-p-polygonal-synergy-shapes:before { content: "\f149"; }
+.cyb-gs-p-polygonal-table-lamp:before { content: "\f14a"; }
+.cyb-gs-p-polygonal-transformer-face:before { content: "\f14b"; }
+.cyb-gs-p-polygonal-triangles-ball:before { content: "\f14c"; }
+.cyb-gs-p-polygonal-triangles-guitar:before { content: "\f14d"; }
+.cyb-gs-p-polygonal-triangular-recycle-symbol:before { content: "\f14e"; }
+.cyb-gs-p-polygonal-windmill:before { content: "\f14f"; }
+.cyb-gs-p-polygonal-wings:before { content: "\f150"; }
+.cyb-gs-p-polygonal-wolf-head:before { content: "\f151"; }
+.cyb-gs-p-polygonal-woman-dress-detail-of-small-triangles:before { content: "\f152"; }
+.cyb-gs-p-side-to-side-of-a-cube:before { content: "\f153"; }
+.cyb-gs-p-star-in-hexagon-of-small-triangles:before { content: "\f154"; }
+.cyb-gs-p-star-of-six-points-formed-by-triangles-with-and-hexagon-center:before { content: "\f155"; }
+.cyb-gs-p-star-of-six-small-triangles:before { content: "\f156"; }
+.cyb-gs-p-star-of-triangles:before { content: "\f157"; }
+.cyb-gs-p-star-ornament-of-small-triangles-outline:before { content: "\f158"; }
+.cyb-gs-p-star-ornament-of-triangles:before { content: "\f159"; }
+.cyb-gs-p-synergy:before { content: "\f15a"; }
+.cyb-gs-p-triangle-inside-a-square-of-small-triangles:before { content: "\f15b"; }
+.cyb-gs-p-triangle-inside-hexagon-shape-outline-of-small-triangles-line:before { content: "\f15c"; }
+.cyb-gs-p-triangle-of-triangles:before { content: "\f15d"; }
+.cyb-gs-p-triangles-couple-of-two-different-sizes-in-black-and-white:before { content: "\f15e"; }
+.cyb-gs-p-triangular-shapes-forming-waves:before { content: "\f15f"; }
+.cyb-gs-p-triple-triangle:before { content: "\f160"; }
+.cyb-gs-p-witch-hat-of-triangles:before { content: "\f161"; }

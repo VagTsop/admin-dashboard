@@ -1,0 +1,18 @@
+[
+  {
+    "beneficiary": "Active",
+    "litres": 501.9
+  },
+  {
+    "beneficiary": "Deactivated",
+    "litres": 301.9
+  },
+  {
+    "beneficiary": "Terminated",
+    "litres": 201.1
+  },
+  {
+    "beneficiary": "Pending",
+    "litres": 165.8
+  }
+]
