@@ -1,0 +1,79 @@
+// body {
+//   --first-segment-delay: showBlock 0s 0s ease-in forwards;
+//   --second-segment-delay: showBlock 0s 3s ease-in forwards;
+//   --third-segment-delay: showBlock 0s 5s ease-in forwards;
+//   --fourth-segment-delay: showBlock 0s 5s ease-in forwards;
+// }
+
+// @media screen and (min-width: 600px), (max-width: 857px) {
+//   .large-text {
+//     font-size: 2.45rem;
+//   }
+// }
+
+// @media screen and (min-width: 858px), (max-width: 1280px) {
+//   .large-text {
+//     font-size: 2.85rem;
+//   }
+// }
+
+// @media screen and (min-width: 1281px) {
+//   .small-text {
+//     font-size: 1.85rem;
+//   }
+// }
+
+// @media screen and (min-width: 1281px), (max-width: 1500px) {
+//   .small-text {
+//     font-size: 0.6rem;
+//   }
+// }
+
+// @media screen and (min-width: 1501px) {
+//   .small-text {
+//     font-size: 0.75rem;
+//   }
+// }
+
+// .fa-rotate-90 {
+//   transform: rotate(90deg);
+//   display: inline-block;
+// }
+
+// .segment-initial-state {
+//   visibility: hidden;
+// }
+
+// .first-segment {
+//   animation: var(--first-segment-delay);
+//   -webkit-animation: var(--first-segment-delay);
+//   -moz-animation: var(--first-segment-delay);
+//   -o-animation: var(--first-segment-delay);
+// }
+
+// .second-segment {
+//   animation: var(--second-segment-delay);
+//   -webkit-animation: var(--second-segment-delay);
+//   -moz-animation: var(--second-segment-delay);
+//   -o-animation: var(--second-segment-delay);
+// }
+
+// .third-segment {
+//   animation: var(--third-segment-delay);
+//   -webkit-animation: var(--third-segment-delay);
+//   -moz-animation: var(--third-segment-delay);
+//   -o-animation: var(--third-segment-delay);
+// }
+
+// .fourth-segment {
+//   animation: var(--fourth-segment-delay);
+//   -webkit-animation: var(--fourth-segment-delay);
+//   -moz-animation: var(--fourth-segment-delay);
+//   -o-animation: var(--fourth-segment-delay);
+// }
+
+// @keyframes showBlock {
+//   to {
+//     visibility: visible;
+//   }
+// }

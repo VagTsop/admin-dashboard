@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "solid-shapes";
+  src: url("./solid-shapes.eot");
+  src: url("./solid-shapes.eot?#iefix") format("embedded-opentype"),
+       url("./solid-shapes.woff") format("woff"),
+       url("./solid-shapes.ttf") format("truetype"),
+       url("./solid-shapes.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="cyb-gs-ss-"]:before, [class*=" cyb-gs-ss-"]:before,
+[class^="cyb-gs-ss-"]:after, [class*=" cyb-gs-ss-"]:after {   
+font-family: "solid-shapes" !important;
+font-size: 20px;
+font-style: normal !important;
+font-weight: normal !important;
+font-variant: normal !important;
+text-transform: none !important;
+text-align: center;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+.cyb-gs-ss-bolt:before { content: "\f100"; }
+.cyb-gs-ss-circle:before { content: "\f101"; }
+.cyb-gs-ss-crown:before { content: "\f102"; }
+.cyb-gs-ss-cube:before { content: "\f103"; }
+.cyb-gs-ss-diamond:before { content: "\f104"; }
+.cyb-gs-ss-dice:before { content: "\f105"; }
+.cyb-gs-ss-dice-1:before { content: "\f106"; }
+.cyb-gs-ss-dice-2:before { content: "\f107"; }
+.cyb-gs-ss-dice-3:before { content: "\f108"; }
+.cyb-gs-ss-dice-4:before { content: "\f109"; }
+.cyb-gs-ss-dice-5:before { content: "\f10a"; }
+.cyb-gs-ss-genders:before { content: "\f10b"; }
+.cyb-gs-ss-heart:before { content: "\f10c"; }
+.cyb-gs-ss-intersex:before { content: "\f10d"; }
+.cyb-gs-ss-joke:before { content: "\f10e"; }
+.cyb-gs-ss-mars:before { content: "\f10f"; }
+.cyb-gs-ss-mars-1:before { content: "\f110"; }
+.cyb-gs-ss-moon:before { content: "\f111"; }
+.cyb-gs-ss-puzzle:before { content: "\f112"; }
+.cyb-gs-ss-sad:before { content: "\f113"; }
+.cyb-gs-ss-smiley:before { content: "\f114"; }
+.cyb-gs-ss-smiley-1:before { content: "\f115"; }
+.cyb-gs-ss-square:before { content: "\f116"; }
+.cyb-gs-ss-star:before { content: "\f117"; }
+.cyb-gs-ss-star-1:before { content: "\f118"; }
+.cyb-gs-ss-straight:before { content: "\f119"; }
+.cyb-gs-ss-surprise:before { content: "\f11a"; }
+.cyb-gs-ss-venus:before { content: "\f11b"; }
+.cyb-gs-ss-venus-1:before { content: "\f11c"; }
+.cyb-gs-ss-worldwide:before { content: "\f11d"; }

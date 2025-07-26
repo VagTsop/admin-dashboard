@@ -1,0 +1,15 @@
+[
+  {
+    "date": "2021-06-23",
+    "executions": 15
+  },
+  {
+    "date": "2021-07-28",
+    "executions": 5
+  },
+  {
+    "date": "2021-08-23",
+    "executions": 3,
+    "bulletDisabled": false
+  }
+]

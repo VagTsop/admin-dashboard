@@ -1,0 +1,57 @@
+[
+  {
+    "date": "2013-01-13",
+    "node": 0,
+    "beneficiary": 0,
+    "user": 0
+  },
+  {
+    "date": "2013-01-14",
+    "node": 150,
+    "beneficiary": 69,
+    "user": 32
+  },
+  {
+    "date": "2013-01-15",
+    "node": 78,
+    "beneficiary": 88,
+    "user": 35
+  },
+  {
+    "date": "2013-01-16",
+    "node": 85,
+    "beneficiary": 32,
+    "user": 70
+  },
+  {
+    "date": "2013-01-17",
+    "node": 65,
+    "beneficiary":80,
+    "user": 41
+  },
+  {
+    "date": "2013-01-18",
+    "node": 150,
+    "beneficiary": 69,
+    "user": 32
+  },
+  {
+    "date": "2013-01-19",
+    "node": 78,
+    "beneficiary": 88,
+    "user": 35
+  },
+  {
+    "date": "2013-01-20",
+    "node": 85,
+    "beneficiary": 32,
+    "user": 70
+  },
+  {
+    "date": "2013-01-21",
+    "node": 85,
+    "beneficiary": 32,
+    "user": 70,
+    "bulletDisabled": false
+  }
+]

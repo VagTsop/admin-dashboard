@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "data-table";
+  src:url("data-table.eot");
+  src:url("data-table.eot?#iefix") format("embedded-opentype"),
+    url("data-table.woff") format("woff"),
+    url("data-table.ttf") format("truetype"),
+    url("data-table.svg#data-table") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "data-table" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="dt-"]:before,
+[class*=" dt-"]:before {
+  font-family: "data-table" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.dt-filter:before {
+  content: "\62";
+}
+.dt-collapse:before {
+  content: "\61";
+}
+.dt-expand:before {
+  content: "\63";
+}
+.dt-close:before {
+  content: "\64";
+}
+.dt-up:before {
+  content: "\65";
+}
+.dt-down:before {
+  content: "\66";
+}
+.dt-sort:before {
+  content: "\67";
+}
+.dt-done:before {
+  content: "\68";
+}
+.dt-done-all:before {
+  content: "\69";
+}
+.dt-search:before {
+  content: "\6a";
+}
+.dt-pin:before {
+  content: "\6b";
+}
+.dt-add:before {
+  content: "\6d";
+}
+.dt-left:before {
+  content: "\6f";
+}
+.dt-right:before {
+  content: "\70";
+}
+.dt-skip:before {
+  content: "\71";
+}
+.dt-prev:before {
+  content: "\72";
+}

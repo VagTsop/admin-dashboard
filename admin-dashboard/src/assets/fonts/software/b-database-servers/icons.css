@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "b-database-servers";
+  src: url("./b-database-servers.eot");
+  src: url("./b-database-servers.eot?#iefix") format("embedded-opentype"),
+       url("./b-database-servers.woff") format("woff"),
+       url("./b-database-servers.ttf") format("truetype"),
+       url("./b-database-servers.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="cyb-s-bds-"]:before, [class*=" cyb-s-bds-"]:before,
+[class^="cyb-s-bds-"]:after, [class*=" cyb-s-bds-"]:after {   
+font-family: "b-database-servers" !important;
+font-size: 20px;
+font-style: normal !important;
+font-weight: normal !important;
+font-variant: normal !important;
+text-transform: none !important;
+text-align: center;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+.cyb-s-bds-001-server:before { content: "\f100"; }
+.cyb-s-bds-002-data:before { content: "\f101"; }
+.cyb-s-bds-003-network:before { content: "\f102"; }
+.cyb-s-bds-004-server-1:before { content: "\f103"; }
+.cyb-s-bds-005-database:before { content: "\f104"; }
+.cyb-s-bds-006-data-storage:before { content: "\f105"; }
+.cyb-s-bds-007-ethernet:before { content: "\f106"; }
+.cyb-s-bds-008-files-and-folders:before { content: "\f107"; }
+.cyb-s-bds-009-server-2:before { content: "\f108"; }
+.cyb-s-bds-010-data-sharing:before { content: "\f109"; }
+.cyb-s-bds-011-cpu:before { content: "\f10a"; }
+.cyb-s-bds-012-internet-connection:before { content: "\f10b"; }
+.cyb-s-bds-013-home-network:before { content: "\f10c"; }
+.cyb-s-bds-014-server-3:before { content: "\f10d"; }
+.cyb-s-bds-015-server-4:before { content: "\f10e"; }
+.cyb-s-bds-016-send-data:before { content: "\f10f"; }
+.cyb-s-bds-017-hub:before { content: "\f110"; }
+.cyb-s-bds-018-wireless-router:before { content: "\f111"; }
+.cyb-s-bds-019-ethernet-1:before { content: "\f112"; }
+.cyb-s-bds-020-public:before { content: "\f113"; }
+.cyb-s-bds-021-hard-disk:before { content: "\f114"; }
+.cyb-s-bds-022-wifi:before { content: "\f115"; }
+.cyb-s-bds-023-server-5:before { content: "\f116"; }
+.cyb-s-bds-024-database-1:before { content: "\f117"; }
+.cyb-s-bds-025-cloud-server:before { content: "\f118"; }
+.cyb-s-bds-026-synchronize:before { content: "\f119"; }
+.cyb-s-bds-027-cooling-system:before { content: "\f11a"; }
+.cyb-s-bds-028-data-protection:before { content: "\f11b"; }
+.cyb-s-bds-029-wireless-connection:before { content: "\f11c"; }
+.cyb-s-bds-030-firewall:before { content: "\f11d"; }
+.cyb-s-bds-031-data-1:before { content: "\f11e"; }
+.cyb-s-bds-032-upload:before { content: "\f11f"; }
+.cyb-s-bds-033-download:before { content: "\f120"; }
+.cyb-s-bds-034-encryption:before { content: "\f121"; }
+.cyb-s-bds-035-protection:before { content: "\f122"; }
+.cyb-s-bds-036-monitoring:before { content: "\f123"; }
+.cyb-s-bds-037-browser:before { content: "\f124"; }
+.cyb-s-bds-038-process:before { content: "\f125"; }
+.cyb-s-bds-039-user:before { content: "\f126"; }
+.cyb-s-bds-040-hosting:before { content: "\f127"; }
+.cyb-s-bds-041-network-1:before { content: "\f128"; }
+.cyb-s-bds-042-private:before { content: "\f129"; }
+.cyb-s-bds-043-server-6:before { content: "\f12a"; }
+.cyb-s-bds-044-lan:before { content: "\f12b"; }
+.cyb-s-bds-045-access-denied:before { content: "\f12c"; }
+.cyb-s-bds-046-user-1:before { content: "\f12d"; }
+.cyb-s-bds-047-database-2:before { content: "\f12e"; }
+.cyb-s-bds-048-data-share:before { content: "\f12f"; }
+.cyb-s-bds-049-server-7:before { content: "\f130"; }
+.cyb-s-bds-050-server-8:before { content: "\f131"; }

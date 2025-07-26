@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "business-seo-elements";
+  src: url("./business-seo-elements.eot");
+  src: url("./business-seo-elements.eot?#iefix") format("embedded-opentype"),
+       url("./business-seo-elements.woff") format("woff"),
+       url("./business-seo-elements.ttf") format("truetype"),
+       url("./business-seo-elements.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="cyb-mc-bse-"]:before, [class*=" cyb-mc-bse-"]:before,
+[class^="cyb-mc-bse-"]:after, [class*=" cyb-mc-bse-"]:after {   
+font-family: "business-seo-elements" !important;
+font-size: 20px;
+font-style: normal !important;
+font-weight: normal !important;
+font-variant: normal !important;
+text-transform: none !important;
+text-align: center;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+.cyb-mc-bse-agreement:before { content: "\f100"; }
+.cyb-mc-bse-badge:before { content: "\f101"; }
+.cyb-mc-bse-bar-chart:before { content: "\f102"; }
+.cyb-mc-bse-bar-chart-1:before { content: "\f103"; }
+.cyb-mc-bse-businessman:before { content: "\f104"; }
+.cyb-mc-bse-businessman-1:before { content: "\f105"; }
+.cyb-mc-bse-businessman-2:before { content: "\f106"; }
+.cyb-mc-bse-businessman-3:before { content: "\f107"; }
+.cyb-mc-bse-businessman-4:before { content: "\f108"; }
+.cyb-mc-bse-businessman-5:before { content: "\f109"; }
+.cyb-mc-bse-businessman-6:before { content: "\f10a"; }
+.cyb-mc-bse-businessman-7:before { content: "\f10b"; }
+.cyb-mc-bse-businesswoman:before { content: "\f10c"; }
+.cyb-mc-bse-businesswoman-1:before { content: "\f10d"; }
+.cyb-mc-bse-businesswoman-2:before { content: "\f10e"; }
+.cyb-mc-bse-businesswoman-3:before { content: "\f10f"; }
+.cyb-mc-bse-businesswoman-4:before { content: "\f110"; }
+.cyb-mc-bse-chronometer:before { content: "\f111"; }
+.cyb-mc-bse-circular-chart:before { content: "\f112"; }
+.cyb-mc-bse-cogwheel:before { content: "\f113"; }
+.cyb-mc-bse-customer-service:before { content: "\f114"; }
+.cyb-mc-bse-group:before { content: "\f115"; }
+.cyb-mc-bse-group-1:before { content: "\f116"; }
+.cyb-mc-bse-group-2:before { content: "\f117"; }
+.cyb-mc-bse-group-3:before { content: "\f118"; }
+.cyb-mc-bse-group-4:before { content: "\f119"; }
+.cyb-mc-bse-head:before { content: "\f11a"; }
+.cyb-mc-bse-head-1:before { content: "\f11b"; }
+.cyb-mc-bse-head-2:before { content: "\f11c"; }
+.cyb-mc-bse-head-3:before { content: "\f11d"; }
+.cyb-mc-bse-hierarchical-structure:before { content: "\f11e"; }
+.cyb-mc-bse-hierarchical-structure-1:before { content: "\f11f"; }
+.cyb-mc-bse-hierarchical-structure-2:before { content: "\f120"; }
+.cyb-mc-bse-hierarchical-structure-3:before { content: "\f121"; }
+.cyb-mc-bse-hierarchical-structure-4:before { content: "\f122"; }
+.cyb-mc-bse-hierarchical-structure-5:before { content: "\f123"; }
+.cyb-mc-bse-hierarchical-structure-6:before { content: "\f124"; }
+.cyb-mc-bse-hierarchical-structure-7:before { content: "\f125"; }
+.cyb-mc-bse-hierarchical-structure-8:before { content: "\f126"; }
+.cyb-mc-bse-hierarchical-structure-9:before { content: "\f127"; }
+.cyb-mc-bse-id-card:before { content: "\f128"; }
+.cyb-mc-bse-line-chart:before { content: "\f129"; }
+.cyb-mc-bse-loss:before { content: "\f12a"; }
+.cyb-mc-bse-magnifying-glass:before { content: "\f12b"; }
+.cyb-mc-bse-magnifying-glass-1:before { content: "\f12c"; }
+.cyb-mc-bse-medal:before { content: "\f12d"; }
+.cyb-mc-bse-medal-1:before { content: "\f12e"; }
+.cyb-mc-bse-medal-2:before { content: "\f12f"; }
+.cyb-mc-bse-networking:before { content: "\f130"; }
+.cyb-mc-bse-networking-1:before { content: "\f131"; }
+.cyb-mc-bse-panel:before { content: "\f132"; }
+.cyb-mc-bse-paper-plane:before { content: "\f133"; }
+.cyb-mc-bse-percentage:before { content: "\f134"; }
+.cyb-mc-bse-phone-call:before { content: "\f135"; }
+.cyb-mc-bse-phonebook:before { content: "\f136"; }
+.cyb-mc-bse-pie-chart:before { content: "\f137"; }
+.cyb-mc-bse-pie-chart-1:before { content: "\f138"; }
+.cyb-mc-bse-placeholder:before { content: "\f139"; }
+.cyb-mc-bse-scheme:before { content: "\f13a"; }
+.cyb-mc-bse-scheme-1:before { content: "\f13b"; }
+.cyb-mc-bse-scheme-2:before { content: "\f13c"; }
+.cyb-mc-bse-settings:before { content: "\f13d"; }
+.cyb-mc-bse-settings-1:before { content: "\f13e"; }
+.cyb-mc-bse-settings-2:before { content: "\f13f"; }
+.cyb-mc-bse-settings-3:before { content: "\f140"; }
+.cyb-mc-bse-settings-4:before { content: "\f141"; }
+.cyb-mc-bse-shopping-cart:before { content: "\f142"; }
+.cyb-mc-bse-speech-bubble:before { content: "\f143"; }
+.cyb-mc-bse-speech-bubble-1:before { content: "\f144"; }
+.cyb-mc-bse-tag:before { content: "\f145"; }
+.cyb-mc-bse-tag-1:before { content: "\f146"; }
+.cyb-mc-bse-target:before { content: "\f147"; }
+.cyb-mc-bse-target-1:before { content: "\f148"; }
+.cyb-mc-bse-worldwide:before { content: "\f149"; }
+.cyb-mc-bse-wrench:before { content: "\f14a"; }

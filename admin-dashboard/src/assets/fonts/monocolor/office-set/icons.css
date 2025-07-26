@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "office-set";
+  src: url("./office-set.eot");
+  src: url("./office-set.eot?#iefix") format("embedded-opentype"),
+       url("./office-set.woff") format("woff"),
+       url("./office-set.ttf") format("truetype"),
+       url("./office-set.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="cyb-mc-os-"]:before, [class*=" cyb-mc-os-"]:before,
+[class^="cyb-mc-os-"]:after, [class*=" cyb-mc-os-"]:after {   
+font-family: "office-set" !important;
+font-size: 20px;
+font-style: normal !important;
+font-weight: normal !important;
+font-variant: normal !important;
+text-transform: none !important;
+text-align: center;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+.cyb-mc-os-analysis-chart:before { content: "\f100"; }
+.cyb-mc-os-bank-building:before { content: "\f101"; }
+.cyb-mc-os-bar-chart-reload:before { content: "\f102"; }
+.cyb-mc-os-bar-graph-with-dollar-sign:before { content: "\f103"; }
+.cyb-mc-os-business-affiliate-network:before { content: "\f104"; }
+.cyb-mc-os-business-agreement:before { content: "\f105"; }
+.cyb-mc-os-business-plan:before { content: "\f106"; }
+.cyb-mc-os-business-presentation:before { content: "\f107"; }
+.cyb-mc-os-businessman-success:before { content: "\f108"; }
+.cyb-mc-os-calculator:before { content: "\f109"; }
+.cyb-mc-os-cellphone-with-speech-boxes:before { content: "\f10a"; }
+.cyb-mc-os-chess-horse:before { content: "\f10b"; }
+.cyb-mc-os-credit-cards:before { content: "\f10c"; }
+.cyb-mc-os-cube-divisions:before { content: "\f10d"; }
+.cyb-mc-os-different-currencies:before { content: "\f10e"; }
+.cyb-mc-os-directional-wooden-signs:before { content: "\f10f"; }
+.cyb-mc-os-document-with-paperclip:before { content: "\f110"; }
+.cyb-mc-os-dollar-sign-and-piles-of-coins:before { content: "\f111"; }
+.cyb-mc-os-first-prize:before { content: "\f112"; }
+.cyb-mc-os-global-conference-call:before { content: "\f113"; }
+.cyb-mc-os-graph-analysis:before { content: "\f114"; }
+.cyb-mc-os-group-of-businessmen:before { content: "\f115"; }
+.cyb-mc-os-handshake:before { content: "\f116"; }
+.cyb-mc-os-hierarchy-levels:before { content: "\f117"; }
+.cyb-mc-os-hot-cup-of-coffee:before { content: "\f118"; }
+.cyb-mc-os-hourglass:before { content: "\f119"; }
+.cyb-mc-os-identity-card:before { content: "\f11a"; }
+.cyb-mc-os-increased-revenue:before { content: "\f11b"; }
+.cyb-mc-os-international-connection:before { content: "\f11c"; }
+.cyb-mc-os-key-to-success:before { content: "\f11d"; }
+.cyb-mc-os-labyrinth-and-arrow:before { content: "\f11e"; }
+.cyb-mc-os-lightbulb-idea:before { content: "\f11f"; }
+.cyb-mc-os-magnifying-glass-with-two-way-arrows:before { content: "\f120"; }
+.cyb-mc-os-meeting-deadlines:before { content: "\f121"; }
+.cyb-mc-os-noisy-megaphone:before { content: "\f122"; }
+.cyb-mc-os-objective-searching:before { content: "\f123"; }
+.cyb-mc-os-office-block:before { content: "\f124"; }
+.cyb-mc-os-office-briefcase:before { content: "\f125"; }
+.cyb-mc-os-office-chair:before { content: "\f126"; }
+.cyb-mc-os-passage-of-time:before { content: "\f127"; }
+.cyb-mc-os-pie-chart:before { content: "\f128"; }
+.cyb-mc-os-presentation-board-with-graph:before { content: "\f129"; }
+.cyb-mc-os-ribbon-badge-award:before { content: "\f12a"; }
+.cyb-mc-os-rocket-hitting-target:before { content: "\f12b"; }
+.cyb-mc-os-rubber-stamp:before { content: "\f12c"; }
+.cyb-mc-os-signing-the-contract:before { content: "\f12d"; }
+.cyb-mc-os-stapler:before { content: "\f12e"; }
+.cyb-mc-os-task-complete:before { content: "\f12f"; }
+.cyb-mc-os-teamwork-in-the-office:before { content: "\f130"; }
+.cyb-mc-os-thumbs-up:before { content: "\f131"; }

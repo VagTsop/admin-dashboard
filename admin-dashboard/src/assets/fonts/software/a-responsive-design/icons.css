@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "a-responsive-design";
+  src: url("./a-responsive-design.eot");
+  src: url("./a-responsive-design.eot?#iefix") format("embedded-opentype"),
+       url("./a-responsive-design.woff") format("woff"),
+       url("./a-responsive-design.ttf") format("truetype"),
+       url("./a-responsive-design.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="cyb-s-ard-"]:before, [class*=" cyb-s-ard-"]:before,
+[class^="cyb-s-ard-"]:after, [class*=" cyb-s-ard-"]:after {   
+font-family: "a-responsive-design" !important;
+font-size: 20px;
+font-style: normal !important;
+font-weight: normal !important;
+font-variant: normal !important;
+text-transform: none !important;
+text-align: center;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+.cyb-s-ard-001-computer:before { content: "\f100"; }
+.cyb-s-ard-002-tablet:before { content: "\f101"; }
+.cyb-s-ard-003-laptop:before { content: "\f102"; }
+.cyb-s-ard-004-browser:before { content: "\f103"; }
+.cyb-s-ard-005-computer-1:before { content: "\f104"; }
+.cyb-s-ard-006-computer-2:before { content: "\f105"; }
+.cyb-s-ard-007-mobile:before { content: "\f106"; }
+.cyb-s-ard-008-mobile-1:before { content: "\f107"; }
+.cyb-s-ard-009-mobile-2:before { content: "\f108"; }
+.cyb-s-ard-010-adjust:before { content: "\f109"; }
+.cyb-s-ard-011-layout:before { content: "\f10a"; }
+.cyb-s-ard-012-computer-3:before { content: "\f10b"; }
+.cyb-s-ard-013-tablet-1:before { content: "\f10c"; }
+.cyb-s-ard-014-mobile-3:before { content: "\f10d"; }
+.cyb-s-ard-015-mobile-phone:before { content: "\f10e"; }
+.cyb-s-ard-016-mobile-4:before { content: "\f10f"; }
+.cyb-s-ard-017-laptop-1:before { content: "\f110"; }
+.cyb-s-ard-018-computer-4:before { content: "\f111"; }
+.cyb-s-ard-019-tablet-2:before { content: "\f112"; }
+.cyb-s-ard-020-browser-1:before { content: "\f113"; }
+.cyb-s-ard-021-browser-2:before { content: "\f114"; }
+.cyb-s-ard-022-screen:before { content: "\f115"; }
+.cyb-s-ard-023-screen-1:before { content: "\f116"; }
+.cyb-s-ard-024-screen-2:before { content: "\f117"; }
+.cyb-s-ard-025-devices:before { content: "\f118"; }
+.cyb-s-ard-026-mobile-phone-1:before { content: "\f119"; }
+.cyb-s-ard-027-computer-5:before { content: "\f11a"; }
+.cyb-s-ard-028-tablet-3:before { content: "\f11b"; }
+.cyb-s-ard-029-tablet-4:before { content: "\f11c"; }
+.cyb-s-ard-030-laptop-2:before { content: "\f11d"; }
+.cyb-s-ard-031-mobile-5:before { content: "\f11e"; }
+.cyb-s-ard-032-computer-6:before { content: "\f11f"; }
+.cyb-s-ard-033-computer-7:before { content: "\f120"; }
+.cyb-s-ard-034-devices-1:before { content: "\f121"; }
+.cyb-s-ard-035-devices-2:before { content: "\f122"; }
+.cyb-s-ard-036-settings:before { content: "\f123"; }
+.cyb-s-ard-037-device:before { content: "\f124"; }
+.cyb-s-ard-038-tablet-5:before { content: "\f125"; }
+.cyb-s-ard-039-tablet-6:before { content: "\f126"; }
+.cyb-s-ard-040-computer-8:before { content: "\f127"; }
+.cyb-s-ard-041-computer-9:before { content: "\f128"; }
+.cyb-s-ard-042-computer-10:before { content: "\f129"; }
+.cyb-s-ard-043-laptop-3:before { content: "\f12a"; }
+.cyb-s-ard-044-tablet-7:before { content: "\f12b"; }
+.cyb-s-ard-045-content:before { content: "\f12c"; }
+.cyb-s-ard-046-mobile-phone-2:before { content: "\f12d"; }
+.cyb-s-ard-047-browser-3:before { content: "\f12e"; }
+.cyb-s-ard-048-design:before { content: "\f12f"; }
+.cyb-s-ard-049-layout-1:before { content: "\f130"; }
+.cyb-s-ard-050-layout-2:before { content: "\f131"; }

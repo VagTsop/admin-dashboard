@@ -1,0 +1,23 @@
+[
+  {
+    "category": "Nodes",
+    "active": 40,
+    "deactivated": 55,
+    "terminated": 65,
+    "pending": 75
+  },
+  {
+    "category": "Beneficiaries",
+    "active": 30,
+    "deactivated": 78,
+    "terminated": 65,
+    "pending": 55
+  },
+  {
+    "category": "Users",
+    "active": 27,
+    "deactivated": 40,
+    "terminated": 45,
+    "pending": 35
+  }
+]

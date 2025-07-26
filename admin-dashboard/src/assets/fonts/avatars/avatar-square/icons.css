@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "avatar-square";
+  src: url("./avatar-square.eot");
+  src: url("./avatar-square.eot?#iefix") format("embedded-opentype"),
+       url("./avatar-square.woff") format("woff"),
+       url("./avatar-square.ttf") format("truetype"),
+       url("./avatar-square.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="cyb-a-as-"]:before, [class*=" cyb-a-as-"]:before,
+[class^="cyb-a-as-"]:after, [class*=" cyb-a-as-"]:after {   
+font-family: "avatar-square" !important;
+font-size: 20px;
+font-style: normal !important;
+font-weight: normal !important;
+font-variant: normal !important;
+text-transform: none !important;
+text-align: center;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+.cyb-a-as-avatar:before { content: "\f100"; }
+.cyb-a-as-avatar-1:before { content: "\f101"; }
+.cyb-a-as-avatar-10:before { content: "\f102"; }
+.cyb-a-as-avatar-11:before { content: "\f103"; }
+.cyb-a-as-avatar-12:before { content: "\f104"; }
+.cyb-a-as-avatar-13:before { content: "\f105"; }
+.cyb-a-as-avatar-14:before { content: "\f106"; }
+.cyb-a-as-avatar-15:before { content: "\f107"; }
+.cyb-a-as-avatar-2:before { content: "\f108"; }
+.cyb-a-as-avatar-3:before { content: "\f109"; }
+.cyb-a-as-avatar-4:before { content: "\f10a"; }
+.cyb-a-as-avatar-5:before { content: "\f10b"; }
+.cyb-a-as-avatar-6:before { content: "\f10c"; }
+.cyb-a-as-avatar-7:before { content: "\f10d"; }
+.cyb-a-as-avatar-8:before { content: "\f10e"; }
+.cyb-a-as-avatar-9:before { content: "\f10f"; }

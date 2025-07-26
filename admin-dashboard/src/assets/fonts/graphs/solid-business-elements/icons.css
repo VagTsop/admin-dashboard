@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "solid-business-elements";
+  src: url("./solid-business-elements.eot");
+  src: url("./solid-business-elements.eot?#iefix") format("embedded-opentype"),
+       url("./solid-business-elements.woff") format("woff"),
+       url("./solid-business-elements.ttf") format("truetype"),
+       url("./solid-business-elements.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="cyb-g-sbe-"]:before, [class*=" cyb-g-sbe-"]:before,
+[class^="cyb-g-sbe-"]:after, [class*=" cyb-g-sbe-"]:after {   
+font-family: "solid-business-elements" !important;
+font-size: 20px;
+font-style: normal !important;
+font-weight: normal !important;
+font-variant: normal !important;
+text-transform: none !important;
+text-align: center;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+.cyb-g-sbe-airplane:before { content: "\f100"; }
+.cyb-g-sbe-armchair:before { content: "\f101"; }
+.cyb-g-sbe-bill:before { content: "\f102"; }
+.cyb-g-sbe-briefcase:before { content: "\f103"; }
+.cyb-g-sbe-briefcase-1:before { content: "\f104"; }
+.cyb-g-sbe-briefcase-2:before { content: "\f105"; }
+.cyb-g-sbe-calculator:before { content: "\f106"; }
+.cyb-g-sbe-calendar:before { content: "\f107"; }
+.cyb-g-sbe-chat:before { content: "\f108"; }
+.cyb-g-sbe-clipboard:before { content: "\f109"; }
+.cyb-g-sbe-contract:before { content: "\f10a"; }
+.cyb-g-sbe-contract-1:before { content: "\f10b"; }
+.cyb-g-sbe-desk:before { content: "\f10c"; }
+.cyb-g-sbe-document:before { content: "\f10d"; }
+.cyb-g-sbe-document-1:before { content: "\f10e"; }
+.cyb-g-sbe-factory:before { content: "\f10f"; }
+.cyb-g-sbe-folder:before { content: "\f110"; }
+.cyb-g-sbe-folder-1:before { content: "\f111"; }
+.cyb-g-sbe-fountain-pen:before { content: "\f112"; }
+.cyb-g-sbe-gears:before { content: "\f113"; }
+.cyb-g-sbe-graphic:before { content: "\f114"; }
+.cyb-g-sbe-graphic-1:before { content: "\f115"; }
+.cyb-g-sbe-graphic-2:before { content: "\f116"; }
+.cyb-g-sbe-graphic-3:before { content: "\f117"; }
+.cyb-g-sbe-graphic-4:before { content: "\f118"; }
+.cyb-g-sbe-hourglass:before { content: "\f119"; }
+.cyb-g-sbe-id-card:before { content: "\f11a"; }
+.cyb-g-sbe-laptop:before { content: "\f11b"; }
+.cyb-g-sbe-mail:before { content: "\f11c"; }
+.cyb-g-sbe-money:before { content: "\f11d"; }
+.cyb-g-sbe-money-1:before { content: "\f11e"; }
+.cyb-g-sbe-organization:before { content: "\f11f"; }
+.cyb-g-sbe-organization-1:before { content: "\f120"; }
+.cyb-g-sbe-organization-2:before { content: "\f121"; }
+.cyb-g-sbe-organization-3:before { content: "\f122"; }
+.cyb-g-sbe-phone-call:before { content: "\f123"; }
+.cyb-g-sbe-pie-chart:before { content: "\f124"; }
+.cyb-g-sbe-pie-chart-1:before { content: "\f125"; }
+.cyb-g-sbe-presentation:before { content: "\f126"; }
+.cyb-g-sbe-presentation-1:before { content: "\f127"; }
+.cyb-g-sbe-presentation-2:before { content: "\f128"; }
+.cyb-g-sbe-printer:before { content: "\f129"; }
+.cyb-g-sbe-smartphone:before { content: "\f12a"; }
+.cyb-g-sbe-speech-bubble:before { content: "\f12b"; }
+.cyb-g-sbe-stamp:before { content: "\f12c"; }
+.cyb-g-sbe-suit:before { content: "\f12d"; }
+.cyb-g-sbe-target:before { content: "\f12e"; }
+.cyb-g-sbe-tie:before { content: "\f12f"; }
+.cyb-g-sbe-trolley:before { content: "\f130"; }
+.cyb-g-sbe-worldwide:before { content: "\f131"; }

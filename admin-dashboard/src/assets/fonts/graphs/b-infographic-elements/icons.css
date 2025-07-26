@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "b-infographic-elements";
+  src: url("./b-infographic-elements.eot");
+  src: url("./b-infographic-elements.eot?#iefix") format("embedded-opentype"),
+       url("./b-infographic-elements.woff") format("woff"),
+       url("./b-infographic-elements.ttf") format("truetype"),
+       url("./b-infographic-elements.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="cyb-g-bie-"]:before, [class*=" cyb-g-bie-"]:before,
+[class^="cyb-g-bie-"]:after, [class*=" cyb-g-bie-"]:after {   
+font-family: "b-infographic-elements" !important;
+font-size: 20px;
+font-style: normal !important;
+font-weight: normal !important;
+font-variant: normal !important;
+text-transform: none !important;
+text-align: center;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+.cyb-g-bie-001-infographic-18:before { content: "\f100"; }
+.cyb-g-bie-002-speedometer:before { content: "\f101"; }
+.cyb-g-bie-003-infographic-17:before { content: "\f102"; }
+.cyb-g-bie-004-pie-chart-4:before { content: "\f103"; }
+.cyb-g-bie-005-computer:before { content: "\f104"; }
+.cyb-g-bie-006-infographic-16:before { content: "\f105"; }
+.cyb-g-bie-007-infographic-15:before { content: "\f106"; }
+.cyb-g-bie-008-infographic-14:before { content: "\f107"; }
+.cyb-g-bie-009-infographic-13:before { content: "\f108"; }
+.cyb-g-bie-010-diagram-1:before { content: "\f109"; }
+.cyb-g-bie-011-infographic-12:before { content: "\f10a"; }
+.cyb-g-bie-012-infographic-11:before { content: "\f10b"; }
+.cyb-g-bie-013-infographic-10:before { content: "\f10c"; }
+.cyb-g-bie-014-venn-diagram:before { content: "\f10d"; }
+.cyb-g-bie-015-puzzle:before { content: "\f10e"; }
+.cyb-g-bie-016-infographic-9:before { content: "\f10f"; }
+.cyb-g-bie-017-bar-chart-4:before { content: "\f110"; }
+.cyb-g-bie-018-infographic-8:before { content: "\f111"; }
+.cyb-g-bie-019-infographic-7:before { content: "\f112"; }
+.cyb-g-bie-020-loss:before { content: "\f113"; }
+.cyb-g-bie-021-infographic-6:before { content: "\f114"; }
+.cyb-g-bie-022-loop:before { content: "\f115"; }
+.cyb-g-bie-023-arrows:before { content: "\f116"; }
+.cyb-g-bie-024-infographic-5:before { content: "\f117"; }
+.cyb-g-bie-025-pie-chart-3:before { content: "\f118"; }
+.cyb-g-bie-026-diagram:before { content: "\f119"; }
+.cyb-g-bie-027-bar-chart-3:before { content: "\f11a"; }
+.cyb-g-bie-028-pie-chart-2:before { content: "\f11b"; }
+.cyb-g-bie-029-infographic-4:before { content: "\f11c"; }
+.cyb-g-bie-030-funnel:before { content: "\f11d"; }
+.cyb-g-bie-031-pie-chart-1:before { content: "\f11e"; }
+.cyb-g-bie-032-line-chart:before { content: "\f11f"; }
+.cyb-g-bie-033-bar-chart-2:before { content: "\f120"; }
+.cyb-g-bie-034-flow:before { content: "\f121"; }
+.cyb-g-bie-035-bar-chart-1:before { content: "\f122"; }
+.cyb-g-bie-036-hexagon-1:before { content: "\f123"; }
+.cyb-g-bie-037-hexagon:before { content: "\f124"; }
+.cyb-g-bie-038-pie-chart:before { content: "\f125"; }
+.cyb-g-bie-039-infographic-3:before { content: "\f126"; }
+.cyb-g-bie-040-chart:before { content: "\f127"; }
+.cyb-g-bie-041-layer:before { content: "\f128"; }
+.cyb-g-bie-042-infographic-2:before { content: "\f129"; }
+.cyb-g-bie-043-pyramid-chart-1:before { content: "\f12a"; }
+.cyb-g-bie-044-sweep:before { content: "\f12b"; }
+.cyb-g-bie-045-cubes:before { content: "\f12c"; }
+.cyb-g-bie-046-infographic-1:before { content: "\f12d"; }
+.cyb-g-bie-047-infographic:before { content: "\f12e"; }
+.cyb-g-bie-048-interlocking:before { content: "\f12f"; }
+.cyb-g-bie-049-bar-chart:before { content: "\f130"; }
+.cyb-g-bie-050-pyramid-chart:before { content: "\f131"; }

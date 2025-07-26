@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "phone-icons";
+  src: url("./phone-icons.eot");
+  src: url("./phone-icons.eot?#iefix") format("embedded-opentype"),
+       url("./phone-icons.woff") format("woff"),
+       url("./phone-icons.ttf") format("truetype"),
+       url("./phone-icons.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="cyb-mc-pi-"]:before, [class*=" cyb-mc-pi-"]:before,
+[class^="cyb-mc-pi-"]:after, [class*=" cyb-mc-pi-"]:after {   
+font-family: "phone-icons" !important;
+font-size: 20px;
+font-style: normal !important;
+font-weight: normal !important;
+font-variant: normal !important;
+text-transform: none !important;
+text-align: center;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+.cyb-mc-pi-boy-talking-by-phone:before { content: "\f100"; }
+.cyb-mc-pi-broken-cellphone:before { content: "\f101"; }
+.cyb-mc-pi-broken-telephone:before { content: "\f102"; }
+.cyb-mc-pi-buying-on-smartphone:before { content: "\f103"; }
+.cyb-mc-pi-call-center-girl:before { content: "\f104"; }
+.cyb-mc-pi-cellphone-internet-connection:before { content: "\f105"; }
+.cyb-mc-pi-cellphone-with-wifi-signal:before { content: "\f106"; }
+.cyb-mc-pi-chat-between-two-smartphones:before { content: "\f107"; }
+.cyb-mc-pi-communication-by-phone-chat:before { content: "\f108"; }
+.cyb-mc-pi-finger-touching-tablet-screen:before { content: "\f109"; }
+.cyb-mc-pi-girl-on-phone:before { content: "\f10a"; }
+.cyb-mc-pi-girl-telephone-call:before { content: "\f10b"; }
+.cyb-mc-pi-hand-graving-smartphone:before { content: "\f10c"; }
+.cyb-mc-pi-hand-with-smartphone-and-wireless-internet:before { content: "\f10d"; }
+.cyb-mc-pi-horizontal-smartphone-chatting:before { content: "\f10e"; }
+.cyb-mc-pi-horizontal-smartphone-with-wifi-connection:before { content: "\f10f"; }
+.cyb-mc-pi-incoming-call:before { content: "\f110"; }
+.cyb-mc-pi-international-calls:before { content: "\f111"; }
+.cyb-mc-pi-mobile-phone-with-wifi:before { content: "\f112"; }
+.cyb-mc-pi-office-telephone:before { content: "\f113"; }
+.cyb-mc-pi-old-mobile-phone-calling:before { content: "\f114"; }
+.cyb-mc-pi-old-telephone-ringing:before { content: "\f115"; }
+.cyb-mc-pi-person-of-a-call-center-in-communication-with-headphones:before { content: "\f116"; }
+.cyb-mc-pi-phone-auricular-with-high-volume:before { content: "\f117"; }
+.cyb-mc-pi-phone-book:before { content: "\f118"; }
+.cyb-mc-pi-phone-chat:before { content: "\f119"; }
+.cyb-mc-pi-phone-chat-with-wifi-signal:before { content: "\f11a"; }
+.cyb-mc-pi-phone-connection-with-a-boy:before { content: "\f11b"; }
+.cyb-mc-pi-phone-contact:before { content: "\f11c"; }
+.cyb-mc-pi-phone-group-communication:before { content: "\f11d"; }
+.cyb-mc-pi-refresh-wifi-signal:before { content: "\f11e"; }
+.cyb-mc-pi-smartphone-24-hours-service:before { content: "\f11f"; }
+.cyb-mc-pi-smartphone-blocked:before { content: "\f120"; }
+.cyb-mc-pi-smartphone-call:before { content: "\f121"; }
+.cyb-mc-pi-smartphone-group-chat:before { content: "\f122"; }
+.cyb-mc-pi-smartphone-message:before { content: "\f123"; }
+.cyb-mc-pi-smartphone-receiving-sign:before { content: "\f124"; }
+.cyb-mc-pi-smartphone-ringing:before { content: "\f125"; }
+.cyb-mc-pi-smartphone-screen-with-sound-line:before { content: "\f126"; }
+.cyb-mc-pi-smartphone-sending-data:before { content: "\f127"; }
+.cyb-mc-pi-smartphone-video-conference-with-friends:before { content: "\f128"; }
+.cyb-mc-pi-smartphone-with-a-smile:before { content: "\f129"; }
+.cyb-mc-pi-smartphone-with-email:before { content: "\f12a"; }
+.cyb-mc-pi-smartphone-with-emoticon:before { content: "\f12b"; }
+.cyb-mc-pi-smartphone-with-glasses:before { content: "\f12c"; }
+.cyb-mc-pi-smartphone-with-globe-grid:before { content: "\f12d"; }
+.cyb-mc-pi-smartphone-with-hand:before { content: "\f12e"; }
+.cyb-mc-pi-smartphone-with-internet:before { content: "\f12f"; }
+.cyb-mc-pi-smartphone-with-internet-connection:before { content: "\f130"; }
+.cyb-mc-pi-smartphone-with-internet-connection-1:before { content: "\f131"; }
+.cyb-mc-pi-smartphone-with-picture:before { content: "\f132"; }
+.cyb-mc-pi-smartphone-with-reload-arrows:before { content: "\f133"; }
+.cyb-mc-pi-smartphone-with-sad-face-on-screen:before { content: "\f134"; }
+.cyb-mc-pi-smartphone-with-shield:before { content: "\f135"; }
+.cyb-mc-pi-smartphone-with-wireless-internet:before { content: "\f136"; }
+.cyb-mc-pi-smartphones-couple:before { content: "\f137"; }
+.cyb-mc-pi-tablet-with-wifi-signal-on-screen:before { content: "\f138"; }
+.cyb-mc-pi-telephone-and-phonebook:before { content: "\f139"; }
+.cyb-mc-pi-telephone-auricular-with-cable:before { content: "\f13a"; }
+.cyb-mc-pi-telephone-battery-half-charged:before { content: "\f13b"; }
+.cyb-mc-pi-telephone-international-communication:before { content: "\f13c"; }
+.cyb-mc-pi-telephone-line-24-hours-service:before { content: "\f13d"; }
+.cyb-mc-pi-telephone-locked:before { content: "\f13e"; }
+.cyb-mc-pi-telephone-of-old-design:before { content: "\f13f"; }
+.cyb-mc-pi-telephone-receiver-with-circular-arrows:before { content: "\f140"; }
+.cyb-mc-pi-telephone-receiver-with-up-arrow:before { content: "\f141"; }
+.cyb-mc-pi-telephone-with-a-bolt-on-screen:before { content: "\f142"; }
+.cyb-mc-pi-telephone-with-glasses-and-moustache:before { content: "\f143"; }
+.cyb-mc-pi-tower-transmissions:before { content: "\f144"; }
+.cyb-mc-pi-vintage-broken-telephone:before { content: "\f145"; }
+.cyb-mc-pi-vintage-cellphone:before { content: "\f146"; }
+.cyb-mc-pi-vintage-cellphone-with-wifi-signal:before { content: "\f147"; }
+.cyb-mc-pi-vintage-mobile-phone:before { content: "\f148"; }
+.cyb-mc-pi-vintage-telephone:before { content: "\f149"; }
+.cyb-mc-pi-vintage-telephone-call:before { content: "\f14a"; }
+.cyb-mc-pi-wifi-signal-tower:before { content: "\f14b"; }
+.cyb-mc-pi-world-wide-internet-signal:before { content: "\f14c"; }
+.cyb-mc-pi-worldwide-communications:before { content: "\f14d"; }
+.cyb-mc-pi-worldwide-transmissions:before { content: "\f14e"; }
+.cyb-mc-pi-worlwide-transmission:before { content: "\f14f"; }

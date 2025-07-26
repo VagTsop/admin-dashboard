@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "maps-and-transport";
+  src: url("./maps-and-transport.eot");
+  src: url("./maps-and-transport.eot?#iefix") format("embedded-opentype"),
+       url("./maps-and-transport.woff") format("woff"),
+       url("./maps-and-transport.ttf") format("truetype"),
+       url("./maps-and-transport.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="cyb-mc-mat-"]:before, [class*=" cyb-mc-mat-"]:before,
+[class^="cyb-mc-mat-"]:after, [class*=" cyb-mc-mat-"]:after {   
+font-family: "maps-and-transport" !important;
+font-size: 20px;
+font-style: normal !important;
+font-weight: normal !important;
+font-variant: normal !important;
+text-transform: none !important;
+text-align: center;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+.cyb-mc-mat-001-expand:before { content: "\f100"; }
+.cyb-mc-mat-002-people:before { content: "\f101"; }
+.cyb-mc-mat-003-tram:before { content: "\f102"; }
+.cyb-mc-mat-004-train-2:before { content: "\f103"; }
+.cyb-mc-mat-005-traffic-light:before { content: "\f104"; }
+.cyb-mc-mat-006-mountains:before { content: "\f105"; }
+.cyb-mc-mat-007-subway:before { content: "\f106"; }
+.cyb-mc-mat-008-street-view:before { content: "\f107"; }
+.cyb-mc-mat-009-store:before { content: "\f108"; }
+.cyb-mc-mat-010-satellite:before { content: "\f109"; }
+.cyb-mc-mat-011-cutlery-2:before { content: "\f10a"; }
+.cyb-mc-mat-012-cutlery-1:before { content: "\f10b"; }
+.cyb-mc-mat-013-review:before { content: "\f10c"; }
+.cyb-mc-mat-014-placeholder-2:before { content: "\f10d"; }
+.cyb-mc-mat-015-placeholder-1:before { content: "\f10e"; }
+.cyb-mc-mat-016-placeholder:before { content: "\f10f"; }
+.cyb-mc-mat-017-pin:before { content: "\f110"; }
+.cyb-mc-mat-018-navigation-1:before { content: "\f111"; }
+.cyb-mc-mat-019-navigation:before { content: "\f112"; }
+.cyb-mc-mat-020-target:before { content: "\f113"; }
+.cyb-mc-mat-021-map:before { content: "\f114"; }
+.cyb-mc-mat-022-taxi:before { content: "\f115"; }
+.cyb-mc-mat-023-truck:before { content: "\f116"; }
+.cyb-mc-mat-024-camera:before { content: "\f117"; }
+.cyb-mc-mat-025-printer:before { content: "\f118"; }
+.cyb-mc-mat-026-mail:before { content: "\f119"; }
+.cyb-mc-mat-027-ticket-1:before { content: "\f11a"; }
+.cyb-mc-mat-028-pizza:before { content: "\f11b"; }
+.cyb-mc-mat-029-phone:before { content: "\f11c"; }
+.cyb-mc-mat-030-pharmacy:before { content: "\f11d"; }
+.cyb-mc-mat-031-parking:before { content: "\f11e"; }
+.cyb-mc-mat-032-label:before { content: "\f11f"; }
+.cyb-mc-mat-033-film-strip:before { content: "\f120"; }
+.cyb-mc-mat-034-shopping-bag:before { content: "\f121"; }
+.cyb-mc-mat-035-library:before { content: "\f122"; }
+.cyb-mc-mat-036-washing-machine:before { content: "\f123"; }
+.cyb-mc-mat-037-bed-1:before { content: "\f124"; }
+.cyb-mc-mat-038-hospital:before { content: "\f125"; }
+.cyb-mc-mat-039-cart:before { content: "\f126"; }
+.cyb-mc-mat-040-gas-station:before { content: "\f127"; }
+.cyb-mc-mat-041-flower:before { content: "\f128"; }
+.cyb-mc-mat-042-water:before { content: "\f129"; }
+.cyb-mc-mat-043-cutlery:before { content: "\f12a"; }
+.cyb-mc-mat-044-convenience-store:before { content: "\f12b"; }
+.cyb-mc-mat-045-car-wash:before { content: "\f12c"; }
+.cyb-mc-mat-046-coffee:before { content: "\f12d"; }
+.cyb-mc-mat-047-cocktail:before { content: "\f12e"; }
+.cyb-mc-mat-048-dollar:before { content: "\f12f"; }
+.cyb-mc-mat-049-plane:before { content: "\f130"; }
+.cyb-mc-mat-050-ticket:before { content: "\f131"; }
+.cyb-mc-mat-051-layers-1:before { content: "\f132"; }
+.cyb-mc-mat-052-layers:before { content: "\f133"; }
+.cyb-mc-mat-053-bed:before { content: "\f134"; }
+.cyb-mc-mat-054-flight:before { content: "\f135"; }
+.cyb-mc-mat-055-electric-station:before { content: "\f136"; }
+.cyb-mc-mat-056-location-1:before { content: "\f137"; }
+.cyb-mc-mat-057-walk:before { content: "\f138"; }
+.cyb-mc-mat-058-train-1:before { content: "\f139"; }
+.cyb-mc-mat-059-run:before { content: "\f13a"; }
+.cyb-mc-mat-060-train:before { content: "\f13b"; }
+.cyb-mc-mat-061-car:before { content: "\f13c"; }
+.cyb-mc-mat-062-bus:before { content: "\f13d"; }
+.cyb-mc-mat-063-boat:before { content: "\f13e"; }
+.cyb-mc-mat-064-bike:before { content: "\f13f"; }
+.cyb-mc-mat-065-direction:before { content: "\f140"; }
+.cyb-mc-mat-066-signal:before { content: "\f141"; }
+.cyb-mc-mat-067-location:before { content: "\f142"; }

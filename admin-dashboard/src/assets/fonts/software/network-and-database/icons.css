@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "network-and-database";
+  src: url("./network-and-database.eot");
+  src: url("./network-and-database.eot?#iefix") format("embedded-opentype"),
+       url("./network-and-database.woff") format("woff"),
+       url("./network-and-database.ttf") format("truetype"),
+       url("./network-and-database.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="cyb-s-nad-"]:before, [class*=" cyb-s-nad-"]:before,
+[class^="cyb-s-nad-"]:after, [class*=" cyb-s-nad-"]:after {   
+font-family: "network-and-database" !important;
+font-size: 20px;
+font-style: normal !important;
+font-weight: normal !important;
+font-variant: normal !important;
+text-transform: none !important;
+text-align: center;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+.cyb-s-nad-001-server-12:before { content: "\f100"; }
+.cyb-s-nad-002-world:before { content: "\f101"; }
+.cyb-s-nad-003-server-11:before { content: "\f102"; }
+.cyb-s-nad-004-laptop-1:before { content: "\f103"; }
+.cyb-s-nad-005-transfer-2:before { content: "\f104"; }
+.cyb-s-nad-006-truck:before { content: "\f105"; }
+.cyb-s-nad-007-server-10:before { content: "\f106"; }
+.cyb-s-nad-008-computer-3:before { content: "\f107"; }
+.cyb-s-nad-009-cloud-3:before { content: "\f108"; }
+.cyb-s-nad-010-database-3:before { content: "\f109"; }
+.cyb-s-nad-011-computer-2:before { content: "\f10a"; }
+.cyb-s-nad-012-computer-1:before { content: "\f10b"; }
+.cyb-s-nad-013-server-9:before { content: "\f10c"; }
+.cyb-s-nad-014-cloud-2:before { content: "\f10d"; }
+.cyb-s-nad-015-storage:before { content: "\f10e"; }
+.cyb-s-nad-016-computing-cloud:before { content: "\f10f"; }
+.cyb-s-nad-017-laptop:before { content: "\f110"; }
+.cyb-s-nad-018-download-file:before { content: "\f111"; }
+.cyb-s-nad-019-shield-1:before { content: "\f112"; }
+.cyb-s-nad-020-download:before { content: "\f113"; }
+.cyb-s-nad-021-server-8:before { content: "\f114"; }
+.cyb-s-nad-022-management:before { content: "\f115"; }
+.cyb-s-nad-023-cloud-1:before { content: "\f116"; }
+.cyb-s-nad-024-cloud:before { content: "\f117"; }
+.cyb-s-nad-025-server-7:before { content: "\f118"; }
+.cyb-s-nad-026-server-6:before { content: "\f119"; }
+.cyb-s-nad-027-database-2:before { content: "\f11a"; }
+.cyb-s-nad-028-transfer-1:before { content: "\f11b"; }
+.cyb-s-nad-029-database-1:before { content: "\f11c"; }
+.cyb-s-nad-030-server-5:before { content: "\f11d"; }
+.cyb-s-nad-031-server-4:before { content: "\f11e"; }
+.cyb-s-nad-032-plug-3:before { content: "\f11f"; }
+.cyb-s-nad-033-plug-2:before { content: "\f120"; }
+.cyb-s-nad-034-data:before { content: "\f121"; }
+.cyb-s-nad-035-shield:before { content: "\f122"; }
+.cyb-s-nad-036-database:before { content: "\f123"; }
+.cyb-s-nad-037-server-3:before { content: "\f124"; }
+.cyb-s-nad-038-server-2:before { content: "\f125"; }
+.cyb-s-nad-039-transfer:before { content: "\f126"; }
+.cyb-s-nad-040-generator:before { content: "\f127"; }
+.cyb-s-nad-041-safebox:before { content: "\f128"; }
+.cyb-s-nad-042-back-up-1:before { content: "\f129"; }
+.cyb-s-nad-043-back-up:before { content: "\f12a"; }
+.cyb-s-nad-044-tape:before { content: "\f12b"; }
+.cyb-s-nad-045-plug-1:before { content: "\f12c"; }
+.cyb-s-nad-046-plug:before { content: "\f12d"; }
+.cyb-s-nad-047-server-1:before { content: "\f12e"; }
+.cyb-s-nad-048-server:before { content: "\f12f"; }
+.cyb-s-nad-049-computer:before { content: "\f130"; }
+.cyb-s-nad-050-protected:before { content: "\f131"; }

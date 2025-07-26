@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "business-chart-pictograms";
+  src: url("./business-chart-pictograms.eot");
+  src: url("./business-chart-pictograms.eot?#iefix") format("embedded-opentype"),
+       url("./business-chart-pictograms.woff") format("woff"),
+       url("./business-chart-pictograms.ttf") format("truetype"),
+       url("./business-chart-pictograms.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="cyb-g-bcp-"]:before, [class*=" cyb-g-bcp-"]:before,
+[class^="cyb-g-bcp-"]:after, [class*=" cyb-g-bcp-"]:after {   
+font-family: "business-chart-pictograms" !important;
+font-size: 20px;
+font-style: normal !important;
+font-weight: normal !important;
+font-variant: normal !important;
+text-transform: none !important;
+text-align: center;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+.cyb-g-bcp-bar-dotted-stats:before { content: "\f100"; }
+.cyb-g-bcp-business-bars-graphic:before { content: "\f101"; }
+.cyb-g-bcp-business-chart:before { content: "\f102"; }
+.cyb-g-bcp-business-financial-chart:before { content: "\f103"; }
+.cyb-g-bcp-business-financial-chart-1:before { content: "\f104"; }
+.cyb-g-bcp-business-stats:before { content: "\f105"; }
+.cyb-g-bcp-cirular-line-chart:before { content: "\f106"; }
+.cyb-g-bcp-dotted-chart:before { content: "\f107"; }
+.cyb-g-bcp-dual-chart:before { content: "\f108"; }
+.cyb-g-bcp-financial-bar-chart:before { content: "\f109"; }
+.cyb-g-bcp-financial-bars-stats:before { content: "\f10a"; }
+.cyb-g-bcp-financial-chart-loss:before { content: "\f10b"; }
+.cyb-g-bcp-horizontal-bars-chart:before { content: "\f10c"; }
+.cyb-g-bcp-marketing-circular-chart:before { content: "\f10d"; }
+.cyb-g-bcp-pie-chart-stats:before { content: "\f10e"; }
+.cyb-g-bcp-radar-chart:before { content: "\f10f"; }
+.cyb-g-bcp-sinusoid-graph:before { content: "\f110"; }
+.cyb-g-bcp-triangular-chart:before { content: "\f111"; }
+.cyb-g-bcp-triple-layer-chart:before { content: "\f112"; }
+.cyb-g-bcp-zig-zag-chart:before { content: "\f113"; }

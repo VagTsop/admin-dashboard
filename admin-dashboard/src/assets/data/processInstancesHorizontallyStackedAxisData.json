@@ -1,0 +1,123 @@
+[
+  {
+    "category": "Raina",
+    "value1": 23,
+    "value2": 103,
+    "value3": 130
+  },
+  {
+    "category": "Richie",
+    "value1": 98,
+    "value2": 104,
+    "value3": 120
+  },
+  {
+    "category": "Demarcus",
+    "value1": 50,
+    "value2": 70,
+    "value3": 80
+  },
+
+  {
+    "category": "Carlo",
+    "value1": 15,
+    "value2": 40,
+    "value3": 80
+  },
+  {
+    "category": "Jacinda",
+    "value1": 20,
+    "value2": 35,
+    "value3": 65
+  },
+  {
+    "category": "Richie",
+    "value1": 22,
+    "value2": 60,
+    "value3": 75
+  },
+  {
+    "category": "Anthony",
+    "value1": 47,
+    "value2": 65,
+    "value3": 80
+  },
+  {
+    "category": "Amanda",
+    "value1": 55,
+    "value2": 63,
+    "value3": 75
+  },
+  {
+    "category": "Idalia",
+    "value1": 32,
+    "value2": 71,
+    "value3": 120
+  },
+  {
+    "category": "Janella",
+    "value1": 40,
+    "value2": 60,
+    "value3": 88
+  },
+  {
+    "category": "Marla",
+    "value1": 72,
+    "value2": 88,
+    "value3": 110
+  },
+  {
+    "category": "Curtis",
+    "value1": 56,
+    "value2": 79,
+    "value3": 110
+  },
+  {
+    "category": "Shellie",
+    "value1": 21,
+    "value2": 57,
+    "value3": 130
+  },
+  {
+    "category": "Meggan",
+    "value1": 67,
+    "value2": 80,
+    "value3": 95
+  },
+  {
+    "category": "Nathanael",
+    "value1": 55,
+    "value2": 79,
+    "value3": 110
+  },
+  {
+    "category": "Jannette",
+    "value1": 70,
+    "value2": 90,
+    "value3": 120
+  },
+  {
+    "category": "Tyrell",
+    "value1": 60,
+    "value2": 92,
+    "value3": 120
+  },
+  {
+    "category": "Sheena",
+    "value1": 55,
+    "value2": 80,
+    "value3": 130
+  },
+  {
+    "category": "Maranda",
+    "value1": 55,
+    "value2": 71,
+    "value3": 105
+  },
+  {
+    "category": "Briana",
+    "value1": 40,
+    "value2": 60,
+    "value3": 82
+  }
+]

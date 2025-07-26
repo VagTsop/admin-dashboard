@@ -1,0 +1,387 @@
+[
+  {
+    "date": "2000-04-15",
+    "price": 1011,
+    "quantity": 896
+  },
+  {
+    "date": "2000-04-16",
+    "price": 1016,
+    "quantity": 440
+  },
+  {
+    "date": "2000-04-17",
+    "price": 1093,
+    "quantity": 815
+  },
+  {
+    "date": "2000-04-18",
+    "price": 1096,
+    "quantity": 340
+  },
+  {
+    "date": "2000-04-19",
+    "price": 1181,
+    "quantity": 388
+  },
+  {
+    "date": "2000-04-20",
+    "price": 1114,
+    "quantity": 754
+  },
+  {
+    "date": "2000-04-21",
+    "price": 1022,
+    "quantity": 884
+  },
+  {
+    "date": "2000-04-22",
+    "price": 1077,
+    "quantity": 1277
+  },
+  {
+    "date": "2000-04-23",
+    "price": 985,
+    "quantity": 1108
+  },
+  {
+    "date": "2000-04-24",
+    "price": 920,
+    "quantity": 1115
+  },
+  {
+    "date": "2000-04-25",
+    "price": 921,
+    "quantity": 684
+  },
+  {
+    "date": "2000-04-26",
+    "price": 872,
+    "quantity": 436
+  },
+  {
+    "date": "2000-04-27",
+    "price": 811,
+    "quantity": 725
+  },
+  {
+    "date": "2000-04-28",
+    "price": 837,
+    "quantity": 1127
+  },
+  {
+    "date": "2000-04-29",
+    "price": 898,
+    "quantity": 1561
+  },
+  {
+    "date": "2000-04-30",
+    "price": 954,
+    "quantity": 1302
+  },
+  {
+    "date": "2000-05-01",
+    "price": 984,
+    "quantity": 1337
+  },
+  {
+    "date": "2000-05-02",
+    "price": 921,
+    "quantity": 1512
+  },
+  {
+    "date": "2000-05-03",
+    "price": 835,
+    "quantity": 1524
+  },
+  {
+    "date": "2000-05-04",
+    "price": 763,
+    "quantity": 1246
+  },
+  {
+    "date": "2000-05-05",
+    "price": 684,
+    "quantity": 1300
+  },
+  {
+    "date": "2000-05-06",
+    "price": 728,
+    "quantity": 1269
+  },
+  {
+    "date": "2000-05-07",
+    "price": 689,
+    "quantity": 1332
+  },
+  {
+    "date": "2000-05-08",
+    "price": 779,
+    "quantity": 1616
+  },
+  {
+    "date": "2000-05-09",
+    "price": 843,
+    "quantity": 1547
+  },
+  {
+    "date": "2000-05-10",
+    "price": 775,
+    "quantity": 1576
+  },
+  {
+    "date": "2000-05-11",
+    "price": 786,
+    "quantity": 1646
+  },
+  {
+    "date": "2000-05-12",
+    "price": 855,
+    "quantity": 1442
+  },
+  {
+    "date": "2000-05-13",
+    "price": 769,
+    "quantity": 1373
+  },
+  {
+    "date": "2000-05-14",
+    "price": 864,
+    "quantity": 945
+  },
+  {
+    "date": "2000-05-15",
+    "price": 776,
+    "quantity": 905
+  },
+  {
+    "date": "2000-05-16",
+    "price": 718,
+    "quantity": 919
+  },
+  {
+    "date": "2000-05-17",
+    "price": 695,
+    "quantity": 917
+  },
+  {
+    "date": "2000-05-18",
+    "price": 640,
+    "quantity": 1245
+  },
+  {
+    "date": "2000-05-19",
+    "price": 685,
+    "quantity": 1711
+  },
+  {
+    "date": "2000-05-20",
+    "price": 658,
+    "quantity": 1289
+  },
+  {
+    "date": "2000-05-21",
+    "price": 618,
+    "quantity": 1212
+  },
+  {
+    "date": "2000-05-22",
+    "price": 606,
+    "quantity": 1250
+  },
+  {
+    "date": "2000-05-23",
+    "price": 675,
+    "quantity": 843
+  },
+  {
+    "date": "2000-05-24",
+    "price": 685,
+    "quantity": 821
+  },
+  {
+    "date": "2000-05-25",
+    "price": 619,
+    "quantity": 494
+  },
+  {
+    "date": "2000-05-26",
+    "price": 701,
+    "quantity": 751
+  },
+  {
+    "date": "2000-05-27",
+    "price": 754,
+    "quantity": 861
+  },
+  {
+    "date": "2000-05-28",
+    "price": 827,
+    "quantity": 1043
+  },
+  {
+    "date": "2000-05-29",
+    "price": 840,
+    "quantity": 885
+  },
+  {
+    "date": "2000-05-30",
+    "price": 878,
+    "quantity": 785
+  },
+  {
+    "date": "2000-05-31",
+    "price": 907,
+    "quantity": 558
+  },
+  {
+    "date": "2000-06-01",
+    "price": 878,
+    "quantity": 153
+  },
+  {
+    "date": "2000-06-02",
+    "price": 963,
+    "quantity": 612
+  },
+  {
+    "date": "2000-06-03",
+    "price": 932,
+    "quantity": 450
+  },
+  {
+    "date": "2000-06-04",
+    "price": 1025,
+    "quantity": 25
+  },
+  {
+    "date": "2000-06-05",
+    "price": 1073,
+    "quantity": 94
+  },
+  {
+    "date": "2000-06-06",
+    "price": 1101,
+    "quantity": 227
+  },
+  {
+    "date": "2000-06-07",
+    "price": 1027,
+    "quantity": 116
+  },
+  {
+    "date": "2000-06-08",
+    "price": 986,
+    "quantity": 269
+  },
+  {
+    "date": "2000-06-09",
+    "price": 1051,
+    "quantity": 711
+  },
+  {
+    "date": "2000-06-10",
+    "price": 1075,
+    "quantity": 1177
+  },
+  {
+    "date": "2000-06-11",
+    "price": 1123,
+    "quantity": 771
+  },
+  {
+    "date": "2000-06-12",
+    "price": 1038,
+    "quantity": 351
+  },
+  {
+    "date": "2000-06-13",
+    "price": 1090,
+    "quantity": 363
+  },
+  {
+    "date": "2000-06-14",
+    "price": 1103,
+    "quantity": 348
+  },
+  {
+    "date": "2000-06-15",
+    "price": 1116,
+    "quantity": 231
+  },
+  {
+    "date": "2000-06-16",
+    "price": 1197,
+    "quantity": 25
+  },
+  {
+    "date": "2000-06-17",
+    "price": 1162,
+    "quantity": 80
+  },
+  {
+    "date": "2000-06-18",
+    "price": 1246,
+    "quantity": 362
+  },
+  {
+    "date": "2000-06-19",
+    "price": 1319,
+    "quantity": 535
+  },
+  {
+    "date": "2000-06-20",
+    "price": 1382,
+    "quantity": 726
+  },
+  {
+    "date": "2000-06-21",
+    "price": 1430,
+    "quantity": 609
+  },
+  {
+    "date": "2000-06-22",
+    "price": 1415,
+    "quantity": 1062
+  },
+  {
+    "date": "2000-06-23",
+    "price": 1473,
+    "quantity": 832
+  },
+  {
+    "date": "2000-06-24",
+    "price": 1511,
+    "quantity": 820
+  },
+  {
+    "date": "2000-06-25",
+    "price": 1545,
+    "quantity": 1088
+  },
+  {
+    "date": "2000-06-26",
+    "price": 1610,
+    "quantity": 981
+  },
+  {
+    "date": "2000-06-27",
+    "price": 1604,
+    "quantity": 1136
+  },
+  {
+    "date": "2000-06-28",
+    "price": 1554,
+    "quantity": 1463
+  },
+  {
+    "date": "2000-06-29",
+    "price": 1510,
+    "quantity": 1957
+  },
+  {
+    "date": "2000-06-30",
+    "price": 1437,
+    "quantity": 1635
+  }
+]

@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "office";
+  src: url("./office.eot");
+  src: url("./office.eot?#iefix") format("embedded-opentype"),
+       url("./office.woff") format("woff"),
+       url("./office.ttf") format("truetype"),
+       url("./office.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="cyb-mc-o-"]:before, [class*=" cyb-mc-o-"]:before,
+[class^="cyb-mc-o-"]:after, [class*=" cyb-mc-o-"]:after {   
+font-family: "office" !important;
+font-size: 20px;
+font-style: normal !important;
+font-weight: normal !important;
+font-variant: normal !important;
+text-transform: none !important;
+text-align: center;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+.cyb-mc-o-001-coffee-2:before { content: "\f100"; }
+.cyb-mc-o-002-tablet:before { content: "\f101"; }
+.cyb-mc-o-003-sushi-1:before { content: "\f102"; }
+.cyb-mc-o-004-sushi:before { content: "\f103"; }
+.cyb-mc-o-005-cctv:before { content: "\f104"; }
+.cyb-mc-o-006-suitcase:before { content: "\f105"; }
+.cyb-mc-o-007-stationery:before { content: "\f106"; }
+.cyb-mc-o-008-scissors:before { content: "\f107"; }
+.cyb-mc-o-009-printer:before { content: "\f108"; }
+.cyb-mc-o-010-plant:before { content: "\f109"; }
+.cyb-mc-o-011-phone-2:before { content: "\f10a"; }
+.cyb-mc-o-012-phone-1:before { content: "\f10b"; }
+.cyb-mc-o-013-phone:before { content: "\f10c"; }
+.cyb-mc-o-014-pencils:before { content: "\f10d"; }
+.cyb-mc-o-015-office:before { content: "\f10e"; }
+.cyb-mc-o-016-mouse:before { content: "\f10f"; }
+.cyb-mc-o-017-lunch-2:before { content: "\f110"; }
+.cyb-mc-o-018-lunch-1:before { content: "\f111"; }
+.cyb-mc-o-019-lunch:before { content: "\f112"; }
+.cyb-mc-o-020-lamp:before { content: "\f113"; }
+.cyb-mc-o-021-laptop:before { content: "\f114"; }
+.cyb-mc-o-022-keyboard:before { content: "\f115"; }
+.cyb-mc-o-023-id:before { content: "\f116"; }
+.cyb-mc-o-024-graph:before { content: "\f117"; }
+.cyb-mc-o-025-frame:before { content: "\f118"; }
+.cyb-mc-o-026-form-1:before { content: "\f119"; }
+.cyb-mc-o-027-form:before { content: "\f11a"; }
+.cyb-mc-o-028-folder:before { content: "\f11b"; }
+.cyb-mc-o-029-cabinet:before { content: "\f11c"; }
+.cyb-mc-o-030-document-4:before { content: "\f11d"; }
+.cyb-mc-o-031-document-3:before { content: "\f11e"; }
+.cyb-mc-o-032-document-2:before { content: "\f11f"; }
+.cyb-mc-o-033-document-1:before { content: "\f120"; }
+.cyb-mc-o-034-document:before { content: "\f121"; }
+.cyb-mc-o-035-desktop:before { content: "\f122"; }
+.cyb-mc-o-036-desk:before { content: "\f123"; }
+.cyb-mc-o-037-conversation:before { content: "\f124"; }
+.cyb-mc-o-038-coffee-1:before { content: "\f125"; }
+.cyb-mc-o-039-coffee:before { content: "\f126"; }
+.cyb-mc-o-040-clock:before { content: "\f127"; }
+.cyb-mc-o-041-chair:before { content: "\f128"; }
+.cyb-mc-o-042-calendar:before { content: "\f129"; }
+.cyb-mc-o-043-cactus:before { content: "\f12a"; }
+.cyb-mc-o-044-building-2:before { content: "\f12b"; }
+.cyb-mc-o-045-building-1:before { content: "\f12c"; }
+.cyb-mc-o-046-building:before { content: "\f12d"; }
+.cyb-mc-o-047-book:before { content: "\f12e"; }
+.cyb-mc-o-048-bin:before { content: "\f12f"; }
+.cyb-mc-o-049-bag:before { content: "\f130"; }
+.cyb-mc-o-050-briefcase:before { content: "\f131"; }

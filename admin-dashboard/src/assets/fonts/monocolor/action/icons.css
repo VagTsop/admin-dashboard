@@ -1,0 +1,241 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "action";
+  src: url("./action.eot");
+  src: url("./action.eot?#iefix") format("embedded-opentype"),
+       url("./action.woff") format("woff"),
+       url("./action.ttf") format("truetype"),
+       url("./action.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="cyb-mc-a-"]:before, [class*=" cyb-mc-a-"]:before,
+[class^="cyb-mc-a-"]:after, [class*=" cyb-mc-a-"]:after {   
+font-family: "action" !important;
+font-size: 20px;
+font-style: normal !important;
+font-weight: normal !important;
+font-variant: normal !important;
+text-transform: none !important;
+text-align: center;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+.cyb-mc-a-001-zoom-out:before { content: "\f100"; }
+.cyb-mc-a-002-zoom-in:before { content: "\f101"; }
+.cyb-mc-a-003-search-2:before { content: "\f102"; }
+.cyb-mc-a-004-briefcase:before { content: "\f103"; }
+.cyb-mc-a-005-wall-clock:before { content: "\f104"; }
+.cyb-mc-a-006-invisible:before { content: "\f105"; }
+.cyb-mc-a-007-visibility:before { content: "\f106"; }
+.cyb-mc-a-008-columns-2:before { content: "\f107"; }
+.cyb-mc-a-009-stream:before { content: "\f108"; }
+.cyb-mc-a-010-quilt:before { content: "\f109"; }
+.cyb-mc-a-011-squares:before { content: "\f10a"; }
+.cyb-mc-a-012-list-2:before { content: "\f10b"; }
+.cyb-mc-a-013-headline:before { content: "\f10c"; }
+.cyb-mc-a-014-columns-1:before { content: "\f10d"; }
+.cyb-mc-a-015-columns:before { content: "\f10e"; }
+.cyb-mc-a-016-array-1:before { content: "\f10f"; }
+.cyb-mc-a-017-array:before { content: "\f110"; }
+.cyb-mc-a-018-agenda:before { content: "\f111"; }
+.cyb-mc-a-019-shield:before { content: "\f112"; }
+.cyb-mc-a-020-update:before { content: "\f113"; }
+.cyb-mc-a-021-bookmark-3:before { content: "\f114"; }
+.cyb-mc-a-022-bookmark-2:before { content: "\f115"; }
+.cyb-mc-a-023-profits:before { content: "\f116"; }
+.cyb-mc-a-024-right-arrow:before { content: "\f117"; }
+.cyb-mc-a-025-loss:before { content: "\f118"; }
+.cyb-mc-a-026-translate-1:before { content: "\f119"; }
+.cyb-mc-a-027-radar:before { content: "\f11a"; }
+.cyb-mc-a-028-tap:before { content: "\f11b"; }
+.cyb-mc-a-029-circle:before { content: "\f11c"; }
+.cyb-mc-a-030-calendar-3:before { content: "\f11d"; }
+.cyb-mc-a-031-list-1:before { content: "\f11e"; }
+.cyb-mc-a-032-timeline:before { content: "\f11f"; }
+.cyb-mc-a-033-rating:before { content: "\f120"; }
+.cyb-mc-a-034-like:before { content: "\f121"; }
+.cyb-mc-a-035-dislike:before { content: "\f122"; }
+.cyb-mc-a-036-movie:before { content: "\f123"; }
+.cyb-mc-a-037-tab-1:before { content: "\f124"; }
+.cyb-mc-a-038-tab:before { content: "\f125"; }
+.cyb-mc-a-039-download-2:before { content: "\f126"; }
+.cyb-mc-a-040-sort-1:before { content: "\f127"; }
+.cyb-mc-a-041-sort:before { content: "\f128"; }
+.cyb-mc-a-042-swap:before { content: "\f129"; }
+.cyb-mc-a-043-group:before { content: "\f12a"; }
+.cyb-mc-a-044-left-alignment:before { content: "\f12b"; }
+.cyb-mc-a-045-store:before { content: "\f12c"; }
+.cyb-mc-a-046-star-2:before { content: "\f12d"; }
+.cyb-mc-a-047-star-1:before { content: "\f12e"; }
+.cyb-mc-a-048-check:before { content: "\f12f"; }
+.cyb-mc-a-049-chat-2:before { content: "\f130"; }
+.cyb-mc-a-050-chat-1:before { content: "\f131"; }
+.cyb-mc-a-051-shopping-cart-2:before { content: "\f132"; }
+.cyb-mc-a-052-shopping-basket:before { content: "\f133"; }
+.cyb-mc-a-053-playstore-1:before { content: "\f134"; }
+.cyb-mc-a-054-playstore:before { content: "\f135"; }
+.cyb-mc-a-055-microphone:before { content: "\f136"; }
+.cyb-mc-a-056-remote-control:before { content: "\f137"; }
+.cyb-mc-a-057-power-1:before { content: "\f138"; }
+.cyb-mc-a-058-telephone:before { content: "\f139"; }
+.cyb-mc-a-059-move-1:before { content: "\f13a"; }
+.cyb-mc-a-060-cable:before { content: "\f13b"; }
+.cyb-mc-a-061-hdmi:before { content: "\f13c"; }
+.cyb-mc-a-062-jack:before { content: "\f13d"; }
+.cyb-mc-a-063-input:before { content: "\f13e"; }
+.cyb-mc-a-064-ethernet:before { content: "\f13f"; }
+.cyb-mc-a-065-smartphone:before { content: "\f140"; }
+.cyb-mc-a-066-brightness:before { content: "\f141"; }
+.cyb-mc-a-067-bluetooth:before { content: "\f142"; }
+.cyb-mc-a-068-restore:before { content: "\f143"; }
+.cyb-mc-a-069-settings-2:before { content: "\f144"; }
+.cyb-mc-a-070-settings-1:before { content: "\f145"; }
+.cyb-mc-a-071-search-1:before { content: "\f146"; }
+.cyb-mc-a-072-clock-1:before { content: "\f147"; }
+.cyb-mc-a-073-rowing:before { content: "\f148"; }
+.cyb-mc-a-074-corner:before { content: "\f149"; }
+.cyb-mc-a-075-placeholder:before { content: "\f14a"; }
+.cyb-mc-a-076-file-1:before { content: "\f14b"; }
+.cyb-mc-a-077-history-2:before { content: "\f14c"; }
+.cyb-mc-a-078-warning:before { content: "\f14d"; }
+.cyb-mc-a-079-menu:before { content: "\f14e"; }
+.cyb-mc-a-080-shopping-cart-1:before { content: "\f14f"; }
+.cyb-mc-a-081-gift-card-1:before { content: "\f150"; }
+.cyb-mc-a-082-voice:before { content: "\f151"; }
+.cyb-mc-a-083-receipt:before { content: "\f152"; }
+.cyb-mc-a-084-chat:before { content: "\f153"; }
+.cyb-mc-a-085-clock:before { content: "\f154"; }
+.cyb-mc-a-086-printer:before { content: "\f155"; }
+.cyb-mc-a-087-pregnancy:before { content: "\f156"; }
+.cyb-mc-a-088-power:before { content: "\f157"; }
+.cyb-mc-a-089-polymer:before { content: "\f158"; }
+.cyb-mc-a-090-download-1:before { content: "\f159"; }
+.cyb-mc-a-091-picture-1:before { content: "\f15a"; }
+.cyb-mc-a-092-picture:before { content: "\f15b"; }
+.cyb-mc-a-093-pawprint:before { content: "\f15c"; }
+.cyb-mc-a-094-wifi:before { content: "\f15d"; }
+.cyb-mc-a-095-phone-call:before { content: "\f15e"; }
+.cyb-mc-a-096-folder:before { content: "\f15f"; }
+.cyb-mc-a-097-user-2:before { content: "\f160"; }
+.cyb-mc-a-098-information:before { content: "\f161"; }
+.cyb-mc-a-099-settings:before { content: "\f162"; }
+.cyb-mc-a-100-calendar-2:before { content: "\f163"; }
+.cyb-mc-a-101-camera-1:before { content: "\f164"; }
+.cyb-mc-a-102-credit-card-2:before { content: "\f165"; }
+.cyb-mc-a-103-hold:before { content: "\f166"; }
+.cyb-mc-a-104-search:before { content: "\f167"; }
+.cyb-mc-a-105-move:before { content: "\f168"; }
+.cyb-mc-a-106-full-screen:before { content: "\f169"; }
+.cyb-mc-a-107-upload:before { content: "\f16a"; }
+.cyb-mc-a-108-opacity:before { content: "\f16b"; }
+.cyb-mc-a-109-accept:before { content: "\f16c"; }
+.cyb-mc-a-110-add-file:before { content: "\f16d"; }
+.cyb-mc-a-111-motorcycle:before { content: "\f16e"; }
+.cyb-mc-a-112-unread:before { content: "\f16f"; }
+.cyb-mc-a-113-tag:before { content: "\f170"; }
+.cyb-mc-a-114-padlock-2:before { content: "\f171"; }
+.cyb-mc-a-115-unlocked:before { content: "\f172"; }
+.cyb-mc-a-116-padlock-1:before { content: "\f173"; }
+.cyb-mc-a-117-list:before { content: "\f174"; }
+.cyb-mc-a-118-line-1:before { content: "\f175"; }
+.cyb-mc-a-119-line:before { content: "\f176"; }
+.cyb-mc-a-120-lightbulb:before { content: "\f177"; }
+.cyb-mc-a-121-maximize:before { content: "\f178"; }
+.cyb-mc-a-122-internet:before { content: "\f179"; }
+.cyb-mc-a-123-label-1:before { content: "\f17a"; }
+.cyb-mc-a-124-label:before { content: "\f17b"; }
+.cyb-mc-a-125-invert:before { content: "\f17c"; }
+.cyb-mc-a-126-login:before { content: "\f17d"; }
+.cyb-mc-a-127-info-1:before { content: "\f17e"; }
+.cyb-mc-a-128-info:before { content: "\f17f"; }
+.cyb-mc-a-129-responsive:before { content: "\f180"; }
+.cyb-mc-a-130-padlock:before { content: "\f181"; }
+.cyb-mc-a-131-http:before { content: "\f182"; }
+.cyb-mc-a-132-hourglass-1:before { content: "\f183"; }
+.cyb-mc-a-133-hourglass:before { content: "\f184"; }
+.cyb-mc-a-134-home:before { content: "\f185"; }
+.cyb-mc-a-135-history-1:before { content: "\f186"; }
+.cyb-mc-a-136-close:before { content: "\f187"; }
+.cyb-mc-a-137-help-1:before { content: "\f188"; }
+.cyb-mc-a-138-help:before { content: "\f189"; }
+.cyb-mc-a-139-work:before { content: "\f18a"; }
+.cyb-mc-a-140-star:before { content: "\f18b"; }
+.cyb-mc-a-141-gif:before { content: "\f18c"; }
+.cyb-mc-a-142-download:before { content: "\f18d"; }
+.cyb-mc-a-143-gavel:before { content: "\f18e"; }
+.cyb-mc-a-144-translate:before { content: "\f18f"; }
+.cyb-mc-a-145-flip-1:before { content: "\f190"; }
+.cyb-mc-a-146-flip:before { content: "\f191"; }
+.cyb-mc-a-147-departures:before { content: "\f192"; }
+.cyb-mc-a-148-arrivals:before { content: "\f193"; }
+.cyb-mc-a-149-fingerprint:before { content: "\f194"; }
+.cyb-mc-a-150-find-1:before { content: "\f195"; }
+.cyb-mc-a-151-find:before { content: "\f196"; }
+.cyb-mc-a-152-feedback:before { content: "\f197"; }
+.cyb-mc-a-153-heart-1:before { content: "\f198"; }
+.cyb-mc-a-154-heart:before { content: "\f199"; }
+.cyb-mc-a-155-face:before { content: "\f19a"; }
+.cyb-mc-a-156-extension:before { content: "\f19b"; }
+.cyb-mc-a-157-explore:before { content: "\f19c"; }
+.cyb-mc-a-158-logout:before { content: "\f19d"; }
+.cyb-mc-a-159-seat:before { content: "\f19e"; }
+.cyb-mc-a-160-calendar-1:before { content: "\f19f"; }
+.cyb-mc-a-161-euro:before { content: "\f1a0"; }
+.cyb-mc-a-162-eject:before { content: "\f1a1"; }
+.cyb-mc-a-163-pie-chart-1:before { content: "\f1a2"; }
+.cyb-mc-a-164-pie-chart:before { content: "\f1a3"; }
+.cyb-mc-a-165-done-1:before { content: "\f1a4"; }
+.cyb-mc-a-166-done:before { content: "\f1a5"; }
+.cyb-mc-a-167-server:before { content: "\f1a6"; }
+.cyb-mc-a-168-file:before { content: "\f1a7"; }
+.cyb-mc-a-169-delete-1:before { content: "\f1a8"; }
+.cyb-mc-a-170-delete:before { content: "\f1a9"; }
+.cyb-mc-a-171-calendar:before { content: "\f1aa"; }
+.cyb-mc-a-172-dashboard:before { content: "\f1ab"; }
+.cyb-mc-a-173-credit-card-1:before { content: "\f1ac"; }
+.cyb-mc-a-174-copyright:before { content: "\f1ad"; }
+.cyb-mc-a-175-compare:before { content: "\f1ae"; }
+.cyb-mc-a-176-coding:before { content: "\f1af"; }
+.cyb-mc-a-177-book-1:before { content: "\f1b0"; }
+.cyb-mc-a-178-chrome:before { content: "\f1b1"; }
+.cyb-mc-a-179-checked:before { content: "\f1b2"; }
+.cyb-mc-a-180-history:before { content: "\f1b3"; }
+.cyb-mc-a-181-credit-card:before { content: "\f1b4"; }
+.cyb-mc-a-182-membership:before { content: "\f1b5"; }
+.cyb-mc-a-183-gift-card:before { content: "\f1b6"; }
+.cyb-mc-a-184-camera:before { content: "\f1b7"; }
+.cyb-mc-a-185-reload:before { content: "\f1b8"; }
+.cyb-mc-a-186-build:before { content: "\f1b9"; }
+.cyb-mc-a-187-bug:before { content: "\f1ba"; }
+.cyb-mc-a-188-bookmark-1:before { content: "\f1bb"; }
+.cyb-mc-a-189-bookmark:before { content: "\f1bc"; }
+.cyb-mc-a-190-book:before { content: "\f1bd"; }
+.cyb-mc-a-191-cloud-computing:before { content: "\f1be"; }
+.cyb-mc-a-192-refresh:before { content: "\f1bf"; }
+.cyb-mc-a-193-clipboard-5:before { content: "\f1c0"; }
+.cyb-mc-a-194-clipboard-4:before { content: "\f1c1"; }
+.cyb-mc-a-195-clipboard-3:before { content: "\f1c2"; }
+.cyb-mc-a-196-clipboard-2:before { content: "\f1c3"; }
+.cyb-mc-a-197-clipboard-1:before { content: "\f1c4"; }
+.cyb-mc-a-198-clipboard:before { content: "\f1c5"; }
+.cyb-mc-a-199-analytics:before { content: "\f1c6"; }
+.cyb-mc-a-200-ratio:before { content: "\f1c7"; }
+.cyb-mc-a-201-announcement:before { content: "\f1c8"; }
+.cyb-mc-a-202-android:before { content: "\f1c9"; }
+.cyb-mc-a-203-expand:before { content: "\f1ca"; }
+.cyb-mc-a-204-alarm-clock-3:before { content: "\f1cb"; }
+.cyb-mc-a-205-alarm-clock-2:before { content: "\f1cc"; }
+.cyb-mc-a-206-alarm-clock-1:before { content: "\f1cd"; }
+.cyb-mc-a-207-alarm-clock:before { content: "\f1ce"; }
+.cyb-mc-a-208-shopping-cart:before { content: "\f1cf"; }
+.cyb-mc-a-209-user-1:before { content: "\f1d0"; }
+.cyb-mc-a-210-user:before { content: "\f1d1"; }
+.cyb-mc-a-211-wallet:before { content: "\f1d2"; }
+.cyb-mc-a-212-bank:before { content: "\f1d3"; }
+.cyb-mc-a-213-accessible:before { content: "\f1d4"; }
+.cyb-mc-a-214-accesibility:before { content: "\f1d5"; }
+.cyb-mc-a-215-3d:before { content: "\f1d6"; }

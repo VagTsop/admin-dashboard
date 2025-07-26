@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "b-responsive-design";
+  src: url("./b-responsive-design.eot");
+  src: url("./b-responsive-design.eot?#iefix") format("embedded-opentype"),
+       url("./b-responsive-design.woff") format("woff"),
+       url("./b-responsive-design.ttf") format("truetype"),
+       url("./b-responsive-design.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="cyb-s-brd-"]:before, [class*=" cyb-s-brd-"]:before,
+[class^="cyb-s-brd-"]:after, [class*=" cyb-s-brd-"]:after {   
+font-family: "b-responsive-design" !important;
+font-size: 20px;
+font-style: normal !important;
+font-weight: normal !important;
+font-variant: normal !important;
+text-transform: none !important;
+text-align: center;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+.cyb-s-brd-001-responsive:before { content: "\f100"; }
+.cyb-s-brd-002-responsive-1:before { content: "\f101"; }
+.cyb-s-brd-003-tablet:before { content: "\f102"; }
+.cyb-s-brd-004-smartphone:before { content: "\f103"; }
+.cyb-s-brd-005-responsive-2:before { content: "\f104"; }
+.cyb-s-brd-006-laptop:before { content: "\f105"; }
+.cyb-s-brd-007-desktop:before { content: "\f106"; }
+.cyb-s-brd-008-flip:before { content: "\f107"; }
+.cyb-s-brd-009-responsive-3:before { content: "\f108"; }
+.cyb-s-brd-010-graphic-design:before { content: "\f109"; }
+.cyb-s-brd-011-api:before { content: "\f10a"; }
+.cyb-s-brd-012-analytics:before { content: "\f10b"; }
+.cyb-s-brd-013-responsive-4:before { content: "\f10c"; }
+.cyb-s-brd-014-laptop-1:before { content: "\f10d"; }
+.cyb-s-brd-015-wireframe:before { content: "\f10e"; }
+.cyb-s-brd-016-wireframe-1:before { content: "\f10f"; }
+.cyb-s-brd-017-wireframe-2:before { content: "\f110"; }
+.cyb-s-brd-018-homepage:before { content: "\f111"; }
+.cyb-s-brd-019-domain:before { content: "\f112"; }
+.cyb-s-brd-020-responsive-5:before { content: "\f113"; }
+.cyb-s-brd-021-laptop-2:before { content: "\f114"; }
+.cyb-s-brd-022-laptop-3:before { content: "\f115"; }
+.cyb-s-brd-023-sitemap:before { content: "\f116"; }
+.cyb-s-brd-024-admin:before { content: "\f117"; }
+.cyb-s-brd-025-responsive-6:before { content: "\f118"; }
+.cyb-s-brd-026-settings:before { content: "\f119"; }
+.cyb-s-brd-027-coding:before { content: "\f11a"; }
+.cyb-s-brd-028-responsive-7:before { content: "\f11b"; }
+.cyb-s-brd-029-view:before { content: "\f11c"; }
+.cyb-s-brd-030-browser:before { content: "\f11d"; }
+.cyb-s-brd-031-enlarge:before { content: "\f11e"; }
+.cyb-s-brd-032-landscape:before { content: "\f11f"; }
+.cyb-s-brd-033-picture:before { content: "\f120"; }
+.cyb-s-brd-034-browser-1:before { content: "\f121"; }
+.cyb-s-brd-035-frame:before { content: "\f122"; }
+.cyb-s-brd-036-tabs:before { content: "\f123"; }
+.cyb-s-brd-037-smartphone-1:before { content: "\f124"; }
+.cyb-s-brd-038-profile:before { content: "\f125"; }
+.cyb-s-brd-039-profile-1:before { content: "\f126"; }
+.cyb-s-brd-040-profile-2:before { content: "\f127"; }

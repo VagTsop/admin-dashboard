@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "synchronize";
+  src: url("./synchronize.eot");
+  src: url("./synchronize.eot?#iefix") format("embedded-opentype"),
+       url("./synchronize.woff") format("woff"),
+       url("./synchronize.ttf") format("truetype"),
+       url("./synchronize.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="cyb-gs-s-"]:before, [class*=" cyb-gs-s-"]:before,
+[class^="cyb-gs-s-"]:after, [class*=" cyb-gs-s-"]:after {   
+font-family: "synchronize" !important;
+font-size: 20px;
+font-style: normal !important;
+font-weight: normal !important;
+font-variant: normal !important;
+text-transform: none !important;
+text-align: center;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+.cyb-gs-s-recycling:before { content: "\f100"; }
+.cyb-gs-s-synchronize:before { content: "\f101"; }
+.cyb-gs-s-synchronize-1:before { content: "\f102"; }
+.cyb-gs-s-synchronize-10:before { content: "\f103"; }
+.cyb-gs-s-synchronize-2:before { content: "\f104"; }
+.cyb-gs-s-synchronize-3:before { content: "\f105"; }
+.cyb-gs-s-synchronize-4:before { content: "\f106"; }
+.cyb-gs-s-synchronize-5:before { content: "\f107"; }
+.cyb-gs-s-synchronize-6:before { content: "\f108"; }
+.cyb-gs-s-synchronize-7:before { content: "\f109"; }
+.cyb-gs-s-synchronize-8:before { content: "\f10a"; }
+.cyb-gs-s-synchronize-9:before { content: "\f10b"; }

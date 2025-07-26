@@ -1,0 +1,22 @@
+[
+  {
+    "category": "Group 1",
+    "accessibleApps": 40,
+    "groupMembers": 55
+  },
+  {
+    "category": "Group 2",
+    "accessibleApps": 30,
+    "groupMembers": 78
+  },
+  {
+    "category": "Group 3",
+    "accessibleApps": 27,
+    "groupMembers": 40
+  },
+  {
+    "category": "Group 4",
+    "accessibleApps": 27,
+    "groupMembers": 40
+  }
+]

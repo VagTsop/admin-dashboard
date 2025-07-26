@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "c-building";
+  src: url("./c-building.eot");
+  src: url("./c-building.eot?#iefix") format("embedded-opentype"),
+       url("./c-building.woff") format("woff"),
+       url("./c-building.ttf") format("truetype"),
+       url("./c-building.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="cyb-b-cb-"]:before, [class*=" cyb-b-cb-"]:before,
+[class^="cyb-b-cb-"]:after, [class*=" cyb-b-cb-"]:after {   
+font-family: "c-building" !important;
+font-size: 20px;
+font-style: normal !important;
+font-weight: normal !important;
+font-variant: normal !important;
+text-transform: none !important;
+text-align: center;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+.cyb-b-cb-001-shop-1:before { content: "\f100"; }
+.cyb-b-cb-002-shop:before { content: "\f101"; }
+.cyb-b-cb-003-school:before { content: "\f102"; }
+.cyb-b-cb-004-coffee-shop:before { content: "\f103"; }
+.cyb-b-cb-005-house-10:before { content: "\f104"; }
+.cyb-b-cb-006-house-9:before { content: "\f105"; }
+.cyb-b-cb-007-house-8:before { content: "\f106"; }
+.cyb-b-cb-008-house-7:before { content: "\f107"; }
+.cyb-b-cb-009-house-6:before { content: "\f108"; }
+.cyb-b-cb-010-house-5:before { content: "\f109"; }
+.cyb-b-cb-011-house-4:before { content: "\f10a"; }
+.cyb-b-cb-012-construction-9:before { content: "\f10b"; }
+.cyb-b-cb-013-construction-8:before { content: "\f10c"; }
+.cyb-b-cb-014-construction-7:before { content: "\f10d"; }
+.cyb-b-cb-015-construction-6:before { content: "\f10e"; }
+.cyb-b-cb-016-construction-5:before { content: "\f10f"; }
+.cyb-b-cb-017-construction-4:before { content: "\f110"; }
+.cyb-b-cb-018-house-3:before { content: "\f111"; }
+.cyb-b-cb-019-house-2:before { content: "\f112"; }
+.cyb-b-cb-020-house-1:before { content: "\f113"; }
+.cyb-b-cb-021-house:before { content: "\f114"; }
+.cyb-b-cb-022-hospital-1:before { content: "\f115"; }
+.cyb-b-cb-023-hospital:before { content: "\f116"; }
+.cyb-b-cb-024-landscape:before { content: "\f117"; }
+.cyb-b-cb-025-factory-1:before { content: "\f118"; }
+.cyb-b-cb-026-factory:before { content: "\f119"; }
+.cyb-b-cb-027-construction-3:before { content: "\f11a"; }
+.cyb-b-cb-028-construction-2:before { content: "\f11b"; }
+.cyb-b-cb-029-construction-1:before { content: "\f11c"; }
+.cyb-b-cb-030-construction:before { content: "\f11d"; }
+.cyb-b-cb-031-building-2:before { content: "\f11e"; }
+.cyb-b-cb-032-building-1:before { content: "\f11f"; }
+.cyb-b-cb-033-building:before { content: "\f120"; }
+.cyb-b-cb-034-bank-2:before { content: "\f121"; }
+.cyb-b-cb-035-bank-1:before { content: "\f122"; }
+.cyb-b-cb-036-bank:before { content: "\f123"; }

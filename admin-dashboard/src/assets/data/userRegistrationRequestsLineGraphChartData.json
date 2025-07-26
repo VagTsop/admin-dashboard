@@ -1,0 +1,103 @@
+[
+  {
+    "date": "2012-12-28",
+    "userRegistrationRequests": 0
+  },
+  {
+    "date": "2012-12-29",
+    "userRegistrationRequests": 40
+  },
+  {
+    "date": "2012-12-30",
+    "userRegistrationRequests": 35
+  },
+  {
+    "date": "2012-12-31",
+    "userRegistrationRequests": 45
+  },
+  {
+    "date": "2013-01-01",
+    "userRegistrationRequests": 55
+  },
+  {
+    "date": "2013-01-02",
+    "userRegistrationRequests": 40
+  },
+  {
+    "date": "2013-01-03",
+    "userRegistrationRequests": 35
+  },
+  {
+    "date": "2013-01-04",
+    "userRegistrationRequests": 45
+  },
+  {
+    "date": "2013-01-05",
+    "userRegistrationRequests": 35
+  },
+  {
+    "date": "2013-01-06",
+    "userRegistrationRequests": 150
+  },
+  {
+    "date": "2013-01-07",
+    "userRegistrationRequests": 78
+  },
+  {
+    "date": "2013-01-08",
+    "userRegistrationRequests": 85
+  },
+  {
+    "date": "2013-01-09",
+    "userRegistrationRequests": 60
+  },
+  {
+    "date": "2013-01-10",
+    "userRegistrationRequests": 120
+  },
+  {
+    "date": "2013-01-11",
+    "userRegistrationRequests": 22
+  },
+  {
+    "date": "2013-01-12",
+    "userRegistrationRequests": 36
+  },
+  {
+    "date": "2013-01-13",
+    "userRegistrationRequests": 55
+  },
+  {
+    "date": "2013-01-14",
+    "userRegistrationRequests": 66
+  },
+  {
+    "date": "2013-01-15",
+    "userRegistrationRequests": 77
+  },
+  {
+    "date": "2013-01-16",
+    "userRegistrationRequests": 91
+  },
+  {
+    "date": "2013-01-17",
+    "userRegistrationRequests": 85
+  },
+  {
+    "date": "2013-01-18",
+    "userRegistrationRequests": 85
+  },
+  {
+    "date": "2013-01-19",
+    "userRegistrationRequests": 45
+  },
+  {
+    "date": "2013-01-20",
+    "userRegistrationRequests": 55
+  },
+  {
+    "date": "2013-01-21",
+    "userRegistrationRequests": 60,
+    "bulletDisabled": true
+  }
+]

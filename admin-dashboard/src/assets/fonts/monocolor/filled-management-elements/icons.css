@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "filled-management-elements";
+  src: url("./filled-management-elements.eot");
+  src: url("./filled-management-elements.eot?#iefix") format("embedded-opentype"),
+       url("./filled-management-elements.woff") format("woff"),
+       url("./filled-management-elements.ttf") format("truetype"),
+       url("./filled-management-elements.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="cyb-mc-fme-"]:before, [class*=" cyb-mc-fme-"]:before,
+[class^="cyb-mc-fme-"]:after, [class*=" cyb-mc-fme-"]:after {   
+font-family: "filled-management-elements" !important;
+font-size: 20px;
+font-style: normal !important;
+font-weight: normal !important;
+font-variant: normal !important;
+text-transform: none !important;
+text-align: center;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+.cyb-mc-fme-analytics:before { content: "\f100"; }
+.cyb-mc-fme-boss:before { content: "\f101"; }
+.cyb-mc-fme-businessmen:before { content: "\f102"; }
+.cyb-mc-fme-collaboration:before { content: "\f103"; }
+.cyb-mc-fme-collaboration-1:before { content: "\f104"; }
+.cyb-mc-fme-decision-making:before { content: "\f105"; }
+.cyb-mc-fme-decision-making-1:before { content: "\f106"; }
+.cyb-mc-fme-goal:before { content: "\f107"; }
+.cyb-mc-fme-group:before { content: "\f108"; }
+.cyb-mc-fme-group-1:before { content: "\f109"; }
+.cyb-mc-fme-group-2:before { content: "\f10a"; }
+.cyb-mc-fme-id-card:before { content: "\f10b"; }
+.cyb-mc-fme-idea:before { content: "\f10c"; }
+.cyb-mc-fme-idea-1:before { content: "\f10d"; }
+.cyb-mc-fme-location:before { content: "\f10e"; }
+.cyb-mc-fme-management:before { content: "\f10f"; }
+.cyb-mc-fme-manager:before { content: "\f110"; }
+.cyb-mc-fme-manager-1:before { content: "\f111"; }
+.cyb-mc-fme-manager-2:before { content: "\f112"; }
+.cyb-mc-fme-manager-3:before { content: "\f113"; }
+.cyb-mc-fme-manager-4:before { content: "\f114"; }
+.cyb-mc-fme-manager-5:before { content: "\f115"; }
+.cyb-mc-fme-manager-6:before { content: "\f116"; }
+.cyb-mc-fme-managers:before { content: "\f117"; }
+.cyb-mc-fme-meeting:before { content: "\f118"; }
+.cyb-mc-fme-meeting-1:before { content: "\f119"; }
+.cyb-mc-fme-office-block:before { content: "\f11a"; }
+.cyb-mc-fme-organization:before { content: "\f11b"; }
+.cyb-mc-fme-pie-chart:before { content: "\f11c"; }
+.cyb-mc-fme-presentation:before { content: "\f11d"; }
+.cyb-mc-fme-presentation-1:before { content: "\f11e"; }
+.cyb-mc-fme-presentation-2:before { content: "\f11f"; }
+.cyb-mc-fme-presentation-3:before { content: "\f120"; }
+.cyb-mc-fme-presentation-4:before { content: "\f121"; }
+.cyb-mc-fme-promoting:before { content: "\f122"; }
+.cyb-mc-fme-promotion:before { content: "\f123"; }
+.cyb-mc-fme-promotion-1:before { content: "\f124"; }
+.cyb-mc-fme-rank:before { content: "\f125"; }
+.cyb-mc-fme-resume:before { content: "\f126"; }
+.cyb-mc-fme-search:before { content: "\f127"; }
+.cyb-mc-fme-selection:before { content: "\f128"; }
+.cyb-mc-fme-settings:before { content: "\f129"; }
+.cyb-mc-fme-speech:before { content: "\f12a"; }
+.cyb-mc-fme-speech-1:before { content: "\f12b"; }
+.cyb-mc-fme-strategic:before { content: "\f12c"; }
+.cyb-mc-fme-strategy:before { content: "\f12d"; }
+.cyb-mc-fme-target:before { content: "\f12e"; }
+.cyb-mc-fme-time:before { content: "\f12f"; }
+.cyb-mc-fme-video-conference:before { content: "\f130"; }
+.cyb-mc-fme-workspace:before { content: "\f131"; }

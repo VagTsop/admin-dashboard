@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "block-schemes";
+  src: url("./block-schemes.eot");
+  src: url("./block-schemes.eot?#iefix") format("embedded-opentype"),
+       url("./block-schemes.woff") format("woff"),
+       url("./block-schemes.ttf") format("truetype"),
+       url("./block-schemes.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="cyb-ls-bs-"]:before, [class*=" cyb-ls-bs-"]:before,
+[class^="cyb-ls-bs-"]:after, [class*=" cyb-ls-bs-"]:after {   
+font-family: "block-schemes" !important;
+font-size: 20px;
+font-style: normal !important;
+font-weight: normal !important;
+font-variant: normal !important;
+text-transform: none !important;
+text-align: center;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+.cyb-ls-bs-black-geometric-shapes-graphic:before { content: "\f100"; }
+.cyb-ls-bs-black-geometrical-shapes-graphic:before { content: "\f101"; }
+.cyb-ls-bs-black-squares-and-lines-in-a-graphic-of-interface:before { content: "\f102"; }
+.cyb-ls-bs-black-squares-blocks-scheme:before { content: "\f103"; }
+.cyb-ls-bs-block-scheme:before { content: "\f104"; }
+.cyb-ls-bs-block-scheme-of-basic-black-geometric-shapes:before { content: "\f105"; }
+.cyb-ls-bs-block-scheme-of-basic-geometrical-shapes:before { content: "\f106"; }
+.cyb-ls-bs-block-scheme-of-black-geometrical-shapes:before { content: "\f107"; }
+.cyb-ls-bs-block-scheme-of-four-basic-geometric-black-shapes:before { content: "\f108"; }
+.cyb-ls-bs-block-scheme-of-four-squares-outlines:before { content: "\f109"; }
+.cyb-ls-bs-block-scheme-of-geometrical-shapes:before { content: "\f10a"; }
+.cyb-ls-bs-block-scheme-of-geometrical-shapes-outlines:before { content: "\f10b"; }
+.cyb-ls-bs-block-scheme-of-squares:before { content: "\f10c"; }
+.cyb-ls-bs-block-scheme-of-three-black-squares:before { content: "\f10d"; }
+.cyb-ls-bs-block-scheme-of-three-geometrical-shapes:before { content: "\f10e"; }
+.cyb-ls-bs-block-schemes:before { content: "\f10f"; }
+.cyb-ls-bs-block-schemes-of-black-shapes:before { content: "\f110"; }
+.cyb-ls-bs-block-schemes-of-black-shapes-1:before { content: "\f111"; }
+.cyb-ls-bs-block-schemes-of-three-geometric-shapes-connected-by-lines:before { content: "\f112"; }
+.cyb-ls-bs-block-schemes-of-two-squares-outlines:before { content: "\f113"; }
+.cyb-ls-bs-block-schemes-with-geometrical-basic-shapes-outlines:before { content: "\f114"; }
+.cyb-ls-bs-blocks-scheme:before { content: "\f115"; }
+.cyb-ls-bs-blocks-scheme-graphic:before { content: "\f116"; }
+.cyb-ls-bs-blocks-scheme-of-five-geometric-basic-black-shapes:before { content: "\f117"; }
+.cyb-ls-bs-blocks-scheme-of-five-squares:before { content: "\f118"; }
+.cyb-ls-bs-blocks-scheme-of-squares-and-lines:before { content: "\f119"; }
+.cyb-ls-bs-blocks-scheme-of-three-black-geometric-shapes:before { content: "\f11a"; }
+.cyb-ls-bs-blocks-scheme-of-three-shapes:before { content: "\f11b"; }
+.cyb-ls-bs-business-block-scheme:before { content: "\f11c"; }
+.cyb-ls-bs-five-geometrical-shapes-graphic:before { content: "\f11d"; }
+.cyb-ls-bs-five-squares-block-scheme:before { content: "\f11e"; }
+.cyb-ls-bs-four-geometrical-shapes-outlines-scheme:before { content: "\f11f"; }
+.cyb-ls-bs-four-squares-graphic:before { content: "\f120"; }
+.cyb-ls-bs-four-squares-graphic-1:before { content: "\f121"; }
+.cyb-ls-bs-four-squares-graphic-2:before { content: "\f122"; }
+.cyb-ls-bs-four-squares-outlines-graphic-for-business:before { content: "\f123"; }
+.cyb-ls-bs-geometric-figures-graphic:before { content: "\f124"; }
+.cyb-ls-bs-geometric-shape-graphic:before { content: "\f125"; }
+.cyb-ls-bs-geometric-shapes-graphic:before { content: "\f126"; }
+.cyb-ls-bs-geometrical-basic-shapes-outlines-in-a-graphic-connected-by-lines:before { content: "\f127"; }
+.cyb-ls-bs-geometrical-blocks-scheme:before { content: "\f128"; }
+.cyb-ls-bs-geometrical-shapes-outlines-graphic:before { content: "\f129"; }
+.cyb-ls-bs-graphic-connection-symbol-between-a-square-and-a-circle:before { content: "\f12a"; }
+.cyb-ls-bs-graphic-of-squares-and-lines-for-business-interface:before { content: "\f12b"; }
+.cyb-ls-bs-graphical-squares:before { content: "\f12c"; }
+.cyb-ls-bs-hierarchical-block-scheme-of-squares:before { content: "\f12d"; }
+.cyb-ls-bs-network-graphic-of-three-squares:before { content: "\f12e"; }
+.cyb-ls-bs-six-black-squares-graphic:before { content: "\f12f"; }
+.cyb-ls-bs-six-squares-graphic:before { content: "\f130"; }
+.cyb-ls-bs-square-and-circle-graphic:before { content: "\f131"; }
+.cyb-ls-bs-square-and-circle-shapes-with-line-union-graphic:before { content: "\f132"; }
+.cyb-ls-bs-square-and-circle-union-with-a-vertical-line-simple-graphic:before { content: "\f133"; }
+.cyb-ls-bs-square-blocks-graphic:before { content: "\f134"; }
+.cyb-ls-bs-square-connected-to-circle-graphic:before { content: "\f135"; }
+.cyb-ls-bs-squares-blocks-scheme:before { content: "\f136"; }
+.cyb-ls-bs-squares-couple-graphic:before { content: "\f137"; }
+.cyb-ls-bs-three-black-shapes-block-scheme:before { content: "\f138"; }
+.cyb-ls-bs-three-block-geometrical-shapes-on-a-graphic:before { content: "\f139"; }
+.cyb-ls-bs-three-geometrical-shapes-graphic:before { content: "\f13a"; }
+.cyb-ls-bs-three-geometrical-shapes-graphic-1:before { content: "\f13b"; }
+.cyb-ls-bs-three-squares-blocks-scheme:before { content: "\f13c"; }
+.cyb-ls-bs-three-squares-graphic:before { content: "\f13d"; }
+.cyb-ls-bs-three-squares-outlines-graphic:before { content: "\f13e"; }
+.cyb-ls-bs-two-black-squares-vertical-line-graphic-symbol:before { content: "\f13f"; }
+.cyb-ls-bs-two-connected-squares-graphic:before { content: "\f140"; }
+.cyb-ls-bs-two-geometric-shapes-graphic-outline:before { content: "\f141"; }
+.cyb-ls-bs-two-squares-business-graphic:before { content: "\f142"; }
+.cyb-ls-bs-two-squares-outline-graphic-interface-symbol:before { content: "\f143"; }

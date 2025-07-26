@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "a-network";
+  src: url("./a-network.eot");
+  src: url("./a-network.eot?#iefix") format("embedded-opentype"),
+       url("./a-network.woff") format("woff"),
+       url("./a-network.ttf") format("truetype"),
+       url("./a-network.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="cyb-ls-an-"]:before, [class*=" cyb-ls-an-"]:before,
+[class^="cyb-ls-an-"]:after, [class*=" cyb-ls-an-"]:after {   
+font-family: "a-network" !important;
+font-size: 20px;
+font-style: normal !important;
+font-weight: normal !important;
+font-variant: normal !important;
+text-transform: none !important;
+text-align: center;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+.cyb-ls-an-060-bluetooth:before { content: "\f100"; }
+.cyb-ls-an-060-bluetooth-1:before { content: "\f101"; }
+.cyb-ls-an-060-coffee-cup:before { content: "\f102"; }
+.cyb-ls-an-060-global:before { content: "\f103"; }
+.cyb-ls-an-060-heart:before { content: "\f104"; }
+.cyb-ls-an-060-laptop:before { content: "\f105"; }
+.cyb-ls-an-060-network:before { content: "\f106"; }
+.cyb-ls-an-060-network-1:before { content: "\f107"; }
+.cyb-ls-an-060-network-10:before { content: "\f108"; }
+.cyb-ls-an-060-network-11:before { content: "\f109"; }
+.cyb-ls-an-060-network-12:before { content: "\f10a"; }
+.cyb-ls-an-060-network-13:before { content: "\f10b"; }
+.cyb-ls-an-060-network-14:before { content: "\f10c"; }
+.cyb-ls-an-060-network-15:before { content: "\f10d"; }
+.cyb-ls-an-060-network-16:before { content: "\f10e"; }
+.cyb-ls-an-060-network-17:before { content: "\f10f"; }
+.cyb-ls-an-060-network-18:before { content: "\f110"; }
+.cyb-ls-an-060-network-19:before { content: "\f111"; }
+.cyb-ls-an-060-network-2:before { content: "\f112"; }
+.cyb-ls-an-060-network-20:before { content: "\f113"; }
+.cyb-ls-an-060-network-21:before { content: "\f114"; }
+.cyb-ls-an-060-network-22:before { content: "\f115"; }
+.cyb-ls-an-060-network-23:before { content: "\f116"; }
+.cyb-ls-an-060-network-24:before { content: "\f117"; }
+.cyb-ls-an-060-network-25:before { content: "\f118"; }
+.cyb-ls-an-060-network-26:before { content: "\f119"; }
+.cyb-ls-an-060-network-27:before { content: "\f11a"; }
+.cyb-ls-an-060-network-3:before { content: "\f11b"; }
+.cyb-ls-an-060-network-4:before { content: "\f11c"; }
+.cyb-ls-an-060-network-5:before { content: "\f11d"; }
+.cyb-ls-an-060-network-6:before { content: "\f11e"; }
+.cyb-ls-an-060-network-7:before { content: "\f11f"; }
+.cyb-ls-an-060-network-8:before { content: "\f120"; }
+.cyb-ls-an-060-network-9:before { content: "\f121"; }
+.cyb-ls-an-060-satellite:before { content: "\f122"; }
+.cyb-ls-an-060-wifi:before { content: "\f123"; }
+.cyb-ls-an-060-wifi-1:before { content: "\f124"; }
+.cyb-ls-an-060-wifi-10:before { content: "\f125"; }
+.cyb-ls-an-060-wifi-11:before { content: "\f126"; }
+.cyb-ls-an-060-wifi-12:before { content: "\f127"; }
+.cyb-ls-an-060-wifi-13:before { content: "\f128"; }
+.cyb-ls-an-060-wifi-14:before { content: "\f129"; }
+.cyb-ls-an-060-wifi-15:before { content: "\f12a"; }
+.cyb-ls-an-060-wifi-16:before { content: "\f12b"; }
+.cyb-ls-an-060-wifi-17:before { content: "\f12c"; }
+.cyb-ls-an-060-wifi-18:before { content: "\f12d"; }
+.cyb-ls-an-060-wifi-19:before { content: "\f12e"; }
+.cyb-ls-an-060-wifi-2:before { content: "\f12f"; }
+.cyb-ls-an-060-wifi-20:before { content: "\f130"; }
+.cyb-ls-an-060-wifi-21:before { content: "\f131"; }
+.cyb-ls-an-060-wifi-22:before { content: "\f132"; }
+.cyb-ls-an-060-wifi-3:before { content: "\f133"; }
+.cyb-ls-an-060-wifi-4:before { content: "\f134"; }
+.cyb-ls-an-060-wifi-5:before { content: "\f135"; }
+.cyb-ls-an-060-wifi-6:before { content: "\f136"; }
+.cyb-ls-an-060-wifi-7:before { content: "\f137"; }
+.cyb-ls-an-060-wifi-8:before { content: "\f138"; }
+.cyb-ls-an-060-wifi-9:before { content: "\f139"; }
+.cyb-ls-an-060-worldwide:before { content: "\f13a"; }

@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "artificial-intelligence";
+  src: url("./artificial-intelligence.eot");
+  src: url("./artificial-intelligence.eot?#iefix") format("embedded-opentype"),
+       url("./artificial-intelligence.woff") format("woff"),
+       url("./artificial-intelligence.ttf") format("truetype"),
+       url("./artificial-intelligence.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="cyb-ls-ai-"]:before, [class*=" cyb-ls-ai-"]:before,
+[class^="cyb-ls-ai-"]:after, [class*=" cyb-ls-ai-"]:after {   
+font-family: "artificial-intelligence" !important;
+font-size: 20px;
+font-style: normal !important;
+font-weight: normal !important;
+font-variant: normal !important;
+text-transform: none !important;
+text-align: center;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+.cyb-ls-ai-001-detection:before { content: "\f100"; }
+.cyb-ls-ai-002-robot-15:before { content: "\f101"; }
+.cyb-ls-ai-003-wristwatch-1:before { content: "\f102"; }
+.cyb-ls-ai-004-computer:before { content: "\f103"; }
+.cyb-ls-ai-005-aeroplane:before { content: "\f104"; }
+.cyb-ls-ai-006-robot-14:before { content: "\f105"; }
+.cyb-ls-ai-007-turing-test:before { content: "\f106"; }
+.cyb-ls-ai-008-robot-13:before { content: "\f107"; }
+.cyb-ls-ai-009-rocket:before { content: "\f108"; }
+.cyb-ls-ai-010-prediction:before { content: "\f109"; }
+.cyb-ls-ai-011-teaching:before { content: "\f10a"; }
+.cyb-ls-ai-012-check-list:before { content: "\f10b"; }
+.cyb-ls-ai-013-robot-12:before { content: "\f10c"; }
+.cyb-ls-ai-014-business-1:before { content: "\f10d"; }
+.cyb-ls-ai-015-ball:before { content: "\f10e"; }
+.cyb-ls-ai-016-speech-bubble:before { content: "\f10f"; }
+.cyb-ls-ai-017-replacement:before { content: "\f110"; }
+.cyb-ls-ai-018-gaming:before { content: "\f111"; }
+.cyb-ls-ai-019-binary-code-3:before { content: "\f112"; }
+.cyb-ls-ai-020-robot-11:before { content: "\f113"; }
+.cyb-ls-ai-021-network-2:before { content: "\f114"; }
+.cyb-ls-ai-022-chat:before { content: "\f115"; }
+.cyb-ls-ai-023-mail:before { content: "\f116"; }
+.cyb-ls-ai-024-facial-recognition:before { content: "\f117"; }
+.cyb-ls-ai-025-shop-assistant:before { content: "\f118"; }
+.cyb-ls-ai-026-shopping-bag:before { content: "\f119"; }
+.cyb-ls-ai-027-science-2:before { content: "\f11a"; }
+.cyb-ls-ai-028-train:before { content: "\f11b"; }
+.cyb-ls-ai-029-speech:before { content: "\f11c"; }
+.cyb-ls-ai-030-translation:before { content: "\f11d"; }
+.cyb-ls-ai-031-laptop:before { content: "\f11e"; }
+.cyb-ls-ai-032-binary-code-2:before { content: "\f11f"; }
+.cyb-ls-ai-033-robot-10:before { content: "\f120"; }
+.cyb-ls-ai-034-smart-home:before { content: "\f121"; }
+.cyb-ls-ai-035-recognition:before { content: "\f122"; }
+.cyb-ls-ai-036-business:before { content: "\f123"; }
+.cyb-ls-ai-037-coins:before { content: "\f124"; }
+.cyb-ls-ai-038-mechanical-arm-1:before { content: "\f125"; }
+.cyb-ls-ai-039-machine:before { content: "\f126"; }
+.cyb-ls-ai-040-robot-9:before { content: "\f127"; }
+.cyb-ls-ai-041-data-analysis-1:before { content: "\f128"; }
+.cyb-ls-ai-042-robots:before { content: "\f129"; }
+.cyb-ls-ai-043-wristwatch:before { content: "\f12a"; }
+.cyb-ls-ai-044-smartphone-1:before { content: "\f12b"; }
+.cyb-ls-ai-045-robot-8:before { content: "\f12c"; }
+.cyb-ls-ai-046-code:before { content: "\f12d"; }
+.cyb-ls-ai-047-motorway:before { content: "\f12e"; }
+.cyb-ls-ai-048-road:before { content: "\f12f"; }
+.cyb-ls-ai-049-book:before { content: "\f130"; }
+.cyb-ls-ai-050-nurse:before { content: "\f131"; }
+.cyb-ls-ai-051-robot-7:before { content: "\f132"; }
+.cyb-ls-ai-052-servers-1:before { content: "\f133"; }
+.cyb-ls-ai-053-robot-6:before { content: "\f134"; }
+.cyb-ls-ai-054-healthcare:before { content: "\f135"; }
+.cyb-ls-ai-055-science-1:before { content: "\f136"; }
+.cyb-ls-ai-056-science:before { content: "\f137"; }
+.cyb-ls-ai-057-medicine:before { content: "\f138"; }
+.cyb-ls-ai-058-servers:before { content: "\f139"; }
+.cyb-ls-ai-059-chip:before { content: "\f13a"; }
+.cyb-ls-ai-060-drone:before { content: "\f13b"; }
+.cyb-ls-ai-061-network-1:before { content: "\f13c"; }
+.cyb-ls-ai-062-file-transfer:before { content: "\f13d"; }
+.cyb-ls-ai-063-network:before { content: "\f13e"; }
+.cyb-ls-ai-064-secure-data:before { content: "\f13f"; }
+.cyb-ls-ai-065-algorithm-3:before { content: "\f140"; }
+.cyb-ls-ai-066-algorithm-2:before { content: "\f141"; }
+.cyb-ls-ai-067-data-analysis:before { content: "\f142"; }
+.cyb-ls-ai-068-robot-5:before { content: "\f143"; }
+.cyb-ls-ai-069-artificial-intelligence-5:before { content: "\f144"; }
+.cyb-ls-ai-070-thought:before { content: "\f145"; }
+.cyb-ls-ai-071-binary-code-1:before { content: "\f146"; }
+.cyb-ls-ai-072-artificial-intelligence-4:before { content: "\f147"; }
+.cyb-ls-ai-073-binary:before { content: "\f148"; }
+.cyb-ls-ai-074-brain:before { content: "\f149"; }
+.cyb-ls-ai-075-transfer:before { content: "\f14a"; }
+.cyb-ls-ai-076-data-transfer:before { content: "\f14b"; }
+.cyb-ls-ai-077-smartphone:before { content: "\f14c"; }
+.cyb-ls-ai-078-assistant:before { content: "\f14d"; }
+.cyb-ls-ai-079-chess:before { content: "\f14e"; }
+.cyb-ls-ai-080-mechanical-arm:before { content: "\f14f"; }
+.cyb-ls-ai-081-artificial-intelligence-3:before { content: "\f150"; }
+.cyb-ls-ai-082-cloud-computing:before { content: "\f151"; }
+.cyb-ls-ai-083-robot-4:before { content: "\f152"; }
+.cyb-ls-ai-084-binary-code:before { content: "\f153"; }
+.cyb-ls-ai-085-android-2:before { content: "\f154"; }
+.cyb-ls-ai-086-bot:before { content: "\f155"; }
+.cyb-ls-ai-087-android-1:before { content: "\f156"; }
+.cyb-ls-ai-088-android:before { content: "\f157"; }
+.cyb-ls-ai-089-robot-3:before { content: "\f158"; }
+.cyb-ls-ai-090-car:before { content: "\f159"; }
+.cyb-ls-ai-091-algorithm-1:before { content: "\f15a"; }
+.cyb-ls-ai-092-database:before { content: "\f15b"; }
+.cyb-ls-ai-093-artificial-intelligence-2:before { content: "\f15c"; }
+.cyb-ls-ai-094-algorithm:before { content: "\f15d"; }
+.cyb-ls-ai-095-artificial-intelligence-1:before { content: "\f15e"; }
+.cyb-ls-ai-096-robot-2:before { content: "\f15f"; }
+.cyb-ls-ai-097-artificial-intelligence:before { content: "\f160"; }
+.cyb-ls-ai-098-robot-1:before { content: "\f161"; }
+.cyb-ls-ai-099-robot:before { content: "\f162"; }
+.cyb-ls-ai-100-cpu:before { content: "\f163"; }

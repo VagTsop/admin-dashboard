@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "avatar-collection";
+  src: url("./avatar-collection.eot");
+  src: url("./avatar-collection.eot?#iefix") format("embedded-opentype"),
+       url("./avatar-collection.woff") format("woff"),
+       url("./avatar-collection.ttf") format("truetype"),
+       url("./avatar-collection.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="cyb-a-ac-"]:before, [class*=" cyb-a-ac-"]:before,
+[class^="cyb-a-ac-"]:after, [class*=" cyb-a-ac-"]:after {   
+font-family: "avatar-collection" !important;
+font-size: 20px;
+font-style: normal !important;
+font-weight: normal !important;
+font-variant: normal !important;
+text-transform: none !important;
+text-align: center;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+.cyb-a-ac-boy:before { content: "\f100"; }
+.cyb-a-ac-boy-1:before { content: "\f101"; }
+.cyb-a-ac-girl:before { content: "\f102"; }
+.cyb-a-ac-girl-1:before { content: "\f103"; }
+.cyb-a-ac-man:before { content: "\f104"; }
+.cyb-a-ac-man-1:before { content: "\f105"; }
+.cyb-a-ac-man-2:before { content: "\f106"; }
+.cyb-a-ac-man-3:before { content: "\f107"; }
+.cyb-a-ac-man-4:before { content: "\f108"; }

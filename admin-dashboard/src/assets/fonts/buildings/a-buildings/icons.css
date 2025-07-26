@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "a-buildings";
+  src: url("./a-buildings.eot");
+  src: url("./a-buildings.eot?#iefix") format("embedded-opentype"),
+       url("./a-buildings.woff") format("woff"),
+       url("./a-buildings.ttf") format("truetype"),
+       url("./a-buildings.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="cyb-b-ab-"]:before, [class*=" cyb-b-ab-"]:before,
+[class^="cyb-b-ab-"]:after, [class*=" cyb-b-ab-"]:after {   
+font-family: "a-buildings" !important;
+font-size: 20px;
+font-style: normal !important;
+font-weight: normal !important;
+font-variant: normal !important;
+text-transform: none !important;
+text-align: center;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+.cyb-b-ab-architectural-structure:before { content: "\f100"; }
+.cyb-b-ab-building:before { content: "\f101"; }
+.cyb-b-ab-building-1:before { content: "\f102"; }
+.cyb-b-ab-building-2:before { content: "\f103"; }
+.cyb-b-ab-building-3:before { content: "\f104"; }
+.cyb-b-ab-building-4:before { content: "\f105"; }
+.cyb-b-ab-building-5:before { content: "\f106"; }
+.cyb-b-ab-building-6:before { content: "\f107"; }
+.cyb-b-ab-building-7:before { content: "\f108"; }
+.cyb-b-ab-buildings:before { content: "\f109"; }
+.cyb-b-ab-buildings-1:before { content: "\f10a"; }
+.cyb-b-ab-buildings-2:before { content: "\f10b"; }
+.cyb-b-ab-buildings-3:before { content: "\f10c"; }
+.cyb-b-ab-buildings-4:before { content: "\f10d"; }
+.cyb-b-ab-buildings-5:before { content: "\f10e"; }
+.cyb-b-ab-buildings-6:before { content: "\f10f"; }
+.cyb-b-ab-burj-al-arab-building:before { content: "\f110"; }
+.cyb-b-ab-city:before { content: "\f111"; }
+.cyb-b-ab-city-view:before { content: "\f112"; }
+.cyb-b-ab-empire-state-building:before { content: "\f113"; }
+.cyb-b-ab-hospital:before { content: "\f114"; }
+.cyb-b-ab-skyscrapers:before { content: "\f115"; }
+.cyb-b-ab-skyscrapers-1:before { content: "\f116"; }
+.cyb-b-ab-tall-building-with-covered-door:before { content: "\f117"; }
+.cyb-b-ab-tower-building:before { content: "\f118"; }

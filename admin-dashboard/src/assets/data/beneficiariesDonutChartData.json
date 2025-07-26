@@ -1,0 +1,13 @@
+[
+    {
+      "code": "Success",
+      "rate": 85,
+      "color": "#ded709"
+    },
+    {
+      "code": "Error",
+      "rate": 15,
+      "color": "#A0A0A0"
+    }
+  ]
+  

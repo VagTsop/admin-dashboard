@@ -1,0 +1,59 @@
+[
+  {
+    "date": "2013-01-13",
+    "beneficiary1": 0,
+    "beneficiary2": 0,
+    "beneficiary3": 0,
+    "beneficiary4": 0
+  },
+  {
+    "date": "2013-01-14",
+    "beneficiary1": 48,
+    "beneficiary2": 31,
+    "beneficiary3": 40,
+    "beneficiary4": 23
+  },
+  {
+    "date": "2013-01-15",
+    "beneficiary1": 34,
+    "beneficiary2": 45,
+    "beneficiary3": 50,
+    "beneficiary4": 32
+  },
+  {
+    "date": "2013-01-16",
+    "beneficiary1": 35,
+    "beneficiary2": 22,
+    "beneficiary3": 44,
+    "beneficiary4": 70
+  },
+  {
+    "date": "2013-01-17",
+    "beneficiary1": 42,
+    "beneficiary2": 25,
+    "beneficiary3": 34,
+    "beneficiary4": 51
+  },
+  {
+    "date": "2013-01-18",
+    "beneficiary1": 35,
+    "beneficiary2": 22,
+    "beneficiary3": 44,
+    "beneficiary4": 70
+  },
+  {
+    "date": "2013-01-19",
+    "beneficiary1": 55,
+    "beneficiary2": 44,
+    "beneficiary3": 68,
+    "beneficiary4": 40
+  },
+  {
+    "date": "2013-01-20",
+    "beneficiary1": 66,
+    "beneficiary2": 70,
+    "beneficiary3": 40,
+    "beneficiary4": 25,
+    "bulletDisabled": false
+  }
+]

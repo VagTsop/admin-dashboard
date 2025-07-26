@@ -1,0 +1,226 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "the-ultimate";
+  src: url("./the-ultimate.eot");
+  src: url("./the-ultimate.eot?#iefix") format("embedded-opentype"),
+       url("./the-ultimate.woff") format("woff"),
+       url("./the-ultimate.ttf") format("truetype"),
+       url("./the-ultimate.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="cyb-mc-tu-"]:before, [class*=" cyb-mc-tu-"]:before,
+[class^="cyb-mc-tu-"]:after, [class*=" cyb-mc-tu-"]:after {   
+font-family: "the-ultimate" !important;
+font-size: 20px;
+font-style: normal !important;
+font-weight: normal !important;
+font-variant: normal !important;
+text-transform: none !important;
+text-align: center;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+.cyb-mc-tu-alien:before { content: "\f100"; }
+.cyb-mc-tu-ambulance:before { content: "\f101"; }
+.cyb-mc-tu-ambulance-1:before { content: "\f102"; }
+.cyb-mc-tu-aries:before { content: "\f103"; }
+.cyb-mc-tu-armchair:before { content: "\f104"; }
+.cyb-mc-tu-baby:before { content: "\f105"; }
+.cyb-mc-tu-baby-1:before { content: "\f106"; }
+.cyb-mc-tu-baby-girl:before { content: "\f107"; }
+.cyb-mc-tu-back:before { content: "\f108"; }
+.cyb-mc-tu-balance:before { content: "\f109"; }
+.cyb-mc-tu-bar-chart:before { content: "\f10a"; }
+.cyb-mc-tu-bar-chart-1:before { content: "\f10b"; }
+.cyb-mc-tu-battery:before { content: "\f10c"; }
+.cyb-mc-tu-battery-1:before { content: "\f10d"; }
+.cyb-mc-tu-battery-2:before { content: "\f10e"; }
+.cyb-mc-tu-battery-3:before { content: "\f10f"; }
+.cyb-mc-tu-battery-4:before { content: "\f110"; }
+.cyb-mc-tu-bedside-table:before { content: "\f111"; }
+.cyb-mc-tu-beer:before { content: "\f112"; }
+.cyb-mc-tu-binoculars:before { content: "\f113"; }
+.cyb-mc-tu-blind:before { content: "\f114"; }
+.cyb-mc-tu-book:before { content: "\f115"; }
+.cyb-mc-tu-cancer:before { content: "\f116"; }
+.cyb-mc-tu-car:before { content: "\f117"; }
+.cyb-mc-tu-car-1:before { content: "\f118"; }
+.cyb-mc-tu-car-2:before { content: "\f119"; }
+.cyb-mc-tu-center-alignment:before { content: "\f11a"; }
+.cyb-mc-tu-center-alignment-1:before { content: "\f11b"; }
+.cyb-mc-tu-chicken:before { content: "\f11c"; }
+.cyb-mc-tu-chicken-1:before { content: "\f11d"; }
+.cyb-mc-tu-chicken-2:before { content: "\f11e"; }
+.cyb-mc-tu-clock:before { content: "\f11f"; }
+.cyb-mc-tu-clock-1:before { content: "\f120"; }
+.cyb-mc-tu-clock-2:before { content: "\f121"; }
+.cyb-mc-tu-clock-3:before { content: "\f122"; }
+.cyb-mc-tu-clock-4:before { content: "\f123"; }
+.cyb-mc-tu-cloud:before { content: "\f124"; }
+.cyb-mc-tu-cloud-1:before { content: "\f125"; }
+.cyb-mc-tu-cloud-2:before { content: "\f126"; }
+.cyb-mc-tu-cloud-computing:before { content: "\f127"; }
+.cyb-mc-tu-cloudy:before { content: "\f128"; }
+.cyb-mc-tu-coins:before { content: "\f129"; }
+.cyb-mc-tu-compass:before { content: "\f12a"; }
+.cyb-mc-tu-conga:before { content: "\f12b"; }
+.cyb-mc-tu-copy:before { content: "\f12c"; }
+.cyb-mc-tu-corndog:before { content: "\f12d"; }
+.cyb-mc-tu-cow:before { content: "\f12e"; }
+.cyb-mc-tu-customer-service:before { content: "\f12f"; }
+.cyb-mc-tu-cutlery:before { content: "\f130"; }
+.cyb-mc-tu-diagonal-arrow:before { content: "\f131"; }
+.cyb-mc-tu-diagonal-arrow-1:before { content: "\f132"; }
+.cyb-mc-tu-diagonal-arrow-2:before { content: "\f133"; }
+.cyb-mc-tu-diagonal-arrow-3:before { content: "\f134"; }
+.cyb-mc-tu-diamond:before { content: "\f135"; }
+.cyb-mc-tu-diaper:before { content: "\f136"; }
+.cyb-mc-tu-download:before { content: "\f137"; }
+.cyb-mc-tu-download-1:before { content: "\f138"; }
+.cyb-mc-tu-electric-guitar:before { content: "\f139"; }
+.cyb-mc-tu-emoticon:before { content: "\f13a"; }
+.cyb-mc-tu-export:before { content: "\f13b"; }
+.cyb-mc-tu-eye:before { content: "\f13c"; }
+.cyb-mc-tu-eye-1:before { content: "\f13d"; }
+.cyb-mc-tu-feeding-bottle:before { content: "\f13e"; }
+.cyb-mc-tu-file:before { content: "\f13f"; }
+.cyb-mc-tu-file-1:before { content: "\f140"; }
+.cyb-mc-tu-file-2:before { content: "\f141"; }
+.cyb-mc-tu-file-3:before { content: "\f142"; }
+.cyb-mc-tu-film-strip:before { content: "\f143"; }
+.cyb-mc-tu-flag:before { content: "\f144"; }
+.cyb-mc-tu-flash:before { content: "\f145"; }
+.cyb-mc-tu-fork:before { content: "\f146"; }
+.cyb-mc-tu-fountain-pen:before { content: "\f147"; }
+.cyb-mc-tu-fountain-pen-1:before { content: "\f148"; }
+.cyb-mc-tu-fountain-pen-2:before { content: "\f149"; }
+.cyb-mc-tu-fountain-pen-3:before { content: "\f14a"; }
+.cyb-mc-tu-fountain-pen-4:before { content: "\f14b"; }
+.cyb-mc-tu-gemini:before { content: "\f14c"; }
+.cyb-mc-tu-glass-of-water:before { content: "\f14d"; }
+.cyb-mc-tu-guitar:before { content: "\f14e"; }
+.cyb-mc-tu-ham:before { content: "\f14f"; }
+.cyb-mc-tu-happy:before { content: "\f150"; }
+.cyb-mc-tu-happy-1:before { content: "\f151"; }
+.cyb-mc-tu-head:before { content: "\f152"; }
+.cyb-mc-tu-heavy-metal:before { content: "\f153"; }
+.cyb-mc-tu-home:before { content: "\f154"; }
+.cyb-mc-tu-home-1:before { content: "\f155"; }
+.cyb-mc-tu-home-2:before { content: "\f156"; }
+.cyb-mc-tu-home-3:before { content: "\f157"; }
+.cyb-mc-tu-home-4:before { content: "\f158"; }
+.cyb-mc-tu-horse:before { content: "\f159"; }
+.cyb-mc-tu-id-card:before { content: "\f15a"; }
+.cyb-mc-tu-jar:before { content: "\f15b"; }
+.cyb-mc-tu-justify:before { content: "\f15c"; }
+.cyb-mc-tu-laundry:before { content: "\f15d"; }
+.cyb-mc-tu-laundry-1:before { content: "\f15e"; }
+.cyb-mc-tu-laundry-2:before { content: "\f15f"; }
+.cyb-mc-tu-laundry-3:before { content: "\f160"; }
+.cyb-mc-tu-laundry-4:before { content: "\f161"; }
+.cyb-mc-tu-laundry-5:before { content: "\f162"; }
+.cyb-mc-tu-left-alignment:before { content: "\f163"; }
+.cyb-mc-tu-left-alignment-1:before { content: "\f164"; }
+.cyb-mc-tu-lemon:before { content: "\f165"; }
+.cyb-mc-tu-lemon-1:before { content: "\f166"; }
+.cyb-mc-tu-lemonade:before { content: "\f167"; }
+.cyb-mc-tu-lemonade-1:before { content: "\f168"; }
+.cyb-mc-tu-leo:before { content: "\f169"; }
+.cyb-mc-tu-light-bulb:before { content: "\f16a"; }
+.cyb-mc-tu-like:before { content: "\f16b"; }
+.cyb-mc-tu-mail:before { content: "\f16c"; }
+.cyb-mc-tu-mail-1:before { content: "\f16d"; }
+.cyb-mc-tu-mail-2:before { content: "\f16e"; }
+.cyb-mc-tu-mail-3:before { content: "\f16f"; }
+.cyb-mc-tu-mail-4:before { content: "\f170"; }
+.cyb-mc-tu-mail-5:before { content: "\f171"; }
+.cyb-mc-tu-man:before { content: "\f172"; }
+.cyb-mc-tu-man-1:before { content: "\f173"; }
+.cyb-mc-tu-map:before { content: "\f174"; }
+.cyb-mc-tu-maths:before { content: "\f175"; }
+.cyb-mc-tu-medical-result:before { content: "\f176"; }
+.cyb-mc-tu-money:before { content: "\f177"; }
+.cyb-mc-tu-monitor:before { content: "\f178"; }
+.cyb-mc-tu-monitor-1:before { content: "\f179"; }
+.cyb-mc-tu-monitor-2:before { content: "\f17a"; }
+.cyb-mc-tu-monitor-3:before { content: "\f17b"; }
+.cyb-mc-tu-monitor-4:before { content: "\f17c"; }
+.cyb-mc-tu-monitor-5:before { content: "\f17d"; }
+.cyb-mc-tu-muted:before { content: "\f17e"; }
+.cyb-mc-tu-next:before { content: "\f17f"; }
+.cyb-mc-tu-ninja:before { content: "\f180"; }
+.cyb-mc-tu-padlock:before { content: "\f181"; }
+.cyb-mc-tu-padlock-1:before { content: "\f182"; }
+.cyb-mc-tu-pear:before { content: "\f183"; }
+.cyb-mc-tu-phone-call:before { content: "\f184"; }
+.cyb-mc-tu-phone-call-1:before { content: "\f185"; }
+.cyb-mc-tu-phone-call-2:before { content: "\f186"; }
+.cyb-mc-tu-phone-call-3:before { content: "\f187"; }
+.cyb-mc-tu-photo-camera:before { content: "\f188"; }
+.cyb-mc-tu-pie-chart:before { content: "\f189"; }
+.cyb-mc-tu-pie-chart-1:before { content: "\f18a"; }
+.cyb-mc-tu-piggy-bank:before { content: "\f18b"; }
+.cyb-mc-tu-pin:before { content: "\f18c"; }
+.cyb-mc-tu-placeholder:before { content: "\f18d"; }
+.cyb-mc-tu-placeholder-1:before { content: "\f18e"; }
+.cyb-mc-tu-placeholder-2:before { content: "\f18f"; }
+.cyb-mc-tu-plug:before { content: "\f190"; }
+.cyb-mc-tu-plug-1:before { content: "\f191"; }
+.cyb-mc-tu-pointing:before { content: "\f192"; }
+.cyb-mc-tu-rain:before { content: "\f193"; }
+.cyb-mc-tu-right-alignment:before { content: "\f194"; }
+.cyb-mc-tu-right-alignment-1:before { content: "\f195"; }
+.cyb-mc-tu-rolling-pin:before { content: "\f196"; }
+.cyb-mc-tu-ruler:before { content: "\f197"; }
+.cyb-mc-tu-ruler-1:before { content: "\f198"; }
+.cyb-mc-tu-sad:before { content: "\f199"; }
+.cyb-mc-tu-saturn:before { content: "\f19a"; }
+.cyb-mc-tu-saturn-1:before { content: "\f19b"; }
+.cyb-mc-tu-sausage:before { content: "\f19c"; }
+.cyb-mc-tu-sheep:before { content: "\f19d"; }
+.cyb-mc-tu-sheep-1:before { content: "\f19e"; }
+.cyb-mc-tu-shield:before { content: "\f19f"; }
+.cyb-mc-tu-shop:before { content: "\f1a0"; }
+.cyb-mc-tu-shopping-bag:before { content: "\f1a1"; }
+.cyb-mc-tu-shopping-basket:before { content: "\f1a2"; }
+.cyb-mc-tu-smartphone:before { content: "\f1a3"; }
+.cyb-mc-tu-smartphone-1:before { content: "\f1a4"; }
+.cyb-mc-tu-smartphone-2:before { content: "\f1a5"; }
+.cyb-mc-tu-smartphone-3:before { content: "\f1a6"; }
+.cyb-mc-tu-smile:before { content: "\f1a7"; }
+.cyb-mc-tu-socket:before { content: "\f1a8"; }
+.cyb-mc-tu-speech-bubble:before { content: "\f1a9"; }
+.cyb-mc-tu-speech-bubble-1:before { content: "\f1aa"; }
+.cyb-mc-tu-speech-bubble-2:before { content: "\f1ab"; }
+.cyb-mc-tu-speech-bubble-3:before { content: "\f1ac"; }
+.cyb-mc-tu-spoon:before { content: "\f1ad"; }
+.cyb-mc-tu-sun:before { content: "\f1ae"; }
+.cyb-mc-tu-surprised:before { content: "\f1af"; }
+.cyb-mc-tu-syringe:before { content: "\f1b0"; }
+.cyb-mc-tu-table:before { content: "\f1b1"; }
+.cyb-mc-tu-tap:before { content: "\f1b2"; }
+.cyb-mc-tu-tap-1:before { content: "\f1b3"; }
+.cyb-mc-tu-tap-2:before { content: "\f1b4"; }
+.cyb-mc-tu-taurus:before { content: "\f1b5"; }
+.cyb-mc-tu-telephone:before { content: "\f1b6"; }
+.cyb-mc-tu-toaster:before { content: "\f1b7"; }
+.cyb-mc-tu-ufo:before { content: "\f1b8"; }
+.cyb-mc-tu-upload:before { content: "\f1b9"; }
+.cyb-mc-tu-upload-1:before { content: "\f1ba"; }
+.cyb-mc-tu-van:before { content: "\f1bb"; }
+.cyb-mc-tu-victory:before { content: "\f1bc"; }
+.cyb-mc-tu-video-camera:before { content: "\f1bd"; }
+.cyb-mc-tu-video-camera-1:before { content: "\f1be"; }
+.cyb-mc-tu-watermelon:before { content: "\f1bf"; }
+.cyb-mc-tu-weight:before { content: "\f1c0"; }
+.cyb-mc-tu-wifi:before { content: "\f1c1"; }
+.cyb-mc-tu-wifi-1:before { content: "\f1c2"; }
+.cyb-mc-tu-wifi-2:before { content: "\f1c3"; }
+.cyb-mc-tu-wifi-3:before { content: "\f1c4"; }
+.cyb-mc-tu-woman:before { content: "\f1c5"; }
+.cyb-mc-tu-woman-1:before { content: "\f1c6"; }
+.cyb-mc-tu-zip:before { content: "\f1c7"; }
