@@ -36,3 +36,13 @@ body.light-theme {
     fill: #ffffff !important;
   }
 }
+
+body.dark-theme .cdk-overlay-pane .mat-tooltip {
+  color: white !important;
+  background: #333 !important;
+}
+
+body.light-theme .cdk-overlay-pane .mat-tooltip {
+  color: black !important;
+  background: #f5f5f5 !important;
+}
