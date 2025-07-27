@@ -25,7 +25,6 @@ export class DashboardAdministrateComponent
 {
   _showSpinner!: boolean;
 
-  // Declare observables (just declarations, no initialization yet)
   nodesDonutChartData$!: Observable<any>;
   beneficiariesDonutChartData$!: Observable<any>;
   usersDonutChartData$!: Observable<any>;

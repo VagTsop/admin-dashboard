@@ -108,7 +108,6 @@ export class StockChartComponent
       this.chart.cursor = new am4charts.XYCursor();
       this.chart.data = this.data;
 
-      // Assign color based on identifier
       if (
         this.identifier === 'shipmentOrdersInbound' ||
         this.identifier === 'shipmentOrdersOutbound'

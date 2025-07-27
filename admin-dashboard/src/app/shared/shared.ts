@@ -1,5 +1,3 @@
-// src/app/shared/shared.ts
-
 import { provideAnimations } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';

@@ -43,7 +43,6 @@ export class MicroChartComponent implements OnInit, OnChanges, OnDestroy {
       am4core.options.autoDispose = true;
       am4core.useTheme(am4themes_animated);
 
-      // remove logo from display
       this.renderer.removeChild(container, container.logo.dom);
 
       container.layout = 'grid';
@@ -51,7 +50,6 @@ export class MicroChartComponent implements OnInit, OnChanges, OnDestroy {
       container.width = am4core.percent(100);
       container.height = am4core.percent(100);
 
-      // Color set
       const colors = new am4core.ColorSet();
 
       const createColumn = (
@@ -65,7 +63,6 @@ export class MicroChartComponent implements OnInit, OnChanges, OnDestroy {
         const chart = container.createChild(am4charts.XYChart);
         chart.data = data as any;
 
-        // Add chart title
         const title = chart.titles.create() as any;
         title.fill = '#ffffff';
         title.text = 'AAPL (Turnover)';

@@ -41,7 +41,6 @@ export class GaugeChartComponent implements OnInit, AfterViewInit, OnDestroy {
       );
 
       am4core.useTheme(am4themes_animated);
-      // remove logo from display
       this.renderer.removeChild(this.chart, this.chart.logo.dom);
 
       this.chart.radius = am4core.percent(85);

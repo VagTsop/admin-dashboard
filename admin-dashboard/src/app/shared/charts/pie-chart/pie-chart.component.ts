@@ -61,7 +61,6 @@ export class AmChartsPieChartComponent implements OnInit, OnDestroy, OnChanges {
 
       am4core.useTheme(am4themes_animated);
 
-      // remove logo from display
       this.renderer.removeChild(this.chart, this.chart.logo.dom);
       const pieSeries = this.chart.series.push(new am4charts.PieSeries());
 
@@ -71,12 +70,10 @@ export class AmChartsPieChartComponent implements OnInit, OnDestroy, OnChanges {
         this.chart.legend.valueLabels.template.text =
           "{value.percent.formatNumber('')}";
 
-        // customize marker inside Legend
         const markerTemplate = this.chart.legend.markers.template;
         markerTemplate.width = 11;
         markerTemplate.height = 11;
 
-        // Add a legend
         if (identifier === 'Subscription Policies') {
           this.chart.legend.labels.template.fontSize = 10;
           this.chart.legend.position = 'left';
@@ -84,7 +81,6 @@ export class AmChartsPieChartComponent implements OnInit, OnDestroy, OnChanges {
         }
 
         if (identifier === 'Activations') {
-          // Add a legend
           this.chart.legend.layout = 'horizontal';
           this.chart.legend.position = 'bottom';
           this.chart.legend.contentAlign = 'center';
@@ -99,8 +95,6 @@ export class AmChartsPieChartComponent implements OnInit, OnDestroy, OnChanges {
         value: string,
         color: string
       ) => {
-        // Add and configure Series
-
         pieSeries.dataFields.value = value;
         pieSeries.dataFields.category = category;
         pieSeries.slices.template.strokeWidth = 2;
@@ -117,7 +111,6 @@ export class AmChartsPieChartComponent implements OnInit, OnDestroy, OnChanges {
           this.cardTitle === 'Collaboration Enrollements'
         ) {
           this.chart.innerRadius = am4core.percent(75);
-          // Add and configure Slices
           this.chart.responsive.rules.push({
             relevant: function (target: any) {
               if (target.pixelWidth <= 200 && target.pixelWidth >= 1) {
@@ -173,22 +166,16 @@ export class AmChartsPieChartComponent implements OnInit, OnDestroy, OnChanges {
 
       const processPieChartData = (data: string) => {
         this.chart.data = data;
-        // 1. create an array
         let objectKeysArray: string[] = [];
-        // 2. loop chart data array of object
         this.chart.data.forEach((data: { [x: string]: any }) => {
-          // 3. and for each object get keys and push into keyArray
           for (const key in data) {
             if (data.hasOwnProperty(key)) {
               objectKeysArray.push(key);
             }
           }
         });
-        // 4. create a set with keyArray inside Set constructor to remove all duplicate keys
         const keyArrayUnique = new Set([...objectKeysArray]);
-        // 5. Convert Set back to Array
         objectKeysArray = Array.from(keyArrayUnique);
-        // 8. loop array with unique keys and for each unique key create a slice
         let counter;
         for (let i = 0; i < objectKeysArray.length; i++) {
           counter = i;

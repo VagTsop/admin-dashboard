@@ -38,12 +38,12 @@ export class LineGraphChartComponent implements OnInit, OnDestroy, OnChanges {
 
   ngAfterViewInit() {
     this.isViewInitialized = true;
-    if (this.data) this.initChart(); // Create chart only if data is available
+    if (this.data) this.initChart();
   }
 
   ngOnChanges() {
     if (this.isViewInitialized && this.data) {
-      this.initChart(); // Safe to access ViewChild now
+      this.initChart();
     }
   }
 
@@ -56,7 +56,6 @@ export class LineGraphChartComponent implements OnInit, OnDestroy, OnChanges {
         am4charts.XYChart
       );
       am4core.useTheme(am4themes_animated);
-      // remove logo from display
       this.renderer.removeChild(this.chart, this.chart.logo.dom);
 
       const dateAxis = this.chart.xAxes.push(new am4charts.DateAxis());
@@ -148,29 +147,21 @@ export class LineGraphChartComponent implements OnInit, OnDestroy, OnChanges {
           title.fontSize = 12;
         }
 
-        // 1. create an array
         let objectKeysArray: string[] = [];
-        // 2. loop chart data array of object
         this.chart.data.forEach((data: { [x: string]: any }) => {
-          // 3. and for each object get keys and push into keyArray
           for (const key in data) {
             if (data.hasOwnProperty(key)) {
               objectKeysArray.push(key);
             }
           }
         });
-        // 4. create a set with keyArray inside Set constructor to remove all duplicate keys
         const keyArrayUnique = new Set([...objectKeysArray]);
-        // 5. Convert Set back to Array
         objectKeysArray = Array.from(keyArrayUnique);
-        // 6. Remove first element from the array - 'date'
         const date = objectKeysArray.shift();
-        if (!date) return; // or throw new Error('Missing date field');
-        // 7. Remove last element from the array - 'bulletDisabled'
+        if (!date) return;
         objectKeysArray.pop();
         console.log(objectKeysArray);
         let counter;
-        // 8. loop array with unique keys and for each unique key create a line
         for (let i = 0; i < objectKeysArray.length; i++) {
           counter = i;
           const lineSeries = createLineSeries(

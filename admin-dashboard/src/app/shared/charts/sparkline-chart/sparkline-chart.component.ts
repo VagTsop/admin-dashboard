@@ -49,7 +49,6 @@ export class SparkLineChartComponent implements OnInit, OnChanges, OnDestroy {
   private renderChart() {
     if (!this.diagramRef) return;
     this.zone.runOutsideAngular(() => {
-      // Create chart instance
       const container = am4core.create(
         this.diagramRef.nativeElement,
         am4core.Container
@@ -57,14 +56,12 @@ export class SparkLineChartComponent implements OnInit, OnChanges, OnDestroy {
       am4core.options.autoDispose = true;
       am4core.useTheme(am4themes_animated);
 
-      // remove logo from display
       this.renderer.removeChild(container, container.logo.dom);
       container.layout = 'grid';
       container.fixedWidthGrid = false;
       container.width = am4core.percent(100);
       container.height = am4core.percent(100);
 
-      // Color set
       const colors = new am4core.ColorSet();
 
       const createProcessInstancesLine = (
@@ -120,7 +117,6 @@ export class SparkLineChartComponent implements OnInit, OnChanges, OnDestroy {
         series.strokeWidth = 2;
         series.stroke = color;
 
-        // render data points as bullets
         const bullet = series.bullets.push(new am4charts.CircleBullet());
         bullet.circle.opacity = 0;
         bullet.circle.fill = color;
@@ -141,7 +137,6 @@ export class SparkLineChartComponent implements OnInit, OnChanges, OnDestroy {
         chart.titles.template.fill = am4core.color('#ffffff');
         chart.titles.template.textAlign = 'middle';
         chart.titles.template.isMeasured = false;
-        // chart.titles.create().text = title;
 
         chart.padding(15, 0, 0, 0);
 
@@ -181,7 +176,6 @@ export class SparkLineChartComponent implements OnInit, OnChanges, OnDestroy {
         return chart;
       }
 
-      // Functions that create various sparklines
       if (this.identifier === 'taskInstancesActivityTracker') {
         createProcessInstancesLine(
           'Imprints Diagram',

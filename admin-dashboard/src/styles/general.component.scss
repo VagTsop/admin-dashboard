@@ -61,20 +61,13 @@ $layout-breakpoint-lg: 1920px !default;
   }
 }
 
-//change size of specific mat-icon libraries
 mat-icon[class^="cyb-6v"] {
   font-size: 150%;
 }
 
-// override hide scrollbar -- keep it if vasilis like it, otherwise delete class
 .ps__rail-y {
   display: none !important;
 }
-
-//  .ps__rail-x {
-//      top: '' !important;
-//      bottom: 0px !important;
-//  }
 
 .number-in-bubble {
   padding: 5px;
@@ -86,7 +79,6 @@ mat-icon[class^="cyb-6v"] {
   text-align: center;
 }
 
-// override
 h1,
 h2,
 h3,
@@ -158,7 +150,6 @@ h6,
   padding-top: 2px;
 }
 
-//Alignment in both divs and texts
 .tal-center {
   text-align: center !important;
   align-items: center !important;
@@ -273,7 +264,6 @@ h6,
   cursor: pointer;
   font-size: 90%;
 
-  // display: inline !important;
   span {
     width: 100%;
   }
@@ -297,7 +287,6 @@ h6,
 
 .graph-card {
   width: 100% !important;
-  // border: 3px solid rgb(63, 0, 0)
 }
 
 .table {
@@ -316,8 +305,6 @@ h6,
   &:hover {
     background-color: #8ac4e2;
   }
-
-  // border-left: 10px solid #607d8b;
 }
 
 .dark-theme-active .selectedVer {
@@ -333,8 +320,6 @@ h6,
 }
 
 .divider {
-  // padding-top: 8px;
-  // margin-top: 8px;
   border-top: 1px solid;
 }
 
@@ -343,7 +328,6 @@ h6,
   padding-bottom: 2px;
 }
 
-// used for extra cases when separator is applied
 .divider-padding {
   padding-top: 0.5rem !important;
 }
@@ -440,12 +424,10 @@ img {
   max-height: 100px;
 }
 
-// when a field is disable.
 .app-dark .mat-input-element:disabled {
   border-bottom: 0px dotted;
 }
 
-// ICONS & COLORS UI
 .mat-grid-list mat-icon {
   font-size: 170%;
 }
@@ -454,14 +436,10 @@ img {
   display: block !important;
 }
 
-// for dark theme
-
 .dark-theme-active .mat-checkbox-frame {
   border-color: #e4e7ef;
   opacity: 0.5;
 }
-
-// md select
 
 .dark-theme-active .mat-select-content {
   border: 1px solid ghostwhite !important;
@@ -525,10 +503,6 @@ img {
   align-items: center;
 }
 
-// .tab-header-icon-style > div > mat-icon {
-//     margin-top: 8px;
-// }
-
 .blink {
   animation: blinker 1s linear infinite;
 }
@@ -558,7 +532,6 @@ img {
     flex-direction: row;
     align-items: center;
     height: 40px;
-    // min-width: fit-content !important;
     padding: 10px;
     margin-right: 10px;
     border-top-right-radius: 10px;
@@ -683,7 +656,6 @@ img {
   padding: 0 !important;
 }
 
-// SANKEY DIAGRAM
 .nodes rect {
   cursor: pointer;
   shape-rendering: crispEdges;
@@ -722,15 +694,11 @@ img {
   position: fixed;
   top: 9px;
   right: 430px;
-  /* border-radius:50px; */
-  /* text-align:center; */
-  /* box-shadow: 2px 2px 3px #999; */
 }
 
 .progress-bar {
   position: relative;
   top: 50%;
-  // width: calc(100% - 50px);
 }
 
 .hidden {
@@ -747,7 +715,6 @@ img {
 }
 
 .inputfile {
-  // instead of display: none  - does not work at the majority of browsers
   width: 0.1px;
   height: 0.1px;
   opacity: 0;
@@ -783,7 +750,6 @@ img {
   color: #f5f5f5;
 }
 
-// afora to task-board component (gia kapoio logo paizei mono edw aaaaaaaaxxx)
 .dark-theme-active .taskboard-content {
   background: #212121 !important;
 }
@@ -893,7 +859,6 @@ img {
   }
 }
 
-// RESPONSIVE (hide list columns)
 @media screen and (max-width: $layout-breakpoint-xs) {
   .pB,
   .pC,
@@ -924,7 +889,6 @@ img {
   }
 }
 
-// tree graph
 .treeNode {
   cursor: pointer;
 }
@@ -948,8 +912,6 @@ img {
   stroke: #3d5a71;
   stroke-width: 2px;
 }
-
-// circle
 
 .circleNode {
   cursor: pointer;
@@ -1076,8 +1038,6 @@ mat-form-field {
   }
 }
 
-// Generic view style
-
 .generic-view-style {
   .label {
     width: 35%;
@@ -1105,7 +1065,6 @@ mat-form-field {
   height: 1px;
 }
 
-// used to rotate scroll bar
 .rotate {
   transform: rotateX(180deg);
 }
@@ -1114,11 +1073,9 @@ mat-form-field {
   font-size: 20px;
 }
 
-// Style for sql tags in query viewer
 .sqlFormat {
   .hljs-keyword,
   .hljs-literal {
-    // color: #CC7832;
     color: #367dff;
   }
 
@@ -1131,7 +1088,6 @@ mat-form-field {
   }
 
   .hljs-comment {
-    // color: #808080;
     color: #fb4f14;
   }
 

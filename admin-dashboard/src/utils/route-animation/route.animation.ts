@@ -1,4 +1,11 @@
-import { transition, style, trigger, animate, state, group } from "@angular/animations";
+import {
+  transition,
+  style,
+  trigger,
+  animate,
+  state,
+  group,
+} from '@angular/animations';
 
 export let routeAnimation = trigger('routeAnimation', [
   transition('void => *', [
@@ -7,13 +14,18 @@ export let routeAnimation = trigger('routeAnimation', [
       transform: 'translate3d(0, 10%, 0)',
     }),
     group([
-      animate('400ms ease-in-out', style({
-        //transform: 'translate3d(0, 0, 0)',
-        transform: 'translate3d(0, 0, 0)',
-      })),
-      animate('400ms 150ms ease-in-out', style({
-        opacity: 1,
-      }))
+      animate(
+        '400ms ease-in-out',
+        style({
+          transform: 'translate3d(0, 0, 0)',
+        })
+      ),
+      animate(
+        '400ms 150ms ease-in-out',
+        style({
+          opacity: 1,
+        })
+      ),
     ]),
   ]),
 ]);
@@ -23,8 +35,11 @@ export let fadeInAnimation = trigger('fadeInAnimation', [
     style({
       opacity: 0,
     }),
-    animate('400ms 150ms ease-in-out', style({
-      opacity: 1,
-    }))
+    animate(
+      '400ms 150ms ease-in-out',
+      style({
+        opacity: 1,
+      })
+    ),
   ]),
 ]);
