@@ -8,11 +8,24 @@
 } @if (!_showSpinner) {
 <div fxFlex fxLayout="column">
   @if (!tempNotShowDashboard) {
+
   <div fxFlex fxLayout="column">
     <div class="segment-initial-state first-segment" fxLayout="row wrap">
       <div fxFlex="100" fxFlex.md="100" fxFlex.gt-md="33.3" fxLayout="column">
         <div fxFlex="60">
           <mat-card fxLayout="row" fxFlex>
+            <div style="padding: 10px; text-align: right">
+              <button
+                mat-icon-button
+                (click)="toggleTheme()"
+                [matTooltip]="isDark ? 'Light Theme' : 'Dark Theme'"
+              >
+                <mat-icon [ngStyle]="{ color: isDark ? 'white' : 'black' }">
+                  {{ isDark ? "light_mode" : "dark_mode" }}
+                </mat-icon>
+              </button>
+            </div>
+
             <div fxLayout="column" fxLayoutAlign="center center" fxFlex="33.3">
               <div
                 fxFlex="10"

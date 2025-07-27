@@ -6,6 +6,8 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
+import { MatButtonModule } from '@angular/material/button';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 export const sharedImports = [
   CommonModule,
@@ -14,7 +16,9 @@ export const sharedImports = [
   MatIconModule,
   MatDividerModule,
   MatProgressBarModule,
+  MatButtonModule,
   HttpClientModule,
+  MatTooltipModule,
 ];
 
 export const sharedProviders = [provideAnimations()];

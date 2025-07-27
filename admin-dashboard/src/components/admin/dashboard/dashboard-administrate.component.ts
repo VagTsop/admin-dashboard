@@ -1,4 +1,4 @@
-import { Component, ViewEncapsulation, OnInit } from '@angular/core';
+import { Component, ViewEncapsulation, OnInit, Input } from '@angular/core';
 import { GenericComponent } from '../../../generic/generic.component';
 import { fadeInAnimation } from '../../../utils/route-animation/route.animation';
 import { sharedImports } from '../../../app/shared/shared';
@@ -23,6 +23,9 @@ export class DashboardAdministrateComponent
   extends GenericComponent
   implements OnInit
 {
+  @Input() isDark!: boolean;
+  @Input() toggleTheme!: () => void;
+
   _showSpinner!: boolean;
 
   nodesDonutChartData$!: Observable<any>;

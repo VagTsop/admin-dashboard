@@ -19,5 +19,9 @@ export class App {
   toggleTheme(): void {
     this.isDark = !this.isDark;
     this.themeService.setDarkTheme(this.isDark);
+
+    const body = document.body;
+    body.classList.toggle('dark-theme', this.isDark);
+    body.classList.toggle('light-theme', !this.isDark);
   }
 }
