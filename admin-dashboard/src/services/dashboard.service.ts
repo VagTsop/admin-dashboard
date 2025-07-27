@@ -7,7 +7,7 @@ export class DashboardService {
   constructor(private http: HttpClient) {}
 
   private fetchData(path: string) {
-    return this.http.get<any>(`/assets/data/${path}.json`);
+    return this.http.get<any>(`assets/data/${path}.json`);
   }
 
   fetchNodesDonutChartData() {

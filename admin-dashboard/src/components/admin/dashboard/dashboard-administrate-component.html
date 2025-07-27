@@ -1,12 +1,14 @@
-<div *ngIf="_showSpinner" style="height: 100px">
+@if (_showSpinner) {
+<div style="height: 100px">
   <mat-progress-bar
     mode="indeterminate"
     class="progress-bar"
   ></mat-progress-bar>
 </div>
-
-<div *ngIf="!_showSpinner" fxFlex fxLayout="column">
-  <div *ngIf="!tempNotShowDashboard" fxFlex fxLayout="column">
+} @if (!_showSpinner) {
+<div fxFlex fxLayout="column">
+  @if (!tempNotShowDashboard) {
+  <div fxFlex fxLayout="column">
     <div class="segment-initial-state first-segment" fxLayout="row wrap">
       <div fxFlex="100" fxFlex.md="100" fxFlex.gt-md="33.3" fxLayout="column">
         <div fxFlex="60">
@@ -27,12 +29,12 @@
               </div>
 
               <div fxFlex="90" fxLayout="row" fxLayoutAlign="center center">
+                @if (nodesDonutChartData$ | async; as nodesDonutChartData) {
                 <pie-chart
-                  *ngIf="nodesDonutChartData$ | async as nodesDonutChartData"
                   [cardTitle]="'Nodes'"
                   [data]="nodesDonutChartData"
-                >
-                </pie-chart>
+                ></pie-chart>
+                }
 
                 <div
                   class="card-title"
@@ -82,14 +84,13 @@
               </div>
 
               <div fxFlex="90" fxLayout="row" fxLayoutAlign="center center">
+                @if (beneficiariesDonutChartData$ | async; as beneficiariesData)
+                {
                 <pie-chart
-                  *ngIf="
-                    beneficiariesDonutChartData$ | async as beneficiariesData
-                  "
                   [cardTitle]="'Beneficiaries'"
                   [data]="beneficiariesData"
-                >
-                </pie-chart>
+                ></pie-chart>
+                }
 
                 <div
                   class="card-title"
@@ -137,12 +138,10 @@
               </div>
 
               <div fxFlex="90" fxLayout="row" fxLayoutAlign="center center">
-                <pie-chart
-                  *ngIf="usersDonutChartData$ | async as usersData"
-                  [cardTitle]="'Users'"
-                  [data]="usersData"
-                >
+                @if (usersDonutChartData$ | async; as usersData) {
+                <pie-chart [cardTitle]="'Users'" [data]="usersData">
                 </pie-chart>
+                }
 
                 <div
                   class="card-title"
@@ -203,13 +202,13 @@
               </div>
             </div>
 
+            @if (interfacesSparkLineData$ | async; as spark1) {
             <sparkline-chart
-              *ngIf="interfacesSparkLineData$ | async as spark1"
               [identifier]="'interfaces'"
               [data]="spark1"
               fxFlex="45"
-            >
-            </sparkline-chart>
+            ></sparkline-chart>
+            }
           </mat-card>
 
           <mat-card
@@ -241,13 +240,13 @@
               </div>
             </div>
 
+            @if (interactionsSparkLineData$ | async; as spark2) {
             <sparkline-chart
-              *ngIf="interactionsSparkLineData$ | async as spark2"
               [identifier]="'interactions'"
               [data]="spark2"
               fxFlex="45"
-            >
-            </sparkline-chart>
+            ></sparkline-chart>
+            }
           </mat-card>
 
           <mat-card
@@ -279,13 +278,13 @@
               </div>
             </div>
 
+            @if (attestationsSparkLineData$ | async; as spark3) {
             <sparkline-chart
-              *ngIf="attestationsSparkLineData$ | async as spark3"
               [identifier]="'attestations'"
               [data]="spark3"
               fxFlex="45"
-            >
-            </sparkline-chart>
+            ></sparkline-chart>
+            }
           </mat-card>
         </div>
       </div>
@@ -297,29 +296,27 @@
             style="padding-top: 12; padding-left: 0; padding-right: 0"
             fxFlex
           >
+            @if (nodesBeneficiariesUsersClusteredColumnChartData$ | async; as
+            nodesData) {
             <column-chart
-              *ngIf="
-                nodesBeneficiariesUsersClusteredColumnChartData$
-                  | async as nodesData
-              "
               [data]="nodesData"
               [identifier]="'nodesBeneficiariesUsers'"
               fxFlex
-            >
-            </column-chart>
+            ></column-chart>
+            }
           </mat-card>
         </div>
       </div>
 
       <div fxFlex="100" fxFlex.md="50" fxFlex.gt-md="33.3" fxLayout="column">
         <div fxFlex>
+          @if (nodesBeneficiariesUsersLineGraphData$ | async; as lineData) {
           <line-graph-chart
-            *ngIf="nodesBeneficiariesUsersLineGraphData$ | async as lineData"
             [data]="lineData"
             [cardTitle]="'Entities in Numbers'"
             fxFlex
-          >
-          </line-graph-chart>
+          ></line-graph-chart>
+          }
         </div>
       </div>
     </div>
@@ -370,17 +367,15 @@
               Inbound Shipment Orders
             </div>
 
+            @if (shipmentOrdersInboundStockChartData$ | async; as inboundData) {
             <stock-chart
-              *ngIf="
-                shipmentOrdersInboundStockChartData$ | async as inboundData
-              "
-              fxFlex="75"
-              fxLayout="column"
               [identifier]="'shipmentOrdersInbound'"
               [data]="inboundData"
+              fxFlex="75"
+              fxLayout="column"
               style="height: 100%; margin-left: 5px"
-            >
-            </stock-chart>
+            ></stock-chart>
+            }
 
             <div
               fxFlex="5"
@@ -424,17 +419,16 @@
               Outbound Shipment Orders
             </div>
 
+            @if (shipmentOrdersOutboundStockChartData$ | async; as outboundData)
+            {
             <stock-chart
-              *ngIf="
-                shipmentOrdersOutboundStockChartData$ | async as outboundData
-              "
               fxFlex="75"
               fxLayout="column"
               [identifier]="'shipmentOrdersOutbound'"
               [data]="outboundData"
               style="height: 100%; margin-left: 5px"
-            >
-            </stock-chart>
+            ></stock-chart>
+            }
 
             <div
               fxFlex="5"
@@ -478,15 +472,15 @@
               Incoming Messages
             </div>
 
+            @if (messagesIncomingStockChartData$ | async; as incomingData) {
             <stock-chart
-              *ngIf="messagesIncomingStockChartData$ | async as incomingData"
               fxFlex="75"
               fxLayout="column"
-              [data]="incomingData"
               [identifier]="'messagesIncoming'"
+              [data]="incomingData"
               style="height: 100%; margin-left: 5px"
-            >
-            </stock-chart>
+            ></stock-chart>
+            }
 
             <div
               fxFlex="5"
@@ -530,15 +524,15 @@
               Outcoming Messages
             </div>
 
+            @if (messagesOutcomingStockChartData$ | async; as outcomingData) {
             <stock-chart
               fxFlex="75"
-              *ngIf="messagesOutcomingStockChartData$ | async as outcomingData"
               fxLayout="column"
               [identifier]="'messagesOutcoming'"
               [data]="outcomingData"
               style="height: 100%; margin-left: 5px"
-            >
-            </stock-chart>
+            ></stock-chart>
+            }
 
             <div
               fxFlex="5"
@@ -552,13 +546,13 @@
 
       <div fxFlex.xs="70" fxFlex.gt-xs="60" fxFlex.gt-md="35" fxLayout="column">
         <mat-card fxLayout="column" fxFlex>
+          @if (groupsClusteredColumnChartData$ | async; as groupsData) {
           <column-chart
-            *ngIf="groupsClusteredColumnChartData$ | async as groupsData"
             fxFlex
             [data]="groupsData"
             [identifier]="'groups'"
-          >
-          </column-chart>
+          ></column-chart>
+          }
         </mat-card>
       </div>
 
@@ -570,34 +564,31 @@
         fxLayout.lt-md="row wrap"
         style="width: 100%"
       >
+        @if (deployedProcessesLineGraphData$ | async; as deployedData) {
         <line-graph-chart
-          *ngIf="deployedProcessesLineGraphData$ | async as deployedData"
           [cardTitle]="'Deployed Processes'"
           fxFlex.xs="100"
           fxFlex.gt-xs="50"
           [data]="deployedData"
-        >
-        </line-graph-chart>
+        ></line-graph-chart>
 
+        } @if (reportsLineGraphData$ | async; as reportsData) {
         <line-graph-chart
-          *ngIf="reportsLineGraphData$ | async as reportsData"
           [cardTitle]="'Reports'"
           fxFlex.xs="100"
           fxFlex.gt-xs="50"
           [data]="reportsData"
-        >
-        </line-graph-chart>
+        ></line-graph-chart>
+        }
       </div>
     </div>
 
     <div class="segment-initial-state third-segment" fxLayout="row wrap">
       <div fxFlex.xs="100" fxFlex.lt-md="40" fxFlex.md="44" fxFlex.gt-md="23">
         <mat-card fxFlex>
-          <gauge-chart
-            *ngIf="groupsClusteredColumnChartData$ | async as groupsData"
-            [cardTitle]="'Activity'"
-            fxFlex
-          ></gauge-chart>
+          @if (groupsClusteredColumnChartData$ | async; as groupsData) {
+          <gauge-chart [cardTitle]="'Activity'" fxFlex></gauge-chart>
+          }
         </mat-card>
       </div>
 
@@ -621,16 +612,14 @@
             </div>
 
             <div fxFlex="85" fxLayout="row" fxLayoutAlign="center center">
+              @if (conversationContractsDonutChartData$ | async; as
+              conversationData) {
               <pie-chart
-                *ngIf="
-                  conversationContractsDonutChartData$
-                    | async as conversationData
-                "
-                style="margin-top: auto; margin-bottom: auto; height: 67%"
                 [cardTitle]="'Conversation Contracts'"
                 [data]="conversationData"
-              >
-              </pie-chart>
+                style="margin-top: auto; margin-bottom: auto; height: 67%"
+              ></pie-chart>
+              }
 
               <div
                 class="card-title"
@@ -678,15 +667,14 @@
             </div>
 
             <div fxFlex="85" fxLayout="row" fxLayoutAlign="center center">
+              @if (collaborationsDonutChartData$ | async; as collaborationsData)
+              {
               <pie-chart
-                *ngIf="
-                  collaborationsDonutChartData$ | async as collaborationsData
-                "
-                style="margin-top: auto; margin-bottom: auto; height: 67%"
                 [cardTitle]="'Collaborations'"
                 [data]="collaborationsData"
-              >
-              </pie-chart>
+                style="margin-top: auto; margin-bottom: auto; height: 67%"
+              ></pie-chart>
+              }
 
               <div
                 class="card-title"
@@ -736,16 +724,15 @@
             </div>
 
             <div fxFlex="85" fxLayout="row" fxLayoutAlign="center center">
+              @if (collaborationEnrollementsDonutChartData$ | async; as
+              collaborationData) {
               <pie-chart
-                *ngIf="
-                  collaborationEnrollementsDonutChartData$
-                    | async as collaborationData
-                "
-                style="margin-top: auto; margin-bottom: auto; height: 67%"
                 [cardTitle]="'Collaboration Enrollements'"
                 [data]="collaborationData"
-              >
-              </pie-chart>
+                style="margin-top: auto; margin-bottom: auto; height: 67%"
+              ></pie-chart>
+              }
+
               <div
                 class="card-title"
                 [fxHide.lt-xl]="false"
@@ -774,23 +761,23 @@
       </div>
 
       <div fxFlex.xs="100" fxFlex.gt-xs="50" fxFlex.gt-md="20">
+        @if (userRegistrationLineGraphData$ | async; as userRegistrationData) {
         <line-graph-chart
-          *ngIf="userRegistrationLineGraphData$ | async as userRegistrationData"
           [cardTitle]="'User Registration Requests'"
           [data]="userRegistrationData"
           fxFlex
-        >
-        </line-graph-chart>
+        ></line-graph-chart>
+        }
       </div>
 
       <div fxFlex.xs="100" fxFlex.gt-xs="50" fxFlex.gt-md="20">
+        @if (paymentsLineGraphData$ | async; as paymentsData) {
         <line-graph-chart
-          *ngIf="paymentsLineGraphData$ | async as paymentsData"
           [cardTitle]="'Payments'"
           [data]="paymentsData"
           fxFlex
-        >
-        </line-graph-chart>
+        ></line-graph-chart>
+        }
       </div>
     </div>
 
@@ -801,17 +788,16 @@
         fxFlex.gt-md="33.3"
         fxLayout="column"
       >
+        @if (assignedProcessesLineGraphData$ | async; as assignedProcessesData)
+        {
         <line-graph-chart
-          *ngIf="
-            assignedProcessesLineGraphData$ | async as assignedProcessesData
-          "
-          fxFlex.xs="100"
-          fxFlex.lt-md="100"
           [data]="assignedProcessesData"
           [cardTitle]="'Assigned Processes'"
           fxFlex
-        >
-        </line-graph-chart>
+          fxFlex.xs="100"
+          fxFlex.lt-md="100"
+        ></line-graph-chart>
+        }
       </div>
 
       <div
@@ -822,26 +808,24 @@
         fxFlex.gt-md="33.3"
         fxLayout="column"
       >
+        @if (processInstancesLineGraphData$ | async; as processInstancesData) {
         <line-graph-chart
-          *ngIf="processInstancesLineGraphData$ | async as processInstancesData"
-          fxFlex.xs="100"
-          fxFlex="50"
           [cardTitle]="'Process Instances'"
           [data]="processInstancesData"
-        >
-        </line-graph-chart>
+          fxFlex.xs="100"
+          fxFlex="50"
+        ></line-graph-chart>
+        }
 
         <mat-card fxLayout="column" fxFlex="50">
+          @if (beneficiariesClusteredColumnChartData$ | async; as
+          beneficiariesData) {
           <column-chart
-            *ngIf="
-              beneficiariesClusteredColumnChartData$
-                | async as beneficiariesData
-            "
             [identifier]="'beneficiaries'"
-            fxFlex
             [data]="beneficiariesData"
-          >
-          </column-chart>
+            fxFlex
+          ></column-chart>
+          }
         </mat-card>
       </div>
 
@@ -862,19 +846,19 @@
         >
           <h6 class="card-title" fxFlex="10">Subscription Policies</h6>
 
+          @if (subscriptionPoliciesPieChartData$ | async; as
+          subscriptionPoliciesData) {
           <pie-chart
-            *ngIf="
-              subscriptionPoliciesPieChartData$
-                | async as subscriptionPoliciesData
-            "
-            fxFlex="90"
-            style="width: 100%"
             [cardTitle]="'Subscription Policies'"
             [data]="subscriptionPoliciesData"
-          >
-          </pie-chart>
+            fxFlex="90"
+            style="width: 100%"
+          ></pie-chart>
+          }
         </mat-card>
       </div>
     </div>
   </div>
+  }
 </div>
+}
