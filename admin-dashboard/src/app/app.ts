@@ -14,7 +14,9 @@ export class App {
 
   isDark = false;
 
-  constructor(private themeService: ThemeService) {}
+  constructor(private themeService: ThemeService) {
+    this.toggleTheme();
+  }
 
   toggleTheme(): void {
     this.isDark = !this.isDark;
