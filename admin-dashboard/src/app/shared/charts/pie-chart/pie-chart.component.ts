@@ -75,7 +75,7 @@ export class AmChartsPieChartComponent implements OnInit, OnDestroy, OnChanges {
         markerTemplate.height = 11;
 
         if (identifier === 'Subscription Policies') {
-          this.chart.legend.labels.template.fontSize = 10;
+          this.chart.legend.labels.template.fontSize = 18;
           this.chart.legend.position = 'left';
           this.chart.legend.valign = 'top';
         }

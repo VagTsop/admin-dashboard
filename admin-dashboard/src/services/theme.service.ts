@@ -9,7 +9,7 @@ export class ThemeService {
       body.classList.remove('light-theme');
     } else {
       body.classList.add('light-theme');
-      body.classList.remove('dark-theme');
+      body.classList.remove('app-dark');
     }
   }
 }

@@ -13,7 +13,7 @@
     <div class="segment-initial-state first-segment" fxLayout="row wrap">
       <div fxFlex="100" fxFlex.md="100" fxFlex.gt-md="33.3" fxLayout="column">
         <div fxFlex="60">
-          <mat-card fxLayout="row" fxFlex>
+          <mat-card style="padding: 25px" fxLayout="row" fxFlex>
             <div style="padding: 10px; text-align: right">
               <button
                 mat-icon-button
@@ -38,7 +38,12 @@
                   class="cyb-mi-device_hub"
                 ></mat-icon>
 
-                <h6 class="card-title" style="padding-left: 5px">Nodes</h6>
+                <h6
+                  class="card-title"
+                  style="padding-left: 5px; font-size: 25px"
+                >
+                  Nodes
+                </h6>
               </div>
 
               <div fxFlex="90" fxLayout="row" fxLayoutAlign="center center">
@@ -91,7 +96,10 @@
                   class="icon-domain"
                 ></mat-icon>
 
-                <h6 class="card-title" style="padding-left: 5px">
+                <h6
+                  class="card-title"
+                  style="padding-left: 5px; font-size: 25px"
+                >
                   Beneficiaries
                 </h6>
               </div>
@@ -147,7 +155,12 @@
                   class="icon-account"
                 ></mat-icon>
 
-                <h6 class="card-title" style="padding-left: 5px">Users</h6>
+                <h6
+                  class="card-title"
+                  style="padding-left: 5px; font-size: 25px"
+                >
+                  Users
+                </h6>
               </div>
 
               <div fxFlex="90" fxLayout="row" fxLayoutAlign="center center">
@@ -192,7 +205,7 @@
           <mat-card
             fxFlex="33.3"
             fxLayout="column"
-            style="background-color: #048ed0ad; padding: 0"
+            style="background-color: #048ed0ad; padding: 25px"
           >
             <div
               fxLayout="row"
@@ -211,7 +224,9 @@
               <div class="card-title" fxLayout="column">
                 <div class="small-text">1,975,224</div>
 
-                <div class="small-text" fxFlex="20">Interfaces</div>
+                <div style="font-size: 25px" class="small-text" fxFlex="20">
+                  Interfaces
+                </div>
               </div>
             </div>
 
@@ -227,7 +242,7 @@
           <mat-card
             fxFlex="33.3"
             fxLayout="column"
-            style="background-color: #048ed0ad; padding: 0"
+            style="background-color: #048ed0ad; padding: 25px"
           >
             <div
               fxLayout="row"
@@ -249,7 +264,9 @@
               >
                 <div class="small-text">1,975,224</div>
 
-                <div class="small-text" fxFlex="20">Interactions</div>
+                <div style="font-size: 25px" class="small-text" fxFlex="20">
+                  Interactions
+                </div>
               </div>
             </div>
 
@@ -265,7 +282,7 @@
           <mat-card
             fxFlex="33.3"
             fxLayout="column"
-            style="background-color: #048ed0ad; padding: 0"
+            style="background-color: #048ed0ad; padding: 25px"
           >
             <div
               fxLayout="row"
@@ -287,7 +304,9 @@
               >
                 <div class="small-text">1,975,224</div>
 
-                <div class="small-text" fxFlex="20">Attestations</div>
+                <div style="font-size: 25px" class="small-text" fxFlex="20">
+                  Attestations
+                </div>
               </div>
             </div>
 
@@ -306,7 +325,12 @@
         <div fxFlex>
           <mat-card
             fxLayout="column"
-            style="padding-top: 12; padding-left: 0; padding-right: 0"
+            style="
+              padding-top: 12;
+              padding-left: 0;
+              padding-right: 0;
+              padding: 25px;
+            "
             fxFlex
           >
             @if (nodesBeneficiariesUsersClusteredColumnChartData$ | async; as
@@ -346,7 +370,7 @@
           fxLayoutAlign="start center"
           fxFlex.lt-lg="100"
           fxFlex
-          style="padding: 10px"
+          style="padding: 25px"
         >
           <div fxLayoutAlign="start center" style="width: 100%" fxFlex="25">
             <div
@@ -375,7 +399,7 @@
             <div
               fxLayout="column"
               fxFlex="10"
-              style="font-size: 10px; margin-left: 10px; color: #bd66aa"
+              style="font-size: 20px; margin-left: 10px; color: #bd66aa"
             >
               Inbound Shipment Orders
             </div>
@@ -427,7 +451,7 @@
             <div
               fxLayout="column"
               fxFlex="10"
-              style="font-size: 10px; margin-left: 10px; color: #bd66aa"
+              style="font-size: 20px; margin-left: 10px; color: #bd66aa"
             >
               Outbound Shipment Orders
             </div>
@@ -445,7 +469,7 @@
 
             <div
               fxFlex="5"
-              style="font-size: 10px; margin-left: 10px; color: #bd66aa"
+              style="font-size: 20px; margin-left: 10px; color: #bd66aa"
             >
               4%
             </div>
@@ -480,7 +504,7 @@
             <div
               fxLayout="column"
               fxFlex="10"
-              style="font-size: 10px; margin-left: 10px; color: #07b85c"
+              style="font-size: 20px; margin-left: 10px; color: #07b85c"
             >
               Incoming Messages
             </div>
@@ -532,7 +556,7 @@
             <div
               fxLayout="column"
               fxFlex="10"
-              style="font-size: 10px; margin-left: 10px; color: #07b85c"
+              style="font-size: 20px; margin-left: 10px; color: #07b85c"
             >
               Outcoming Messages
             </div>
@@ -558,7 +582,7 @@
       </div>
 
       <div fxFlex.xs="70" fxFlex.gt-xs="60" fxFlex.gt-md="35" fxLayout="column">
-        <mat-card fxLayout="column" fxFlex>
+        <mat-card style="padding: 25px" fxLayout="column" fxFlex>
           @if (groupsClusteredColumnChartData$ | async; as groupsData) {
           <column-chart
             fxFlex
@@ -598,7 +622,7 @@
 
     <div class="segment-initial-state third-segment" fxLayout="row wrap">
       <div fxFlex.xs="100" fxFlex.lt-md="40" fxFlex.md="44" fxFlex.gt-md="23">
-        <mat-card fxFlex>
+        <mat-card style="padding: 25px" fxFlex>
           @if (groupsClusteredColumnChartData$ | async; as groupsData) {
           <gauge-chart [cardTitle]="'Activity'" fxFlex></gauge-chart>
           }
@@ -606,7 +630,7 @@
       </div>
 
       <div fxFlex.xs="100" fxFlex.lt-md="60" fxFlex.md="56" fxFlex.gt-md="37">
-        <mat-card fxLayout="row" fxFlex>
+        <mat-card style="padding: 25px" fxLayout="row" fxFlex>
           <div fxLayout="column" fxLayoutAlign="center center" fxFlex="33.3">
             <div
               fxFlex="15"
@@ -619,7 +643,7 @@
                 class="cyb-fa-file-text-o"
               ></mat-icon>
 
-              <h6 class="card-title" style="padding-left: 8px">
+              <h6 class="card-title" style="padding-left: 8px; font-size: 25px">
                 Conversation Contracts
               </h6>
             </div>
@@ -673,7 +697,7 @@
 
               <h6
                 class="card-title"
-                style="padding-left: 5px; padding-top: 5px"
+                style="padding-left: 5px; padding-top: 5px; font-size: 25px"
               >
                 Collaborations
               </h6>
@@ -731,7 +755,7 @@
                 class="cyb-fa-sign-in"
               ></mat-icon>
 
-              <h6 class="card-title" style="padding-left: 5px">
+              <h6 class="card-title" style="padding-left: 5px; font-size: 25px">
                 Collaboration Enrollements
               </h6>
             </div>
@@ -830,7 +854,7 @@
         ></line-graph-chart>
         }
 
-        <mat-card fxLayout="column" fxFlex="50">
+        <mat-card style="padding: 25px" fxLayout="column" fxFlex="50">
           @if (beneficiariesClusteredColumnChartData$ | async; as
           beneficiariesData) {
           <column-chart
@@ -850,6 +874,7 @@
         fxLayout="column"
       >
         <mat-card
+          style="padding: 25px"
           fxFlex.xs="100"
           fxFlex.lt-md="100"
           fxFlex.md="100"
@@ -857,7 +882,9 @@
           fxLayoutAlign="start center"
           fxLayout="column"
         >
-          <h6 class="card-title" fxFlex="10">Subscription Policies</h6>
+          <h6 style="font-size: 25px" class="card-title" fxFlex="10">
+            Subscription Policies
+          </h6>
 
           @if (subscriptionPoliciesPieChartData$ | async; as
           subscriptionPoliciesData) {

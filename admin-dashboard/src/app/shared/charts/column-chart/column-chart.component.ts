@@ -74,7 +74,7 @@ export class ColumnChartComponent implements OnInit, OnDestroy, OnChanges {
         categoryAxis.renderer.grid.template.disabled = true;
         categoryAxis.renderer.minGridDistance = 30;
         categoryAxis.renderer.inside = true;
-        categoryAxis.renderer.labels.template.fontSize = 12;
+        categoryAxis.renderer.labels.template.fontSize = 25;
         categoryAxis.renderer.grid.template.stroke = '#ffffff';
 
         const valueAxis = this.chart.yAxes.push(
@@ -105,7 +105,7 @@ export class ColumnChartComponent implements OnInit, OnDestroy, OnChanges {
         this.chart.legend.paddingBottom = 20;
         this.chart.legend.labels.template.fill = am4core.color('#ffffff');
         this.chart.legend.labels.template.width = 10;
-        this.chart.legend.labels.template.fontSize = 10;
+        this.chart.legend.labels.template.fontSize = 18;
 
         const markerTemplate = this.chart.legend.markers.template;
         markerTemplate.width = 10;
@@ -118,10 +118,10 @@ export class ColumnChartComponent implements OnInit, OnDestroy, OnChanges {
         xAxis.renderer.cellStartLocation = 0.1;
         xAxis.renderer.cellEndLocation = 0.9;
         xAxis.renderer.grid.template.location = 0;
-        xAxis.renderer.labels.template.fontSize = 10;
+        xAxis.renderer.labels.template.fontSize = 18;
         const yAxis = this.chart.yAxes.push(new am4charts.ValueAxis() as any);
         yAxis.min = 0;
-        yAxis.renderer.labels.template.fontSize = 10;
+        yAxis.renderer.labels.template.fontSize = 18;
         yAxis.renderer.grid.template.stroke = '#ffffff';
       }
 
@@ -143,7 +143,7 @@ export class ColumnChartComponent implements OnInit, OnDestroy, OnChanges {
         title.align = 'center';
         title.fill = '#ffffff';
         title.dy = -55;
-        title.fontSize = 12;
+        title.fontSize = 25;
 
         this.createSeries('active', 'Active');
         this.createSeries('deactivated', 'Deactivated');
@@ -171,7 +171,7 @@ export class ColumnChartComponent implements OnInit, OnDestroy, OnChanges {
         title.align = 'center';
         title.fill = '#ffffff';
         title.dy = -15;
-        title.fontSize = 12;
+        title.fontSize = 25;
 
         this.createSeries('licencee', 'Licencee');
         this.createSeries('partner', 'Partner');
@@ -251,7 +251,7 @@ export class ColumnChartComponent implements OnInit, OnDestroy, OnChanges {
     bullet.interactionsEnabled = false;
     bullet.dy = 30;
     bullet.label.text = '{valueY}';
-    bullet.label.fontSize = 10;
+    bullet.label.fontSize = 20;
     bullet.label.fill = am4core.color('#ffffff');
 
     return series;

@@ -59,14 +59,14 @@ export class LineGraphChartComponent implements OnInit, OnDestroy, OnChanges {
       this.renderer.removeChild(this.chart, this.chart.logo.dom);
 
       const dateAxis = this.chart.xAxes.push(new am4charts.DateAxis());
-      dateAxis.renderer.labels.template.fontSize = 10;
+      dateAxis.renderer.labels.template.fontSize = 20;
       dateAxis.startLocation = 0.5;
       dateAxis.endLocation = 1.2;
 
       const valueAxis = this.chart.yAxes.push(new am4charts.ValueAxis());
       valueAxis.renderer.minGridDistance = 20;
-      valueAxis.title.fontSize = 12;
-      valueAxis.renderer.labels.template.fontSize = 10;
+      valueAxis.title.fontSize = 20;
+      valueAxis.renderer.labels.template.fontSize = 20;
       valueAxis.renderer.grid.template.stroke = '#ffffff';
 
       const topContainer = this.chart.chartContainer.createChild(
@@ -117,7 +117,7 @@ export class LineGraphChartComponent implements OnInit, OnDestroy, OnChanges {
         const valueLabel = series.bullets.push(
           new am4charts.LabelBullet()
         ) as any;
-        valueLabel.label.fontSize = 12;
+        valueLabel.label.fontSize = 18;
         valueLabel.disabled = true;
         valueLabel.propertyFields.disabled = 'bulletDisabled';
         valueLabel.label.text = '[font-size: 12]{valueY}[/]%';
@@ -143,7 +143,7 @@ export class LineGraphChartComponent implements OnInit, OnDestroy, OnChanges {
           title.align = 'center';
           title.fill = '#ffffff';
           title.dy = -15;
-          title.fontSize = 12;
+          title.fontSize = 25;
         }
 
         let objectKeysArray: string[] = [];
