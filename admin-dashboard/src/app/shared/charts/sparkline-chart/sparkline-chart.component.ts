@@ -9,6 +9,7 @@ import {
   Input,
   OnDestroy,
   OnChanges,
+  AfterViewInit,
 } from '@angular/core';
 import * as am4core from '@amcharts/amcharts4/core';
 import * as am4charts from '@amcharts/amcharts4/charts';
@@ -22,8 +23,10 @@ import { chartSharedImports } from '../../chart-shared-imports';
   imports: [chartSharedImports],
   encapsulation: ViewEncapsulation.None,
 })
-export class SparkLineChartComponent implements OnInit, OnChanges, OnDestroy {
-  chart!: am4charts.XYChart;
+export class SparkLineChartComponent
+  implements OnInit, OnChanges, OnDestroy, AfterViewInit
+{
+  private container: any;
   private isViewInitialized = false;
 
   @Input() cardTitle!: string;
@@ -41,42 +44,42 @@ export class SparkLineChartComponent implements OnInit, OnChanges, OnDestroy {
   }
 
   ngOnChanges() {
-    if (this.isViewInitialized && this.data) {
-      this.renderChart();
+    if (this.isViewInitialized && this.container && this.data) {
+      this.container.eachChild((child: any) => {
+        if (child instanceof am4charts.XYChart) {
+          child.data = this.data;
+        }
+      });
     }
   }
 
   private renderChart() {
-    if (!this.diagramRef) return;
+    if (!this.diagramRef || this.container) return;
+
     this.zone.runOutsideAngular(() => {
-      const container = am4core.create(
+      this.container = am4core.create(
         this.diagramRef.nativeElement,
         am4core.Container
       );
       am4core.options.autoDispose = true;
       am4core.useTheme(am4themes_animated);
 
-      this.renderer.removeChild(container, container.logo.dom);
-      container.layout = 'grid';
-      container.fixedWidthGrid = false;
-      container.width = am4core.percent(100);
-      container.height = am4core.percent(100);
+      this.renderer.removeChild(this.container, this.container.logo.dom);
+      this.container.layout = 'grid';
+      this.container.fixedWidthGrid = false;
+      this.container.width = am4core.percent(100);
+      this.container.height = am4core.percent(100);
 
       const colors = new am4core.ColorSet();
 
-      const createProcessInstancesLine = (
+      const createLineChart = (
         title: string,
         data: string,
-        color:
-          | am4core.Color
-          | am4core.Pattern
-          | am4core.LinearGradient
-          | am4core.RadialGradient
+        color: am4core.Color
       ) => {
-        const chart = container.createChild(am4charts.XYChart);
+        const chart = this.container!.createChild(am4charts.XYChart);
         chart.width = am4core.percent(100);
         chart.height = am4core.percent(100);
-
         chart.data = data as any;
 
         chart.titles.template.fontSize = 9;
@@ -107,9 +110,7 @@ export class SparkLineChartComponent implements OnInit, OnChanges, OnDestroy {
 
         const series = chart.series.push(new am4charts.LineSeries());
         series.showOnInit = false;
-        if (series.tooltip) {
-          series.tooltip.animationDuration = 0;
-        }
+        series.tooltip.animationDuration = 0;
         series.tooltipText = '{date}: [bold]{value}';
         series.dataFields.dateX = 'date';
         series.dataFields.valueY = 'value';
@@ -126,11 +127,10 @@ export class SparkLineChartComponent implements OnInit, OnChanges, OnDestroy {
         return chart;
       };
 
-      function createAdministrateLine(data: any, color: any) {
-        const chart = container.createChild(am4charts.XYChart);
+      const createAdminLine = (data: any, color: am4core.Color) => {
+        const chart = this.container!.createChild(am4charts.XYChart);
         chart.width = am4core.percent(110);
         chart.height = am4core.percent(100);
-
         chart.data = data;
 
         chart.titles.template.fontSize = 9;
@@ -172,31 +172,29 @@ export class SparkLineChartComponent implements OnInit, OnChanges, OnDestroy {
         series.dataFields.valueY = 'value';
         series.tensionX = 0.8;
         series.strokeWidth = 2;
-        series.stroke = am4core.color(color);
+        series.stroke = color;
+
         return chart;
-      }
+      };
 
       if (this.identifier === 'taskInstancesActivityTracker') {
-        createProcessInstancesLine(
-          'Imprints Diagram',
-          this.data,
-          colors.getIndex(0)
-        );
+        createLineChart('Imprints Diagram', this.data, colors.getIndex(0));
       }
 
       if (
         this.identifier === 'interfaces' ||
-        'interactions' ||
-        'attestations'
+        this.identifier === 'interactions' ||
+        this.identifier === 'attestations'
       ) {
-        createAdministrateLine(this.data, colors.getIndex(0));
+        createAdminLine(this.data, colors.getIndex(0));
       }
     });
   }
+
   ngOnDestroy() {
     this.zone.runOutsideAngular(() => {
-      if (this.chart) {
-        this.chart.dispose();
+      if (this.container) {
+        this.container.dispose();
       }
     });
   }

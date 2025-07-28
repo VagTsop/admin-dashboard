@@ -9,6 +9,7 @@ import {
   ViewEncapsulation,
   OnDestroy,
   OnChanges,
+  AfterViewInit,
 } from '@angular/core';
 import * as am4core from '@amcharts/amcharts4/core';
 import * as am4charts from '@amcharts/amcharts4/charts';
@@ -23,8 +24,10 @@ import { chartSharedImports } from '../../chart-shared-imports';
   styleUrls: ['../../../../styles/general.component.scss'],
   encapsulation: ViewEncapsulation.None,
 })
-export class ColumnChartComponent implements OnInit, OnDestroy, OnChanges {
-  chart!: am4charts.XYChart;
+export class ColumnChartComponent
+  implements OnInit, OnDestroy, OnChanges, AfterViewInit
+{
+  chart!: any;
   private isViewInitialized = false;
 
   @Input() cardTitle!: string;
@@ -32,6 +35,7 @@ export class ColumnChartComponent implements OnInit, OnDestroy, OnChanges {
   @Input() data!: any;
   @ViewChild('diagramDiv') private diagramRef!: ElementRef;
   private xAxis!: am4charts.CategoryAxis;
+
   constructor(private zone: NgZone, private renderer: Renderer2) {}
 
   ngOnInit() {}
@@ -42,21 +46,22 @@ export class ColumnChartComponent implements OnInit, OnDestroy, OnChanges {
   }
 
   ngOnChanges() {
-    if (this.isViewInitialized && this.data) {
-      this.createChart();
+    if (this.isViewInitialized && this.chart && this.data) {
+      this.chart.data = this.data;
     }
   }
 
   private createChart(): void {
-    if (!this.diagramRef) return;
+    if (!this.diagramRef || this.chart) return;
     am4core.options.animationsEnabled = false;
     am4core.options.autoSetClassName = true;
     this.zone.runOutsideAngular(() => {
+      am4core.useTheme(am4themes_animated);
+
       this.chart = am4core.create(
         this.diagramRef.nativeElement,
         am4charts.XYChart
       );
-      am4core.useTheme(am4themes_animated);
 
       this.renderer.removeChild(this.chart, this.chart.logo.dom);
 
@@ -95,6 +100,7 @@ export class ColumnChartComponent implements OnInit, OnDestroy, OnChanges {
         series.columns.template.column.cornerRadiusTopRight = 15;
         series.columns.template.tooltipText = '{categoryX}: [bold]{valueY}[/b]';
       }
+
       if (
         this.identifier === 'nodesBeneficiariesUsers' ||
         this.identifier === 'groups' ||
@@ -111,14 +117,12 @@ export class ColumnChartComponent implements OnInit, OnDestroy, OnChanges {
         markerTemplate.width = 10;
         markerTemplate.height = 10;
 
-        const xAxis = this.chart.xAxes.push(
-          new am4charts.CategoryAxis() as any
-        );
-        xAxis.dataFields.category = 'category';
-        xAxis.renderer.cellStartLocation = 0.1;
-        xAxis.renderer.cellEndLocation = 0.9;
-        xAxis.renderer.grid.template.location = 0;
-        xAxis.renderer.labels.template.fontSize = 18;
+        this.xAxis = this.chart.xAxes.push(new am4charts.CategoryAxis() as any);
+        this.xAxis.dataFields.category = 'category';
+        this.xAxis.renderer.cellStartLocation = 0.1;
+        this.xAxis.renderer.cellEndLocation = 0.9;
+        this.xAxis.renderer.grid.template.location = 0;
+        this.xAxis.renderer.labels.template.fontSize = 18;
         const yAxis = this.chart.yAxes.push(new am4charts.ValueAxis() as any);
         yAxis.min = 0;
         yAxis.renderer.labels.template.fontSize = 18;

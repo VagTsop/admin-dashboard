@@ -9,11 +9,12 @@ import {
   Renderer2,
   ViewChild,
   ViewEncapsulation,
+  AfterViewInit,
 } from '@angular/core';
 import * as am4core from '@amcharts/amcharts4/core';
-import { chartSharedImports } from '../../chart-shared-imports';
 import * as am4charts from '@amcharts/amcharts4/charts';
 import am4themes_animated from '@amcharts/amcharts4/themes/animated';
+import { chartSharedImports } from '../../chart-shared-imports';
 
 @Component({
   selector: 'line-graph-chart',
@@ -23,39 +24,43 @@ import am4themes_animated from '@amcharts/amcharts4/themes/animated';
   styleUrls: ['../../../../styles/general.component.scss'],
   encapsulation: ViewEncapsulation.None,
 })
-export class LineGraphChartComponent implements OnInit, OnDestroy, OnChanges {
+export class LineGraphChartComponent
+  implements OnInit, OnDestroy, OnChanges, AfterViewInit
+{
   private chart: any;
   private isViewInitialized = false;
 
   @Input() cardTitle!: string;
   @Input() identifier!: string;
-  @Input() data!: string;
+  @Input() data!: any;
   @ViewChild('diagramDiv') private diagramRef!: ElementRef;
 
   constructor(private zone: NgZone, private renderer: Renderer2) {}
 
   ngOnInit() {}
 
-  ngAfterViewInit() {
+  ngAfterViewInit(): void {
     this.isViewInitialized = true;
     if (this.data) this.initChart();
   }
 
-  ngOnChanges() {
-    if (this.isViewInitialized && this.data) {
-      this.initChart();
+  ngOnChanges(): void {
+    if (this.isViewInitialized && this.chart && this.data) {
+      this.chart.data = this.data;
     }
   }
 
   private initChart(): void {
-    if (!this.diagramRef) return;
+    if (!this.diagramRef || this.chart) return;
     am4core.options.autoSetClassName = true;
     this.zone.runOutsideAngular(() => {
+      am4core.useTheme(am4themes_animated);
+
       this.chart = am4core.create(
         this.diagramRef.nativeElement,
         am4charts.XYChart
       );
-      am4core.useTheme(am4themes_animated);
+
       this.renderer.removeChild(this.chart, this.chart.logo.dom);
 
       const dateAxis = this.chart.xAxes.push(new am4charts.DateAxis());
@@ -82,12 +87,12 @@ export class LineGraphChartComponent implements OnInit, OnDestroy, OnChanges {
         seriesName: string,
         strokeColor: string
       ) => {
-        const lineSeries = this.chart.series.push(new am4charts.LineSeries());
+        const lineSeries = this.chart!.series.push(new am4charts.LineSeries());
         lineSeries.showOnInit = false;
         lineSeries.tooltip.animationDuration = 0;
         lineSeries.dataFields.valueY = valueY;
-        (lineSeries.dataFields.dateX = dateValue),
-          (lineSeries.name = seriesName);
+        lineSeries.dataFields.dateX = dateValue;
+        lineSeries.name = seriesName;
         lineSeries.strokeWidth = 2;
         lineSeries.stroke = strokeColor;
         lineSeries.tensionX = 0.7;
@@ -107,10 +112,8 @@ export class LineGraphChartComponent implements OnInit, OnDestroy, OnChanges {
       };
 
       const addColorOnText = (valueLabel: { label: { fill: string } }) => {
-        let textColor: string;
-        textColor = '#fff';
-        valueLabel.label.fill = textColor;
-        return textColor;
+        valueLabel.label.fill = '#fff';
+        return '#fff';
       };
 
       const displayLabelOnLastBullet = (series: { bullets: any[] }) => {
@@ -127,9 +130,10 @@ export class LineGraphChartComponent implements OnInit, OnDestroy, OnChanges {
         return valueLabel;
       };
 
-      const processLineGraphChartData = (data: string) => {
-        this.chart.data = data;
+      const processLineGraphChartData = (data: any) => {
+        this.chart!.data = data;
         dateAxis.renderer.minGridDistance = 60;
+
         if (
           this.cardTitle === 'Assigned Processes' ||
           this.cardTitle === 'Entities in Numbers' ||
@@ -147,7 +151,7 @@ export class LineGraphChartComponent implements OnInit, OnDestroy, OnChanges {
         }
 
         let objectKeysArray: string[] = [];
-        this.chart.data.forEach((data: { [x: string]: any }) => {
+        this.chart!.data.forEach((data: { [x: string]: any }) => {
           for (const key in data) {
             if (data.hasOwnProperty(key)) {
               objectKeysArray.push(key);
@@ -206,13 +210,14 @@ export class LineGraphChartComponent implements OnInit, OnDestroy, OnChanges {
             addColorOnText(valueLabel);
           }
         }
-        this.chart.cursor = new am4charts.XYCursor();
+        this.chart!.cursor = new am4charts.XYCursor();
       };
+
       processLineGraphChartData(this.data);
     });
   }
 
-  ngOnDestroy() {
+  ngOnDestroy(): void {
     this.zone.runOutsideAngular(() => {
       if (this.chart) {
         this.chart.dispose();

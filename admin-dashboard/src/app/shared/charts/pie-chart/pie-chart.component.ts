@@ -9,6 +9,7 @@ import {
   Renderer2,
   ViewEncapsulation,
   OnChanges,
+  AfterViewInit,
 } from '@angular/core';
 import * as am4core from '@amcharts/amcharts4/core';
 import * as am4charts from '@amcharts/amcharts4/charts';
@@ -21,13 +22,13 @@ import { chartSharedImports } from '../../chart-shared-imports';
   standalone: true,
   imports: [chartSharedImports],
   styleUrls: ['../../../../styles/general.component.scss'],
-
   encapsulation: ViewEncapsulation.None,
 })
-export class AmChartsPieChartComponent implements OnInit, OnDestroy, OnChanges {
+export class AmChartsPieChartComponent
+  implements OnInit, OnDestroy, OnChanges, AfterViewInit
+{
   @ViewChild('diagramDiv') private diagramRef!: ElementRef;
   private initialized = false;
-
   private chart: any;
 
   @Input() cardTitle!: string;
@@ -38,58 +39,61 @@ export class AmChartsPieChartComponent implements OnInit, OnDestroy, OnChanges {
 
   ngOnInit(): void {}
 
-  ngAfterViewInit() {
+  ngAfterViewInit(): void {
     this.initialized = true;
     if (this.data) {
       this.createChart();
     }
   }
 
-  ngOnChanges() {
-    if (this.initialized && this.data) {
-      this.createChart();
+  ngOnChanges(): void {
+    if (this.initialized && this.chart && this.data) {
+      this.chart.data = this.data;
     }
   }
 
-  private createChart() {
-    am4core.options.autoSetClassName = true;
+  private createChart(): void {
     this.zone.runOutsideAngular(() => {
+      if (this.chart) return;
+
+      am4core.options.autoSetClassName = true;
+      am4core.useTheme(am4themes_animated);
+
       this.chart = am4core.create(
         this.diagramRef.nativeElement,
         am4charts.PieChart
       );
 
-      am4core.useTheme(am4themes_animated);
-
       this.renderer.removeChild(this.chart, this.chart.logo.dom);
       const pieSeries = this.chart.series.push(new am4charts.PieSeries());
 
       const createLegend = (identifier: string) => {
-        this.chart.legend = new am4charts.Legend();
-        this.chart.legend.labels.template.fill = am4core.color('#ffffff');
-        this.chart.legend.valueLabels.template.text =
+        this.chart!.legend = new am4charts.Legend();
+        this.chart!.legend.labels.template.fill = am4core.color('#ffffff');
+        this.chart!.legend.valueLabels.template.text =
           "{value.percent.formatNumber('')}";
 
-        const markerTemplate = this.chart.legend.markers.template;
+        const markerTemplate = this.chart!.legend.markers.template;
         markerTemplate.width = 11;
         markerTemplate.height = 11;
 
         if (identifier === 'Subscription Policies') {
-          this.chart.legend.labels.template.fontSize = 18;
-          this.chart.legend.position = 'left';
-          this.chart.legend.valign = 'top';
+          this.chart!.legend.labels.template.fontSize = 18;
+          this.chart!.legend.position = 'left';
+          this.chart!.legend.valign = 'top';
         }
 
         if (identifier === 'Activations') {
-          this.chart.legend.layout = 'horizontal';
-          this.chart.legend.position = 'bottom';
-          this.chart.legend.contentAlign = 'center';
-          this.chart.legend.itemContainers.template.margin(0, 2, 0, 0);
-          this.chart.legend.itemContainers.template.padding(0, 0, 0, 3);
-          this.chart.legend.height = 15;
-          this.chart.legend.itemContainers.template.width = 65;
+          this.chart!.legend.layout = 'horizontal';
+          this.chart!.legend.position = 'bottom';
+          this.chart!.legend.contentAlign = 'center';
+          this.chart!.legend.itemContainers.template.margin(0, 2, 0, 0);
+          this.chart!.legend.itemContainers.template.padding(0, 0, 0, 3);
+          this.chart!.legend.height = 15;
+          this.chart!.legend.itemContainers.template.width = 65;
         }
       };
+
       const createSliceSeries = (
         category: string,
         value: string,
@@ -110,13 +114,10 @@ export class AmChartsPieChartComponent implements OnInit, OnDestroy, OnChanges {
           this.cardTitle === 'Collaborations' ||
           this.cardTitle === 'Collaboration Enrollements'
         ) {
-          this.chart.innerRadius = am4core.percent(75);
-          this.chart.responsive.rules.push({
+          this.chart!.innerRadius = am4core.percent(75);
+          this.chart!.responsive.rules.push({
             relevant: function (target: any) {
-              if (target.pixelWidth <= 200 && target.pixelWidth >= 1) {
-                return true;
-              }
-              return false;
+              return target.pixelWidth <= 200 && target.pixelWidth >= 1;
             },
             state: function (target: any, stateId: string) {
               if (target instanceof am4charts.PieChart) {
@@ -128,12 +129,9 @@ export class AmChartsPieChartComponent implements OnInit, OnDestroy, OnChanges {
               return null;
             },
           });
-          this.chart.responsive.rules.push({
+          this.chart!.responsive.rules.push({
             relevant: function (target: any) {
-              if (target.pixelWidth >= 201 && target.pixelWidth <= 301) {
-                return true;
-              }
-              return false;
+              return target.pixelWidth >= 201 && target.pixelWidth <= 301;
             },
             state: function (target: any, stateId: string) {
               if (target instanceof am4charts.PieChart) {
@@ -146,9 +144,10 @@ export class AmChartsPieChartComponent implements OnInit, OnDestroy, OnChanges {
             },
           });
         }
+
         if (this.cardTitle === 'Subscription Policies') {
           createLegend('Subscription Policies');
-          this.chart.paddingRight = 100;
+          this.chart!.paddingRight = 100;
 
           pieSeries.slices.template.stroke = am4core.color('#fff');
           pieSeries.slices.template.strokeOpacity = 1;
@@ -158,16 +157,17 @@ export class AmChartsPieChartComponent implements OnInit, OnDestroy, OnChanges {
           pieSeries.labels.template.radius = am4core.percent(-40);
           pieSeries.labels.template.fill = am4core.color('white');
         }
+
         if (this.cardTitle === 'Activations') {
           createLegend('Activations');
-          this.chart.radius = am4core.percent(95);
+          this.chart!.radius = am4core.percent(95);
         }
       };
 
       const processPieChartData = (data: string) => {
-        this.chart.data = data;
+        this.chart!.data = data;
         let objectKeysArray: string[] = [];
-        this.chart.data.forEach((data: { [x: string]: any }) => {
+        this.chart!.data.forEach((data: { [x: string]: any }) => {
           for (const key in data) {
             if (data.hasOwnProperty(key)) {
               objectKeysArray.push(key);
@@ -205,11 +205,12 @@ export class AmChartsPieChartComponent implements OnInit, OnDestroy, OnChanges {
           );
         }
       };
+
       processPieChartData(this.data);
     });
   }
 
-  ngOnDestroy() {
+  ngOnDestroy(): void {
     this.zone.runOutsideAngular(() => {
       if (this.chart) {
         this.chart.dispose();
