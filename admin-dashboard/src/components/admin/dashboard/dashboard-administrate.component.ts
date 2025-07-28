@@ -44,13 +44,13 @@ export class DashboardAdministrateComponent
   shipmentOrdersOutboundStockChartData$!: Observable<any>;
   messagesIncomingStockChartData$!: Observable<any>;
   messagesOutcomingStockChartData$!: Observable<any>;
-  nodesBeneficiariesUsersLineGraphData$!: Observable<string>;
-  deployedProcessesLineGraphData$!: Observable<string>;
-  reportsLineGraphData$!: Observable<string>;
-  userRegistrationLineGraphData$!: Observable<string>;
-  paymentsLineGraphData$!: Observable<string>;
-  assignedProcessesLineGraphData$!: Observable<string>;
-  processInstancesLineGraphData$!: Observable<string>;
+  nodesBeneficiariesUsersLineGraphData$!: Observable<any>;
+  deployedProcessesLineGraphData$!: Observable<any>;
+  reportsLineGraphData$!: Observable<any>;
+  userRegistrationLineGraphData$!: Observable<any>;
+  paymentsLineGraphData$!: Observable<any>;
+  assignedProcessesLineGraphData$!: Observable<any>;
+  processInstancesLineGraphData$!: Observable<any>;
 
   subscriptionPoliciesPieChartData$!: Observable<any>;
 

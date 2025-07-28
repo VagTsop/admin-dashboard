@@ -13,7 +13,6 @@ import {
 } from '@angular/core';
 import * as am4charts from '@amcharts/amcharts4/charts';
 import * as am4core from '@amcharts/amcharts4/core';
-import am4themes_animated from '@amcharts/amcharts4/themes/animated';
 import { chartSharedImports } from '../../chart-shared-imports';
 
 @Component({
@@ -55,7 +54,6 @@ export class StockChartComponent
         this.diagramRef.nativeElement,
         am4charts.XYChart
       );
-      am4core.useTheme(am4themes_animated);
 
       this.renderer.removeChild(this.chart, this.chart.logo.dom);
 
