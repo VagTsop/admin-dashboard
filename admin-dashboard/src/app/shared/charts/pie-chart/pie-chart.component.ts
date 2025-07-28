@@ -179,7 +179,6 @@ export class AmChartsPieChartComponent implements OnInit, OnDestroy, OnChanges {
         let counter;
         for (let i = 0; i < objectKeysArray.length; i++) {
           counter = i;
-          console.log(counter);
           createSliceSeries(
             objectKeysArray[0],
             objectKeysArray[1],
@@ -204,7 +203,6 @@ export class AmChartsPieChartComponent implements OnInit, OnDestroy, OnChanges {
                   : counter++ * 40
               })`
           );
-          console.log(counter);
         }
       };
       processPieChartData(this.data);

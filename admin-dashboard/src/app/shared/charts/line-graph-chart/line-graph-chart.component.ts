@@ -130,7 +130,6 @@ export class LineGraphChartComponent implements OnInit, OnDestroy, OnChanges {
       const processLineGraphChartData = (data: string) => {
         this.chart.data = data;
         dateAxis.renderer.minGridDistance = 60;
-        console.log(this.cardTitle);
         if (
           this.cardTitle === 'Assigned Processes' ||
           this.cardTitle === 'Entities in Numbers' ||
@@ -160,7 +159,6 @@ export class LineGraphChartComponent implements OnInit, OnDestroy, OnChanges {
         const date = objectKeysArray.shift();
         if (!date) return;
         objectKeysArray.pop();
-        console.log(objectKeysArray);
         let counter;
         for (let i = 0; i < objectKeysArray.length; i++) {
           counter = i;
