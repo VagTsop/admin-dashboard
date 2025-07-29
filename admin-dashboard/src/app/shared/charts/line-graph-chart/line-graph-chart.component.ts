@@ -135,8 +135,8 @@ export class LineGraphChartComponent
         dateAxis.renderer.minGridDistance = 60;
 
         if (
-          this.cardTitle === 'Assigned Processes' ||
-          this.cardTitle === 'Entities in Numbers' ||
+          this.cardTitle === 'Allocated Workflows' ||
+          this.cardTitle === 'Item Totals' ||
           this.cardTitle === 'Account Actions' ||
           this.cardTitle === 'Process Executions'
         ) {
@@ -191,20 +191,20 @@ export class LineGraphChartComponent
             })`
           );
           if (
-            this.cardTitle === 'Deployed Processes' ||
-            this.cardTitle === 'User Registration Requests'
+            this.cardTitle === 'Active Workflows' ||
+            this.cardTitle === 'Profile Creation Requests'
           ) {
             lineSeries.fillOpacity = 1;
             lineSeries.fill = lineSeries.stroke;
           }
-          if (this.cardTitle === 'Deployed Processes') {
+          if (this.cardTitle === 'Active Workflows') {
             const fillModifier = new am4core.LinearGradientModifier() as any;
             fillModifier.opacities = [0.6, 0.3, 0.1];
             fillModifier.lightnesses = [0.6, 0.3, 0.1];
             fillModifier.gradient.rotation = 90;
             lineSeries.segments.template.fillModifier = fillModifier;
           }
-          if (this.cardTitle !== 'User Registration Requests') {
+          if (this.cardTitle !== 'Profile Creation Requests') {
             addBulletsOnSeries(lineSeries, '#fff');
             const valueLabel = displayLabelOnLastBullet(lineSeries);
             addColorOnText(valueLabel);

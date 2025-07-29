@@ -143,7 +143,7 @@ export class ColumnChartComponent
         topContainer.toBack();
         topContainer.width = am4core.percent(100);
 
-        title.text = 'Entities By Status';
+        title.text = 'Work Items by Phase';
         title.align = 'center';
         title.fill = '#ffffff';
         title.dy = -55;
@@ -171,7 +171,7 @@ export class ColumnChartComponent
         topContainer.width = am4core.percent(100);
 
         const title = topContainer.createChild(am4core.Label) as any;
-        title.text = 'Beneficiaries (Per Type)';
+        title.text = 'Recipient Groups';
         title.align = 'center';
         title.fill = '#ffffff';
         title.dy = -15;
