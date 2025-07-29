@@ -1,20 +1,20 @@
 [
   {
-    "category": "Nodes",
+    "category": "Connectors",
     "active": 40,
     "deactivated": 55,
     "terminated": 65,
     "pending": 75
   },
   {
-    "category": "Beneficiaries",
+    "category": "Recipients",
     "active": 30,
     "deactivated": 78,
     "terminated": 65,
     "pending": 55
   },
   {
-    "category": "Users",
+    "category": "Members",
     "active": 27,
     "deactivated": 40,
     "terminated": 45,
