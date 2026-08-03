@@ -1,0 +1,71 @@
+name: Build & deploy to GitHub Pages
+
+on:
+  push:
+    branches: [master]
+  # Lets you redeploy from the Actions tab without pushing a commit.
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Never let two deploys race. A run already in progress finishes; queued ones
+# collapse to the newest commit.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+env:
+  # The Angular workspace lives one level down from the repository root.
+  PROJECT_DIR: admin-dashboard
+  # Project sites are served from /<repo>/, not from the domain root, so the
+  # build has to know its subpath or every asset request 404s.
+  BASE_HREF: /admin-dashboard/
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ${{ env.PROJECT_DIR }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: ${{ env.PROJECT_DIR }}/package-lock.json
+
+      - name: Install
+        run: npm ci
+
+      - name: Test
+        run: npx ng test --watch=false --browsers=ChromeHeadless
+
+      - name: Build
+        run: npx ng build --configuration production --base-href "$BASE_HREF"
+
+      - name: Add SPA fallback
+        # GitHub Pages serves static files: a refresh on /customers would return
+        # its own 404 page. Serving index.html as 404.html hands the URL back to
+        # the Angular router instead.
+        run: cp dist/admin-dashboard/browser/index.html dist/admin-dashboard/browser/404.html
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: ${{ env.PROJECT_DIR }}/dist/admin-dashboard/browser
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
