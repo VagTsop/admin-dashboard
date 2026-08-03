@@ -57,15 +57,26 @@ export class PerfService {
    * Counts frames over one-second windows. Writing the signal once per second
    * rather than once per frame keeps the meter from becoming the thing that
    * slows the page down.
+   *
+   * A window that overran its one-second target is discarded rather than
+   * published. Browsers stop firing rAF for a backgrounded tab, so the first
+   * window after the user returns would otherwise report a scary "1 fps" that
+   * says nothing about how the page actually performs. The same guard keeps
+   * headless captures honest, where the virtual clock jumps between frames.
    */
   private sampleFrames(): void {
+    const WINDOW_MS = 1_000;
+    const OVERRUN_MS = 2_000;
+
     const loop = () => {
       this.frames++;
       const now = performance.now();
       const elapsed = now - this.windowStart;
 
-      if (elapsed >= 1_000) {
-        this.fps.set(Math.round((this.frames * 1_000) / elapsed));
+      if (elapsed >= WINDOW_MS) {
+        if (elapsed <= OVERRUN_MS) {
+          this.fps.set(Math.round((this.frames * 1_000) / elapsed));
+        }
         this.frames = 0;
         this.windowStart = now;
       }
