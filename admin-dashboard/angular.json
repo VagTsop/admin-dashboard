@@ -5,7 +5,12 @@
   "projects": {
     "admin-dashboard": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "changeDetection": "OnPush",
+          "style": "scss"
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -14,33 +19,28 @@
           "builder": "@angular/build:application",
           "options": {
             "browser": "src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": [],
             "tsConfig": "tsconfig.app.json",
             "assets": [
-              "src/assets",
               {
                 "glob": "**/*",
                 "input": "public"
               }
             ],
-            "styles": [
-              "src/assets/scss/style.scss"
-            ]
+            "styles": ["src/styles.scss"]
           },
           "configurations": {
             "production": {
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "2mb",
-                  "maximumError": "5mb"
+                  "maximumWarning": "320kb",
+                  "maximumError": "500kb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2mb",
-                  "maximumError": "5mb"
+                  "maximumWarning": "8kb",
+                  "maximumError": "16kb"
                 }
               ],
               "outputHashing": "all"
@@ -71,10 +71,7 @@
         "test": {
           "builder": "@angular/build:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
+            "polyfills": [],
             "tsConfig": "tsconfig.spec.json",
             "assets": [
               {
@@ -82,9 +79,7 @@
                 "input": "public"
               }
             ],
-            "styles": [
-              "src/assets/scss/style.scss"
-            ]
+            "styles": ["src/styles.scss"]
           }
         }
       }

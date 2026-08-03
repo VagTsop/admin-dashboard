@@ -1,5 +1,121 @@
-<dashboard-administrate
-  [isDark]="isDark"
-  [toggleTheme]="toggleTheme.bind(this)"
-  style="height: 100vh"
-></dashboard-administrate>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<div class="shell" [class.nav-open]="navOpen()">
+  <aside class="sidebar" aria-label="Primary">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true">
+        <app-icon name="layers" [size]="15" [strokeWidth]="2" />
+      </span>
+      <span class="brand-text">
+        <strong>Atlas</strong>
+        <small>Analytics</small>
+      </span>
+    </div>
+
+    <nav class="nav">
+      @for (item of navItems; track item.path) {
+        <a
+          class="nav-item"
+          [routerLink]="item.path"
+          routerLinkActive="is-active"
+          (click)="closeNav()"
+        >
+          <app-icon [name]="item.icon" [size]="16" />
+          <span class="nav-text">
+            <span class="nav-label">{{ item.label }}</span>
+            <span class="nav-hint">{{ item.hint }}</span>
+          </span>
+        </a>
+      }
+    </nav>
+
+    <!-- Runtime telemetry. A dashboard that claims to be fast should show it. -->
+    <section class="perf" aria-label="Runtime metrics">
+      <h2 class="section-label">Runtime</h2>
+
+      <dl>
+        <div>
+          <dt>Frame rate</dt>
+          <dd [attr.data-tone]="fpsTone()">{{ perf.fps() }} fps</dd>
+        </div>
+        <div>
+          <dt>Rows in DOM</dt>
+          <dd>{{ fmt.number(perf.renderedRows()) }}</dd>
+        </div>
+        <div>
+          <dt>Dataset build</dt>
+          <dd>{{ store.buildMs() }} ms</dd>
+        </div>
+        <div>
+          <dt>Slowest chart</dt>
+          <dd>{{ perf.slowestChartMs() }} ms</dd>
+        </div>
+        <div>
+          <dt>DOM nodes</dt>
+          <dd>{{ fmt.number(perf.domNodes()) }}</dd>
+        </div>
+      </dl>
+
+      <p class="perf-note">
+        {{ fmt.number(datasetMeta.customerCount) }} accounts &middot;
+        {{ datasetMeta.historyDays }} days of history, generated in-browser.
+      </p>
+    </section>
+  </aside>
+
+  <div class="nav-scrim" (click)="closeNav()" aria-hidden="true"></div>
+
+  <div class="content">
+    <header class="topbar">
+      <button
+        class="btn btn-icon nav-toggle"
+        type="button"
+        (click)="toggleNav()"
+        [attr.aria-expanded]="navOpen()"
+        aria-label="Toggle navigation"
+      >
+        <app-icon name="grid" [size]="15" />
+      </button>
+
+      <div class="topbar-spacer"></div>
+
+      <div class="range" role="group" aria-label="Date range">
+        @for (r of ranges; track r.key) {
+          <button
+            class="btn range-btn"
+            type="button"
+            [class.is-active]="store.range() === r.key"
+            [attr.aria-pressed]="store.range() === r.key"
+            (click)="store.setRange(r.key)"
+          >
+            {{ r.label }}
+          </button>
+        }
+      </div>
+
+      <button
+        class="btn live"
+        type="button"
+        [class.is-live]="store.live()"
+        (click)="store.toggleLive()"
+        [attr.aria-pressed]="store.live()"
+      >
+        <span class="pulse" aria-hidden="true"></span>
+        {{ store.live() ? 'Live' : 'Paused' }}
+      </button>
+
+      <button
+        class="btn btn-icon"
+        type="button"
+        (click)="toggleTheme()"
+        [attr.aria-label]="isDark() ? 'Switch to light theme' : 'Switch to dark theme'"
+      >
+        <app-icon [name]="isDark() ? 'sun' : 'moon'" [size]="15" />
+      </button>
+    </header>
+
+    <main #scrollArea id="main" class="main" tabindex="-1">
+      <router-outlet />
+    </main>
+  </div>
+</div>

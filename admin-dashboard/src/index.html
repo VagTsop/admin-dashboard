@@ -1,21 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="utf-8" />
-    <title>AdminDashboard</title>
+    <title>Atlas — SaaS Analytics</title>
     <base href="/" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
+    <meta
+      name="description"
+      content="Zoneless Angular 20 analytics dashboard: 50,000-row virtualised table, streaming KPIs and Canvas charts."
     />
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto:400,500,700"
-      rel="stylesheet"
-    />
+    <meta name="theme-color" content="#08090c" />
+    <link rel="icon" href="favicon.ico" sizes="any" />
+
+    <!--
+      Theme is resolved before first paint so the app never flashes the wrong
+      surface colour. Inline on purpose: a render-blocking request here would
+      cost more than the 8 lines it saves.
+    -->
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem('atlas.theme');
+          var theme =
+            stored ||
+            (window.matchMedia('(prefers-color-scheme: light)').matches
+              ? 'light'
+              : 'dark');
+          document.documentElement.dataset.theme = theme;
+          document
+            .querySelector('meta[name=theme-color]')
+            .setAttribute('content', theme === 'light' ? '#f7f8fa' : '#08090c');
+        } catch (e) {
+          /* private mode — the dark default already applied is fine */
+        }
+      })();
+    </script>
   </head>
-  <body class="light-theme">
-    <app-root></app-root>
+  <body>
+    <app-root>
+      <!-- Pre-hydration shell: paints instantly, replaced on bootstrap. -->
+      <div
+        style="
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 100vh;
+          font: 500 13px/1.5 system-ui, sans-serif;
+          color: #626b7b;
+        "
+      >
+        Loading Atlas…
+      </div>
+    </app-root>
   </body>
 </html>

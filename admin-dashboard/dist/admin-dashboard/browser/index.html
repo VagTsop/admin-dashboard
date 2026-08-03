@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en" data-theme="dark" data-beasties-container>
+  <head>
+    <meta charset="utf-8">
+    <title>Atlas — SaaS Analytics</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Zoneless Angular 20 analytics dashboard: 50,000-row virtualised table, streaming KPIs and Canvas charts.">
+    <meta name="theme-color" content="#08090c">
+    <link rel="icon" href="favicon.ico" sizes="any">
+
+    <!--
+      Theme is resolved before first paint so the app never flashes the wrong
+      surface colour. Inline on purpose: a render-blocking request here would
+      cost more than the 8 lines it saves.
+    -->
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem('atlas.theme');
+          var theme =
+            stored ||
+            (window.matchMedia('(prefers-color-scheme: light)').matches
+              ? 'light'
+              : 'dark');
+          document.documentElement.dataset.theme = theme;
+          document
+            .querySelector('meta[name=theme-color]')
+            .setAttribute('content', theme === 'light' ? '#f7f8fa' : '#08090c');
+        } catch (e) {
+          /* private mode — the dark default already applied is fine */
+        }
+      })();
+    </script>
+  <style>:root{--font-sans:"Inter var", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;--font-mono:ui-monospace, "SF Mono", "Cascadia Mono", "Roboto Mono", Menlo, Consolas, monospace;--text-2xs:.6875rem;--text-xs:.75rem;--text-sm:.8125rem;--text-base:.875rem;--text-md:1rem;--text-lg:1.25rem;--text-xl:1.75rem;--text-2xl:2.25rem;--sp-1:.25rem;--sp-2:.5rem;--sp-3:.75rem;--sp-4:1rem;--sp-5:1.25rem;--sp-6:1.5rem;--sp-8:2rem;--sp-10:2.5rem;--sp-12:3rem;--radius-sm:6px;--radius:10px;--radius-lg:14px;--radius-full:999px;--shell-sidebar:244px;--shell-topbar:60px;--ease-out:cubic-bezier(.22, 1, .36, 1);--ease-in-out:cubic-bezier(.65, 0, .35, 1);--dur-fast:.12s;--dur:.22s;--dur-slow:.42s;--viz-1:#6366f1;--viz-2:#06b6d4;--viz-3:#f59e0b;--viz-4:#ec4899;--viz-5:#10b981;--viz-6:#8b5cf6;--viz-7:#f43f5e;--viz-8:#14b8a6}:root{color-scheme:dark;--bg:#08090c;--bg-elevated:#0d0f14;--surface:#111318;--surface-hover:#16191f;--surface-active:#1b1f27;--border:#1e232c;--border-strong:#2a303b;--fg:#eef1f6;--fg-muted:#9aa3b2;--fg-subtle:#626b7b;--accent:#6366f1;--accent-hover:#7c7ff3;--accent-fg:#ffffff;--accent-soft:rgba(99, 102, 241, .14);--positive:#34d399;--positive-soft:rgba(52, 211, 153, .13);--negative:#fb7185;--negative-soft:rgba(251, 113, 133, .13);--warning:#fbbf24;--warning-soft:rgba(251, 191, 36, .13);--grid-line:rgba(255, 255, 255, .055);--shadow-card:0 1px 2px rgba(0, 0, 0, .5);--shadow-pop:0 16px 40px -12px rgba(0, 0, 0, .75);--glow:radial-gradient( 600px circle at var(--mx, 50%) var(--my, 0%), rgba(99, 102, 241, .09), transparent 42% )}*,*:before,*:after{box-sizing:border-box}html,body{height:100%}body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--font-sans);font-size:var(--text-base);line-height:1.5;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-variant-numeric:tabular-nums;transition:background-color var(--dur) var(--ease-out),color var(--dur) var(--ease-out)}*{scrollbar-width:thin;scrollbar-color:var(--border-strong) transparent}*::-webkit-scrollbar{width:10px;height:10px}*::-webkit-scrollbar-track{background:transparent}*::-webkit-scrollbar-thumb{background:var(--border-strong);border:3px solid transparent;background-clip:content-box;border-radius:var(--radius-full)}*::-webkit-scrollbar-thumb:hover{background:var(--fg-subtle);background-clip:content-box}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}</style><link rel="stylesheet" href="styles-JAJOQZNZ.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles-JAJOQZNZ.css"></noscript></head>
+  <body>
+    <app-root>
+      <!-- Pre-hydration shell: paints instantly, replaced on bootstrap. -->
+      <div style="
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 100vh;
+          font: 500 13px/1.5 system-ui, sans-serif;
+          color: #626b7b;
+        ">
+        Loading Atlas…
+      </div>
+    </app-root>
+  <link rel="modulepreload" href="chunk-EFCO55WO.js"><link rel="modulepreload" href="chunk-X36DYYCP.js"><link rel="modulepreload" href="chunk-NJOPWRIB.js"><link rel="modulepreload" href="chunk-SRGWIMNO.js"><script src="main-2LUPI467.js" type="module"></script></body>
+</html>
