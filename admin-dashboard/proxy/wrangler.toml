@@ -1,0 +1,7 @@
+name = "atlas-assistant"
+main = "worker.js"
+compatibility_date = "2026-01-01"
+
+# GEMINI_KEY is NOT set here — it is a secret, added with:
+#   wrangler secret put GEMINI_KEY
+# Anything written in this file ends up in the repository.

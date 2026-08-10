@@ -39,3 +39,7 @@ yarn-error.log*
 # Misc
 /.sass-cache
 /connect.lock
+
+# The Worker source is real source, not build output — the blanket *.js rule
+# above would otherwise leave the proxy unreproducible from this repo.
+!proxy/worker.js

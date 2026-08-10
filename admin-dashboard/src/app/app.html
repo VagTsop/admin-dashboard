@@ -79,6 +79,17 @@
 
       <div class="topbar-spacer"></div>
 
+      <button
+        class="btn btn-icon ask"
+        type="button"
+        (click)="assistant.toggle()"
+        [attr.aria-expanded]="assistant.open()"
+        aria-label="Ask Atlas"
+        title="Ask Atlas"
+      >
+        <app-icon name="bolt" [size]="15" />
+      </button>
+
       <div class="range" role="group" aria-label="Date range">
         @for (r of ranges; track r.key) {
           <button
@@ -119,3 +130,5 @@
     </main>
   </div>
 </div>
+
+<app-assistant-panel />

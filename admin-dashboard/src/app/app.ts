@@ -23,6 +23,8 @@ import { PerfService } from './core/services/perf.service';
 import { ThemeService } from './core/services/theme.service';
 import { DATASET_META } from './core/data/dataset.factory';
 import { IconComponent, IconName } from './shared/ui/icon.component';
+import { AssistantPanelComponent } from './shared/ui/assistant-panel.component';
+import { AssistantService } from './core/services/assistant.service';
 import { fmt } from './core/utils/format';
 
 interface NavItem {
@@ -35,7 +37,7 @@ interface NavItem {
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, RouterLink, RouterLinkActive, IconComponent],
+  imports: [RouterOutlet, RouterLink, RouterLinkActive, IconComponent, AssistantPanelComponent],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './app.html',
   styleUrl: './app.scss',
@@ -43,6 +45,7 @@ interface NavItem {
 export class App {
   private readonly theme = inject(ThemeService);
   protected readonly store = inject(AnalyticsStore);
+  protected readonly assistant = inject(AssistantService);
   protected readonly perf = inject(PerfService);
 
   protected readonly ranges = RANGES;
