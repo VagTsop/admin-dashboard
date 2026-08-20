@@ -80,11 +80,17 @@ export class GeminiTransport implements AssistantTransport {
       systemInstruction: { parts: [{ text: SYSTEM }] },
       tools: TOOLS,
       contents: [
-        // Keep a short window of turns so follow-ups work without the payload growing.
-        ...history.slice(-6).map((m) => ({
-          role: m.role === 'user' ? 'user' : 'model',
-          parts: [{ text: m.text }],
-        })),
+        // Keep a short window of turns so follow-ups work without the payload
+        // growing. Empty turns are dropped first: a question stopped before its
+        // first token leaves a blank reply behind, and an empty part is a 400
+        // that would take the rest of the session down with it.
+        ...history
+          .filter((m) => m.text.trim().length > 0)
+          .slice(-6)
+          .map((m) => ({
+            role: m.role === 'user' ? 'user' : 'model',
+            parts: [{ text: m.text }],
+          })),
         {
           role: 'user',
           parts: [

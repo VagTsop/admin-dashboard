@@ -90,24 +90,35 @@ export class AssistantService {
     ]);
 
     this.busy.set(true);
-    this.controller = new AbortController();
+    // Held locally as well: stop() clears the field, and the catch below still
+    // needs to know whether this particular request was cancelled.
+    const controller = new AbortController();
+    this.controller = controller;
     const snapshot = this.snapshot();
 
     const transport: AssistantTransport =
       this.remote && !this.degraded() ? this.remote : this.mock;
 
     try {
-      for await (const chunk of transport.send(text, snapshot, history, this.controller.signal)) {
+      for await (const chunk of transport.send(text, snapshot, history, controller.signal)) {
         if (chunk.text) this.append(reply.id, chunk.text);
         if (chunk.toolCall) this.runTool(reply.id, chunk.toolCall);
       }
     } catch (err) {
-      // A proxy that is down or rate-limited should not end the conversation:
-      // drop to the local answerer and retry once, silently.
-      if (transport === this.remote) {
+      // Stop aborts the same fetch a dead proxy would reject: a cancellation is
+      // a choice, not an outage, so it must not demote the rest of the session.
+      if (controller.signal.aborted) {
+        // stop() has already cleared `streaming`; the partial reply stands.
+      } else if (transport === this.remote) {
+        // A proxy that is down or rate-limited should not end the conversation:
+        // drop to the local answerer and retry once, silently.
         this.degraded.set(true);
+        // Whatever tokens arrived before the break are half a sentence; leaving
+        // them would run the local answer on from a thought Gemini never
+        // finished. Tool calls already ran, so those notes stay.
+        this.replace(reply.id, '');
         try {
-          for await (const chunk of this.mock.send(text, snapshot, history, this.controller.signal)) {
+          for await (const chunk of this.mock.send(text, snapshot, history, controller.signal)) {
             if (chunk.text) this.append(reply.id, chunk.text);
             if (chunk.toolCall) this.runTool(reply.id, chunk.toolCall);
           }
@@ -121,8 +132,13 @@ export class AssistantService {
       this.messages.update((list) =>
         list.map((m) => (m.id === reply.id ? { ...m, streaming: false } : m)),
       );
-      this.busy.set(false);
-      this.controller = null;
+      // Only if a newer question has not already taken over: stopping one and
+      // asking the next immediately would otherwise leave the new request with
+      // no controller to abort and the panel showing itself as idle.
+      if (this.controller === controller) {
+        this.busy.set(false);
+        this.controller = null;
+      }
     }
   }
 
@@ -132,6 +148,10 @@ export class AssistantService {
     this.messages.update((list) =>
       list.map((m) => (m.id === id ? { ...m, text: m.text + text } : m)),
     );
+  }
+
+  private replace(id: string, text: string): void {
+    this.messages.update((list) => list.map((m) => (m.id === id ? { ...m, text } : m)));
   }
 
   private note(id: string, action: string): void {
@@ -191,8 +211,15 @@ export class AssistantService {
       kpis: this.store.kpis().map((k) => ({
         id: k.id,
         label: k.label,
-        value: Math.round(k.value * 100) / 100,
-        delta: Math.round(k.delta * 1000) / 1000,
+        // Two decimals is the right trim for dollars and users, and far too
+        // coarse for a ratio: churn at 0.0153 would round to 0.02 and be quoted
+        // as 2% against a card reading 1.5%. Ratios keep six, which is past the
+        // point where a trim could tip the card's own rounding either way.
+        value:
+          k.format === 'percent'
+            ? Math.round(k.value * 1_000_000) / 1_000_000
+            : Math.round(k.value * 100) / 100,
+        delta: Math.round(k.delta * 1_000_000) / 1_000_000,
         format: k.format,
       })),
       planMix: this.store.plans().map((p) => ({

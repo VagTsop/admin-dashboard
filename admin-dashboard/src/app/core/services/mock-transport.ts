@@ -5,14 +5,19 @@ import type {
   DashboardSnapshot,
   ToolCall,
 } from './assistant.types';
+import { fmt } from '../utils/format';
 
-/** Handles negatives explicitly — outflows in this dataset are stored negative. */
-const money = (n: number) => {
-  const sign = n < 0 ? '-' : '';
-  const abs = Math.abs(n);
-  return abs >= 1000 ? `${sign}$${(abs / 1000).toFixed(1)}k` : `${sign}$${Math.round(abs)}`;
-};
-const pct = (n: number) => `${(n * 100).toFixed(1)}%`;
+/**
+ * The same formatters the cards and charts use.
+ *
+ * Quoting a figure differently from the tile it came from reads as a second,
+ * disagreeing source — so this borrows the dashboard's own, rather than keeping
+ * a parallel set that has to be remembered about. Negatives pass through
+ * unchanged, which matters here: outflows in this dataset are stored negative.
+ */
+const money = (n: number) => fmt.currencyCompact(n);
+/** Takes a ratio, not a percentage: 0.0153 renders as 1.5%. */
+const pct = (n: number) => fmt.percent(n);
 
 /**
  * Answers questions from the snapshot alone, with no model behind it.
@@ -79,7 +84,7 @@ export class MockTransport implements AssistantTransport {
           `Revenue update — ${snap.range} view.\n\n` +
           `MRR stands at ${money(mrr?.value ?? 0)}, ${signed(mrr?.delta ?? 0)} on the previous period. ` +
           `${users ? `Active users are at ${Math.round(users.value).toLocaleString()} (${signed(users.delta)}). ` : ''}` +
-          `${churn ? `Churn is running at ${pct(churn.value / 100)}. ` : ''}` +
+          `${churn ? `Churn is running at ${pct(churn.value)}. ` : ''}` +
           `${snap.planMix.length ? `${topPlan(snap)} remains the largest plan by revenue.` : ''}`,
       };
     }
