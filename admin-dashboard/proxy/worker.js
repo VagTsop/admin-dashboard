@@ -32,6 +32,16 @@ function rateLimited(ip) {
   const window = hits.get(ip)?.filter((t) => now - t < 60_000) ?? [];
   window.push(now);
   hits.set(ip, window);
+
+  // Visitors who never come back would otherwise sit in this map until the
+  // isolate is recycled. Swept here rather than on a timer: the only moment the
+  // map is known to be worth walking is when something was just added to it.
+  if (hits.size > 500) {
+    for (const [key, times] of hits) {
+      if (times[times.length - 1] < now - 60_000) hits.delete(key);
+    }
+  }
+
   return window.length > MAX_PER_MINUTE;
 }
 

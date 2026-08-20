@@ -59,6 +59,19 @@ import { IconComponent } from './icon.component';
               Answers come from a digest of the current view — not the raw 50,000 rows, and
               never from outside it.
             </p>
+
+            <!-- A visitor who has never met this panel does not know that it can
+                 do anything besides talk. Saying so beats hoping they guess. -->
+            <ul class="can">
+              @for (item of assistant.abilities; track item.example) {
+                <li>
+                  <span class="can-what">{{ item.what }}</span>
+                  <button type="button" class="can-try" (click)="assistant.ask(item.example)">
+                    “{{ item.example }}”
+                  </button>
+                </li>
+              }
+            </ul>
           </div>
         }
 
@@ -91,13 +104,6 @@ import { IconComponent } from './icon.component';
         }
       </div>
 
-      @if (!assistant.messages().length) {
-        <div class="chips">
-          @for (s of assistant.suggestions; track s) {
-            <button type="button" (click)="assistant.ask(s)">{{ s }}</button>
-          }
-        </div>
-      }
 
       <form class="composer" (submit)="submit($event)">
         <input
@@ -236,6 +242,43 @@ import { IconComponent } from './icon.component';
       color: var(--text-dim, #7d8698);
     }
 
+    .can {
+      list-style: none;
+      margin: 1.1rem 0 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+    .can li {
+      display: flex;
+      flex-direction: column;
+      gap: 0.15rem;
+    }
+    .can-what {
+      font-size: var(--text-2xs);
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--text-dim, #7d8698);
+    }
+    .can-try {
+      align-self: flex-start;
+      max-width: 100%;
+      padding: 0.34rem 0.55rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--surface);
+      color: inherit;
+      font: inherit;
+      font-size: var(--text-sm);
+      text-align: left;
+      cursor: pointer;
+    }
+    .can-try:hover {
+      background: var(--surface-active);
+    }
+
     .msg {
       display: flex;
       gap: 0.5rem;
@@ -308,28 +351,6 @@ import { IconComponent } from './icon.component';
       margin: 0.4rem 0 0;
       font-size: var(--text-xs);
       color: #f87171;
-    }
-
-    .chips {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.35rem;
-      padding: 0 0.9rem 0.6rem;
-      flex: none;
-    }
-    .chips button {
-      padding: 0.3rem 0.55rem;
-      border: 1px solid var(--border);
-      border-radius: var(--radius-full);
-      background: var(--surface);
-      color: inherit;
-      font: inherit;
-      font-size: var(--text-xs);
-      cursor: pointer;
-      transition: background var(--dur-fast) var(--ease-out);
-    }
-    .chips button:hover {
-      background: var(--surface-hover);
     }
 
     .composer {

@@ -1,4 +1,5 @@
 import { formatKpi } from '../utils/format';
+import { TOOLS } from './gemini-transport';
 import type { AssistantChunk, DashboardSnapshot } from './assistant.types';
 import { MockTransport } from './mock-transport';
 
@@ -84,6 +85,46 @@ describe('MockTransport', () => {
     expect(tool?.name).toBe('setRange');
     expect(tool?.args['range']).toBe('12m');
   });
+
+  it('puts the accounts on screen instead of only reciting them', async () => {
+    const { text, tool } = await ask('Show me the accounts we should call');
+    expect(tool?.name).toBe('filterCustomers');
+    expect(tool?.args['sort']).toBe('health');
+    expect(tool?.args['direction']).toBe('asc');
+    expect(text).toContain('Quanta Networks');
+  });
+
+  it('narrows to the plan the question named', async () => {
+    const { tool } = await ask('Which enterprise accounts are at risk?');
+    expect(tool?.args['plan']).toBe('enterprise');
+  });
+
+  it('exports offline exactly as it would online', async () => {
+    const { tool } = await ask('Export these numbers to a file');
+    expect(tool?.name).toBe('exportReport');
+  });
+
+  // Eight full answers streamed a word at a time run past Jasmine's default.
+  it('emits no tool the remote assistant has not declared', async () => {
+    const declared = new Set(TOOLS[0].functionDeclarations.map((d) => d.name));
+    const questions = [
+      'Why did MRR move this period?',
+      'Draft the weekly revenue update',
+      'Which accounts should we call first?',
+      'Which enterprise accounts are at risk?',
+      'Export these numbers to a file',
+      'Compare the plans by revenue',
+      'Show me the last 12 months',
+      'What is our churn rate right now?',
+    ];
+
+    for (const question of questions) {
+      const { tool } = await ask(question);
+      // Drift here is invisible until the proxy goes down and the local
+      // answerer turns out to speak a smaller language than the remote one.
+      if (tool) expect(declared.has(tool.name)).toBeTrue();
+    }
+  }, 20_000);
 
   it('stops mid-answer when the request is aborted', async () => {
     const controller = new AbortController();

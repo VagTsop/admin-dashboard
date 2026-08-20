@@ -35,11 +35,20 @@ function csvCell(value: string): string {
   return /[",\r\n]/.test(value) ? `"${value.replace(/"/g, '""')}"` : value;
 }
 
-const SUGGESTIONS = [
-  'Why did MRR move this period?',
-  'Draft the weekly revenue update',
-  'Which accounts should we call first?',
-  'Compare the plans by revenue',
+/**
+ * What the panel can do, in the visitor's terms, with one question that proves
+ * each. Shown before the first message: nobody opens a chat box knowing that it
+ * also drives the screen behind it, and a blank box invites a bad first try.
+ *
+ * Every example is answerable by the local transport too, so the introduction
+ * still holds when the proxy is out of quota.
+ */
+const ABILITIES: readonly { what: string; example: string }[] = [
+  { what: 'Explain a movement', example: 'Why did MRR move this period?' },
+  { what: 'Write the update', example: 'Draft the weekly revenue update' },
+  { what: 'Change the time window', example: 'Show me the last 12 months' },
+  { what: 'Filter the table', example: 'Which enterprise accounts are at risk?' },
+  { what: 'Export what you see', example: 'Export these numbers to a file' },
 ] as const;
 
 @Injectable({ providedIn: 'root' })
@@ -63,7 +72,7 @@ export class AssistantService {
   readonly open = signal(false);
   readonly messages = signal<ChatMessage[]>([]);
   readonly busy = signal(false);
-  readonly suggestions = SUGGESTIONS;
+  readonly abilities = ABILITIES;
 
   readonly mode = computed<'gemini' | 'demo'>(() =>
     this.remote && !this.degraded() ? 'gemini' : 'demo',

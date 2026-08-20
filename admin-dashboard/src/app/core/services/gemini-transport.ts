@@ -7,7 +7,7 @@ import type {
 } from './assistant.types';
 
 /** Function declarations the model may call — each mirrors a control the UI already has. */
-const TOOLS = [
+export const TOOLS = [
   {
     functionDeclarations: [
       {
@@ -75,7 +75,9 @@ Rules, in order of importance:
    extrapolate or invent a number.
 3. Be short. Two to four sentences unless asked for a written update.
 4. Quote figures the way the dashboard formats them: currency rounded, deltas
-   as percentages.
+   as percentages, and percentages to one decimal place. The snapshot carries
+   more precision than the cards display; do not pass that extra digit on, or
+   your answer and the tile beside it will disagree over the same number.
 5. Operate the dashboard rather than describing how to. When a different time
    window would answer the question better, call setRange. When the answer is a
    set of accounts, call filterCustomers and say what you filtered to. When the

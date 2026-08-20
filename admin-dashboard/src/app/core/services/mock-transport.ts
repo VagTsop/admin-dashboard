@@ -106,21 +106,41 @@ export class MockTransport implements AssistantTransport {
       };
     }
 
+    // --- export ------------------------------------------------------------
+    // Exporting is the dashboard's own work, so this answers as capably offline
+    // as online: the tool writes the same snapshot either transport was given.
+    if (/export|download|csv|spreadsheet|save (this|these|the)/.test(q)) {
+      return {
+        text: `Saving the ${snap.range} figures as a CSV — the same numbers shown here, one row per metric and one per month.`,
+        toolCall: { name: 'exportReport', args: {} },
+      };
+    }
+
     // --- accounts at risk ------------------------------------------------
-    if (/risk|churn|health|call|save|cs\b|retention/.test(q)) {
+    if (/risk|churn|health|call|save|cs\b|retention|account/.test(q)) {
       if (!snap.atRisk.length) {
         return { text: 'No accounts are currently below the health threshold — nothing to escalate.' };
       }
-      const lines = snap.atRisk
+
+      const plan = snap.planMix.find((p) => q.includes(p.plan) || q.includes(p.label.toLowerCase()));
+      const shown = plan ? snap.atRisk.filter((c) => c.plan === plan.plan) : snap.atRisk;
+      const lines = shown
         .slice(0, 5)
         .map((c) => `• ${c.name} — ${c.plan}, ${money(c.mrr)} MRR, health ${c.health}/100 (${c.status})`)
         .join('\n');
-      const exposure = snap.atRisk.reduce((s, c) => s + c.mrr, 0);
+      const exposure = shown.reduce((s, c) => s + c.mrr, 0);
+
       return {
         text:
-          `${snap.atRisk.length} accounts are below a health score of 40, together worth ` +
+          `${shown.length} ${plan ? `${plan.label} ` : ''}accounts are below a health score of 40, together worth ` +
           `${money(exposure)} of MRR. The ones worth a call first:\n\n${lines}\n\n` +
-          `The pattern is concentrated in the larger plans, so a single save is worth more than the count suggests.`,
+          `The table is now filtered to match, weakest first.`,
+        // Same reach as the remote assistant: the list is put on screen where it
+        // can be sorted and worked through, not just recited into the panel.
+        toolCall: {
+          name: 'filterCustomers',
+          args: { plan: plan?.plan ?? 'all', sort: 'health', direction: 'asc' },
+        },
       };
     }
 
