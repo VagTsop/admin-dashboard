@@ -1,5 +1,5 @@
 import type { AssistantChunk, DashboardSnapshot } from './assistant.types';
-import { GeminiTransport } from './gemini-transport';
+import { GeminiTransport, ProxyError } from './gemini-transport';
 
 /**
  * Written after the deployed demo spent an afternoon in offline mode: Gemini
@@ -55,6 +55,27 @@ describe('GeminiTransport', () => {
 
     await expectAsync(drain()).toBeRejected();
     expect(calls).toBe(2);
+  });
+
+  it('does not retry a 429: neither a spent minute nor a spent day clears in one', async () => {
+    spyOn(globalThis, 'fetch').and.callFake(async () => {
+      calls++;
+      return new Response('quota', { status: 429 });
+    });
+
+    await expectAsync(drain()).toBeRejectedWithError(/429/);
+    expect(calls).toBe(1);
+  });
+
+  it('reports the status so the caller can pick how long to stay away', async () => {
+    spyOn(globalThis, 'fetch').and.resolveTo(new Response('quota', { status: 429 }));
+
+    try {
+      await drain();
+      fail('expected a rejection');
+    } catch (err) {
+      expect((err as ProxyError).status).toBe(429);
+    }
   });
 
   it('does not retry a refusal, which will not fix itself', async () => {

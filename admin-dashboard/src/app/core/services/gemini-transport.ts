@@ -200,18 +200,33 @@ export class GeminiTransport implements AssistantTransport {
 
       const status = res?.status ?? 0; // 0 stands for the network never answering
       if (attempt >= RETRIES || !RETRYABLE.has(status)) {
-        throw new Error(`assistant proxy: ${status || 'unreachable'}`);
+        throw new ProxyError(status);
       }
       await delay(RETRY_DELAY_MS, signal);
     }
   }
 }
 
+/** Carries the status so the caller can tell a busy minute from a spent day. */
+export class ProxyError extends Error {
+  constructor(readonly status: number) {
+    super(`assistant proxy: ${status || 'unreachable'}`);
+    this.name = 'ProxyError';
+  }
+}
+
 const RETRIES = 1;
 const RETRY_DELAY_MS = 900;
 
-/** Transient by nature: overload, rate limit, gateway, or no answer at all. */
-const RETRYABLE = new Set([0, 408, 425, 429, 500, 502, 503, 504]);
+/**
+ * Worth one more try a second later: overload, gateway trouble, or no answer.
+ *
+ * 429 is deliberately absent. Google returns it both for a minute's rate limit
+ * and for a day's quota being gone, and neither is fixed by asking again a
+ * second later — the retry just spends another request to be told the same
+ * thing. That one is handled by staying out of the way for longer instead.
+ */
+const RETRYABLE = new Set([0, 408, 425, 500, 502, 503, 504]);
 
 function delay(ms: number, signal: AbortSignal): Promise<void> {
   return new Promise((resolve, reject) => {

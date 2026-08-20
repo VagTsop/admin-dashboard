@@ -10,7 +10,7 @@ import type {
   DashboardSnapshot,
   ToolCall,
 } from './assistant.types';
-import { GeminiTransport } from './gemini-transport';
+import { GeminiTransport, ProxyError } from './gemini-transport';
 import { MockTransport } from './mock-transport';
 
 /**
@@ -24,6 +24,9 @@ const PROXY_URL = 'https://atlas-assistant.vatsop52.workers.dev';
 
 /** How long the local answerer keeps the conversation after a proxy failure. */
 const DEGRADED_MS = 60_000;
+
+/** And after a quota refusal, which a minute will not clear. */
+const QUOTA_DEGRADED_MS = 15 * 60_000;
 
 const SORT_KEYS: readonly SortKey[] = ['name', 'plan', 'seats', 'mrr', 'health', 'lastSeen'];
 
@@ -132,7 +135,7 @@ export class AssistantService {
       } else if (transport === this.remote) {
         // A proxy that is down or rate-limited should not end the conversation:
         // drop to the local answerer and retry once, silently.
-        this.degrade();
+        this.degrade(err);
         // Whatever tokens arrived before the break are half a sentence; leaving
         // them would run the local answer on from a thought Gemini never
         // finished. Tool calls already ran, so those notes stay.
@@ -244,14 +247,26 @@ export class AssistantService {
     return `Exported the ${snap.range} figures as CSV`;
   }
 
-  /** Hands the next question back to Gemini once the cooling-off period ends. */
-  private degrade(): void {
+  /**
+   * Hands the next question back to Gemini once the cooling-off period ends.
+   *
+   * A busy minute is worth waiting out; an exhausted quota is not. 429 means
+   * the key is either over its per-minute limit or out of requests for the day,
+   * and coming back in a minute to find out which just spends another request
+   * on the answer — so that one waits considerably longer.
+   */
+  private degrade(err: unknown): void {
+    const quota = err instanceof ProxyError && err.status === 429;
+
     this.degraded.set(true);
     if (this.cooldown) clearTimeout(this.cooldown);
-    this.cooldown = setTimeout(() => {
-      this.degraded.set(false);
-      this.cooldown = null;
-    }, DEGRADED_MS);
+    this.cooldown = setTimeout(
+      () => {
+        this.degraded.set(false);
+        this.cooldown = null;
+      },
+      quota ? QUOTA_DEGRADED_MS : DEGRADED_MS,
+    );
   }
 
   private replace(id: string, text: string): void {
