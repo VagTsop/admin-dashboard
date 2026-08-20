@@ -24,6 +24,7 @@ export type IconName =
   | 'gauge'
   | 'grid'
   | 'layers'
+  | 'mic'
   | 'moon'
   | 'pause'
   | 'play'
@@ -45,6 +46,7 @@ const PATHS: Record<IconName, string> = {
   gauge: 'M12 14l4-4M20.6 17a9 9 0 1 0-17.2 0',
   grid: 'M3 3h7v7H3zM14 3h7v7h-7zM14 14h7v7h-7zM3 14h7v7H3z',
   layers: 'm12 2 9 5-9 5-9-5 9-5ZM3 12l9 5 9-5M3 17l9 5 9-5',
+  mic: 'M12 3a3 3 0 0 0-3 3v5a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3ZM5 11a7 7 0 0 0 14 0M12 18v3',
   moon: 'M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z',
   pause: 'M10 4v16M14 4v16',
   play: 'M6 4l14 8-14 8V4Z',

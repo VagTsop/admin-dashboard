@@ -3,6 +3,7 @@ import { DestroyRef, Injectable, computed, inject, signal } from '@angular/core'
 import { createDataset } from '../data/dataset.factory';
 import {
   Dataset,
+  ForecastPoint,
   Kpi,
   RANGES,
   RangeKey,
@@ -14,6 +15,14 @@ const TICK_MS = 2_000;
 
 /** Days in the notional month used to normalise churn and retention. */
 const MONTH_DAYS = 30;
+
+const DAY_MS = 86_400_000;
+
+/** Below this, a trend line is drawing noise. */
+const MIN_FIT_POINTS = 5;
+
+/** How far past the window to project, as a share of the window itself. */
+const HORIZON_SHARE = 0.2;
 
 /**
  * Application state for the analytics workspace.
@@ -50,6 +59,62 @@ export class AnalyticsStore {
     const all = this.data().revenue;
     const days = RANGES.find((r) => r.key === this.range())!.days;
     return all.slice(Math.max(0, all.length - days));
+  });
+
+  /**
+   * Where the visible window is heading, projected a fifth of its own length
+   * forward.
+   *
+   * Least squares on the visible MRR, with a band at two standard errors of the
+   * residuals — so a steady series projects a narrow corridor and a jumpy one
+   * projects a wide one, which is the honest way to draw the difference. No
+   * model is involved: this is arithmetic the browser can do in a millisecond,
+   * and it stays right even when the assistant is offline.
+   */
+  readonly forecast = computed<readonly ForecastPoint[]>(() => {
+    const series = this.series();
+    if (series.length < MIN_FIT_POINTS) return [];
+
+    const n = series.length;
+    const meanX = (n - 1) / 2;
+    const meanY = series.reduce((s, p) => s + p.mrr, 0) / n;
+
+    let covariance = 0;
+    let variance = 0;
+    for (let i = 0; i < n; i++) {
+      const dx = i - meanX;
+      covariance += dx * (series[i].mrr - meanY);
+      variance += dx * dx;
+    }
+    if (variance === 0) return [];
+
+    const slope = covariance / variance;
+    const intercept = meanY - slope * meanX;
+
+    // Spread of what the line failed to explain, which is what the band is for.
+    let residuals = 0;
+    for (let i = 0; i < n; i++) {
+      const error = series[i].mrr - (intercept + slope * i);
+      residuals += error * error;
+    }
+    const spread = 2 * Math.sqrt(residuals / Math.max(1, n - 2));
+
+    const step = series.length > 1 ? series[1].t - series[0].t : DAY_MS;
+    const horizon = Math.max(3, Math.round(n * HORIZON_SHARE));
+    const lastT = series[n - 1].t;
+
+    return Array.from({ length: horizon }, (_, k) => {
+      const x = n - 1 + (k + 1);
+      const mrr = intercept + slope * x;
+      // The band widens with distance: the further out, the less the fit knows.
+      const reach = spread * Math.sqrt(1 + (k + 1) / horizon);
+      return {
+        t: lastT + step * (k + 1),
+        mrr,
+        lower: mrr - reach,
+        upper: mrr + reach,
+      };
+    });
   });
 
   /** The equivalent window immediately before `series`, for delta maths. */

@@ -30,6 +30,37 @@ const TOOLS = [
         description: 'Pause or resume the live data feed.',
         parameters: { type: 'OBJECT', properties: {} },
       },
+      {
+        name: 'filterCustomers',
+        description:
+          'Open the customers table filtered to a plan, a search term, or both, and sorted by a column. Use it when the answer is a set of accounts the user should look at rather than a figure.',
+        parameters: {
+          type: 'OBJECT',
+          properties: {
+            plan: {
+              type: 'STRING',
+              enum: ['starter', 'growth', 'scale', 'enterprise', 'all'],
+              description: 'Plan to filter to, or "all" to clear the filter.',
+            },
+            query: {
+              type: 'STRING',
+              description: 'Search term matched against account name and domain.',
+            },
+            sort: {
+              type: 'STRING',
+              enum: ['name', 'plan', 'seats', 'mrr', 'health', 'lastSeen'],
+              description: 'Column to sort by.',
+            },
+            direction: { type: 'STRING', enum: ['asc', 'desc'] },
+          },
+        },
+      },
+      {
+        name: 'exportReport',
+        description:
+          'Download the figures currently on screen as a CSV. Use it when the user asks to export, download or save the numbers.',
+        parameters: { type: 'OBJECT', properties: {} },
+      },
     ],
   },
 ];
@@ -45,8 +76,11 @@ Rules, in order of importance:
 3. Be short. Two to four sentences unless asked for a written update.
 4. Quote figures the way the dashboard formats them: currency rounded, deltas
    as percentages.
-5. When a different time window would answer the question better, call setRange
-   rather than telling the user to click it.
+5. Operate the dashboard rather than describing how to. When a different time
+   window would answer the question better, call setRange. When the answer is a
+   set of accounts, call filterCustomers and say what you filtered to. When the
+   user asks to export, download or save the numbers, call exportReport. Call a
+   tool at most once per reply, and never to restate what is already on screen.
 6. Plain text only. No markdown, no asterisks, no headings — the panel renders
    text verbatim.
 
@@ -108,16 +142,8 @@ export class GeminiTransport implements AssistantTransport {
       },
     };
 
-    const res = await fetch(this.endpoint, {
-      method: 'POST',
-      headers: { 'content-type': 'application/json' },
-      body: JSON.stringify(body),
-      signal,
-    });
-
-    if (!res.ok || !res.body) throw new Error(`assistant proxy: ${res.status}`);
-
-    const reader = res.body.getReader();
+    const res = await this.open(JSON.stringify(body), signal);
+    const reader = res.body!.getReader();
     const decoder = new TextDecoder();
     let buffer = '';
 
@@ -146,6 +172,59 @@ export class GeminiTransport implements AssistantTransport {
       }
     }
   }
+
+  /**
+   * Opens the stream, retrying once when the failure is the kind that passes.
+   *
+   * Google answers a capacity spike with 503 UNAVAILABLE and the advice to try
+   * again shortly — so treating the first one as a dead proxy retires the real
+   * assistant for the rest of a visit over a hiccup that lasts seconds. Only
+   * the fetch is retried: nothing has been yielded yet at this point, so no
+   * half-written answer can be duplicated.
+   */
+  private async open(payload: string, signal: AbortSignal): Promise<Response> {
+    for (let attempt = 0; ; attempt++) {
+      let res: Response | null = null;
+      try {
+        res = await fetch(this.endpoint, {
+          method: 'POST',
+          headers: { 'content-type': 'application/json' },
+          body: payload,
+          signal,
+        });
+        if (res.ok && res.body) return res;
+      } catch (err) {
+        // A cancelled request is a decision, not a fault — never retry it.
+        if (signal.aborted) throw err;
+      }
+
+      const status = res?.status ?? 0; // 0 stands for the network never answering
+      if (attempt >= RETRIES || !RETRYABLE.has(status)) {
+        throw new Error(`assistant proxy: ${status || 'unreachable'}`);
+      }
+      await delay(RETRY_DELAY_MS, signal);
+    }
+  }
+}
+
+const RETRIES = 1;
+const RETRY_DELAY_MS = 900;
+
+/** Transient by nature: overload, rate limit, gateway, or no answer at all. */
+const RETRYABLE = new Set([0, 408, 425, 429, 500, 502, 503, 504]);
+
+function delay(ms: number, signal: AbortSignal): Promise<void> {
+  return new Promise((resolve, reject) => {
+    const timer = setTimeout(() => {
+      signal.removeEventListener('abort', onAbort);
+      resolve();
+    }, ms);
+    function onAbort() {
+      clearTimeout(timer);
+      reject(new DOMException('Aborted', 'AbortError'));
+    }
+    signal.addEventListener('abort', onAbort, { once: true });
+  });
 }
 
 /** Pulls text and function calls out of one streamGenerateContent frame. */

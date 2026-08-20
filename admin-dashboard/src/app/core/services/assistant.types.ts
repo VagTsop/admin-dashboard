@@ -51,7 +51,7 @@ export interface DashboardSnapshot {
 
 /** The functions the model may call. Each maps to something the store can do. */
 export interface ToolCall {
-  readonly name: 'setRange' | 'toggleLive';
+  readonly name: 'setRange' | 'toggleLive' | 'filterCustomers' | 'exportReport';
   readonly args: Record<string, unknown>;
 }
 

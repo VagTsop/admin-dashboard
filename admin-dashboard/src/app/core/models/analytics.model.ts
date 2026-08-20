@@ -25,6 +25,19 @@ export interface RevenuePoint {
   readonly trials: number;
 }
 
+/**
+ * One projected day of MRR, with the range the fit considers plausible.
+ *
+ * Deliberately not a `RevenuePoint`: nothing that was extrapolated should be
+ * assignable to something that was measured.
+ */
+export interface ForecastPoint {
+  readonly t: number;
+  readonly mrr: number;
+  readonly lower: number;
+  readonly upper: number;
+}
+
 export interface PlanSlice {
   readonly plan: PlanId;
   readonly label: string;

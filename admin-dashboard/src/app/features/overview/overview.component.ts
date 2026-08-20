@@ -15,7 +15,7 @@ import {
 import { EChartsOption } from '../../shared/charts/echarts.setup';
 import { IconComponent, IconName } from '../../shared/ui/icon.component';
 import { StatCardComponent } from '../../shared/ui/stat-card.component';
-import { EventKind } from '../../core/models/analytics.model';
+import { EventKind, ForecastPoint } from '../../core/models/analytics.model';
 
 const EVENT_ICON: Record<EventKind, IconName> = {
   signup: 'users',
@@ -323,7 +323,16 @@ export class OverviewComponent {
   protected readonly revenueOption = computed<EChartsOption>(() => {
     const t = this.tokens();
     const series = this.store.series();
-    const labels = series.map((p) => fmt.day(p.t));
+    const forecast = this.store.forecast();
+    const labels = [...series.map((p) => fmt.day(p.t)), ...forecast.map((p) => fmt.day(p.t))];
+
+    // Every projected series is padded with nulls across the measured days, so
+    // the dashes begin exactly where the solid line stops. The last real point
+    // is repeated as the first projected one, or the two would not join up.
+    const pad = new Array<number | null>(Math.max(0, series.length - 1)).fill(null);
+    const lastMrr = series.length ? series[series.length - 1].mrr : null;
+    const project = (pick: (p: ForecastPoint) => number) =>
+      forecast.length ? [...pad, lastMrr, ...forecast.map(pick)] : [];
 
     return {
       ...baseOption(t),
@@ -337,6 +346,9 @@ export class OverviewComponent {
         itemGap: 14,
         icon: 'roundRect',
         textStyle: { color: t.fgSubtle, fontSize: 11 },
+        // The invisible floor of the band is scaffolding, not a series anyone
+        // should be offered to toggle.
+        data: ['MRR', 'New business', 'Projection'],
       },
       xAxis: categoryAxis(t, labels),
       yAxis: [
@@ -368,6 +380,41 @@ export class OverviewComponent {
             borderRadius: [2, 2, 0, 0],
           },
           data: series.map((p) => p.newBiz),
+        },
+        // The band is drawn as two stacked areas: an invisible one lifting the
+        // floor to the lower bound, then the span between the bounds. Stacking
+        // is what keeps the shaded part between them rather than under both.
+        {
+          name: 'band-floor',
+          type: 'line',
+          stack: 'forecast-band',
+          silent: true,
+          showSymbol: false,
+          legendHoverLink: false,
+          lineStyle: { opacity: 0 },
+          areaStyle: { opacity: 0 },
+          tooltip: { show: false },
+          data: project((p) => p.lower),
+        },
+        {
+          name: 'Projected range',
+          type: 'line',
+          stack: 'forecast-band',
+          silent: true,
+          showSymbol: false,
+          lineStyle: { opacity: 0 },
+          areaStyle: { color: withAlpha(t.viz[0], 0.12) },
+          tooltip: { show: false },
+          data: project((p) => p.upper - p.lower),
+        },
+        {
+          name: 'Projection',
+          type: 'line',
+          smooth: 0.35,
+          showSymbol: false,
+          lineStyle: { width: 2, type: 'dashed', color: t.viz[0], opacity: 0.75 },
+          itemStyle: { color: t.viz[0] },
+          data: project((p) => p.mrr),
         },
       ],
     };

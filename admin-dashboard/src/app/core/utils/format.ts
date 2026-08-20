@@ -37,6 +37,12 @@ const dayMonth = new Intl.DateTimeFormat('en-US', {
   timeZone: 'UTC',
 });
 
+const monthYear = new Intl.DateTimeFormat('en-US', {
+  month: 'long',
+  year: 'numeric',
+  timeZone: 'UTC',
+});
+
 const time = new Intl.DateTimeFormat('en-US', {
   hour: '2-digit',
   minute: '2-digit',
@@ -51,6 +57,8 @@ export const fmt = {
   percent: (v: number) => percent.format(v),
   delta: (v: number) => signedPercent.format(v),
   day: (t: number) => dayMonth.format(t),
+  /** Takes the snapshot's bucket key — "2026-08" reads back as "August 2026". */
+  month: (key: string) => monthYear.format(new Date(`${key}-01T00:00:00Z`)),
   time: (t: number) => time.format(t),
   relative: (t: number) => {
     const mins = Math.max(0, Math.round((Date.now() - t) / 60_000));

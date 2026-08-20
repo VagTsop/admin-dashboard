@@ -1,7 +1,9 @@
 import { computed, inject, Injectable, signal } from '@angular/core';
+import { Router } from '@angular/router';
 
-import { RANGES, type RangeKey } from '../models/analytics.model';
+import { PLANS, RANGES, type PlanId, type RangeKey } from '../models/analytics.model';
 import { AnalyticsStore } from './analytics.store';
+import { CustomersView, type SortKey } from './customers-view';
 import type {
   AssistantTransport,
   ChatMessage,
@@ -20,6 +22,16 @@ import { MockTransport } from './mock-transport';
  */
 const PROXY_URL = 'https://atlas-assistant.vatsop52.workers.dev';
 
+/** How long the local answerer keeps the conversation after a proxy failure. */
+const DEGRADED_MS = 60_000;
+
+const SORT_KEYS: readonly SortKey[] = ['name', 'plan', 'seats', 'mrr', 'health', 'lastSeen'];
+
+/** Quotes only when it has to, and doubles any quote already inside. */
+function csvCell(value: string): string {
+  return /[",\r\n]/.test(value) ? `"${value.replace(/"/g, '""')}"` : value;
+}
+
 const SUGGESTIONS = [
   'Why did MRR move this period?',
   'Draft the weekly revenue update',
@@ -30,12 +42,20 @@ const SUGGESTIONS = [
 @Injectable({ providedIn: 'root' })
 export class AssistantService {
   private readonly store = inject(AnalyticsStore);
+  private readonly view = inject(CustomersView);
+  private readonly router = inject(Router);
 
   private readonly mock = new MockTransport();
   private readonly remote = PROXY_URL ? new GeminiTransport(PROXY_URL) : null;
 
-  /** Flips to the mock for the rest of the session if the proxy fails. */
+  /**
+   * Flips to the mock when the proxy fails, and back again after a cooling-off
+   * period. Permanent would be simpler, but a Gemini capacity spike lasts
+   * seconds while a visit lasts minutes — one bad moment should not decide what
+   * the rest of the visit gets to see.
+   */
   private readonly degraded = signal(false);
+  private cooldown: ReturnType<typeof setTimeout> | null = null;
 
   readonly open = signal(false);
   readonly messages = signal<ChatMessage[]>([]);
@@ -112,7 +132,7 @@ export class AssistantService {
       } else if (transport === this.remote) {
         // A proxy that is down or rate-limited should not end the conversation:
         // drop to the local answerer and retry once, silently.
-        this.degraded.set(true);
+        this.degrade();
         // Whatever tokens arrived before the break are half a sentence; leaving
         // them would run the local answer on from a thought Gemini never
         // finished. Tool calls already ran, so those notes stay.
@@ -150,6 +170,90 @@ export class AssistantService {
     );
   }
 
+  /**
+   * Points the customers table at a subset and shows it.
+   *
+   * Every argument is checked against the values the table itself accepts:
+   * a model that invents a plan name changes nothing rather than emptying the
+   * screen. The search term is capped for the same reason.
+   */
+  private filterCustomers(args: Record<string, unknown>): string {
+    const applied: string[] = [];
+
+    const plan = typeof args['plan'] === 'string' ? args['plan'] : undefined;
+    if (plan === 'all') {
+      this.view.setPlan(null);
+      applied.push('all plans');
+    } else if (plan && PLANS.some((p) => p.id === plan)) {
+      this.view.setPlan(plan as PlanId);
+      applied.push(PLANS.find((p) => p.id === plan)!.label);
+    }
+
+    if (typeof args['query'] === 'string') {
+      const query = args['query'].slice(0, 60);
+      this.view.setQuery(query);
+      if (query) applied.push(`“${query}”`);
+    }
+
+    const sort = args['sort'];
+    if (typeof sort === 'string' && SORT_KEYS.includes(sort as SortKey)) {
+      const direction = args['direction'] === 'asc' ? 'asc' : 'desc';
+      this.view.sortBy(sort as SortKey, direction);
+      applied.push(`sorted by ${sort}`);
+    }
+
+    // The filter is applied either way; failing to navigate is not worth an
+    // unhandled rejection on top of it.
+    void this.router.navigate(['/customers']).catch(() => undefined);
+    return applied.length
+      ? `Filtered the customers table to ${applied.join(', ')}`
+      : 'Opened the customers table';
+  }
+
+  /**
+   * Saves the visible figures as a CSV.
+   *
+   * The snapshot is the export: whatever the assistant was allowed to read is
+   * exactly what lands in the file, so the two can never disagree.
+   */
+  private exportReport(): string {
+    const snap = this.snapshot();
+    const rows: string[][] = [
+      ['Metric', 'Value', 'Change'],
+      ...snap.kpis.map((k) => [k.label, String(k.value), String(k.delta)]),
+      [],
+      ['Month', 'MRR', 'New business', 'Expansion', 'Contraction', 'Churn'],
+      ...snap.monthly.map((m) => [
+        m.month,
+        String(m.mrr),
+        String(m.newBiz),
+        String(m.expansion),
+        String(m.contraction),
+        String(m.churn),
+      ]),
+    ];
+
+    const csv = rows.map((r) => r.map(csvCell).join(',')).join('\r\n');
+    const url = URL.createObjectURL(new Blob([csv], { type: 'text/csv;charset=utf-8' }));
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = `atlas-${snap.range}-${new Date().toISOString().slice(0, 10)}.csv`;
+    link.click();
+    URL.revokeObjectURL(url);
+
+    return `Exported the ${snap.range} figures as CSV`;
+  }
+
+  /** Hands the next question back to Gemini once the cooling-off period ends. */
+  private degrade(): void {
+    this.degraded.set(true);
+    if (this.cooldown) clearTimeout(this.cooldown);
+    this.cooldown = setTimeout(() => {
+      this.degraded.set(false);
+      this.cooldown = null;
+    }, DEGRADED_MS);
+  }
+
   private replace(id: string, text: string): void {
     this.messages.update((list) => list.map((m) => (m.id === id ? { ...m, text } : m)));
   }
@@ -178,6 +282,16 @@ export class AssistantService {
       if (!RANGES.some((r) => r.key === range)) return;
       this.store.setRange(range);
       this.note(messageId, `Switched the range to ${RANGES.find((r) => r.key === range)!.label}`);
+      return;
+    }
+
+    if (call.name === 'filterCustomers') {
+      this.note(messageId, this.filterCustomers(call.args));
+      return;
+    }
+
+    if (call.name === 'exportReport') {
+      this.note(messageId, this.exportReport());
       return;
     }
 

@@ -7,6 +7,7 @@ import type {
 } from './assistant.types';
 import { fmt } from '../utils/format';
 
+
 /**
  * The same formatters the cards and charts use.
  *
@@ -66,9 +67,9 @@ export class MockTransport implements AssistantTransport {
       const worstValue = Math.abs(worst === 'contraction' ? last.contraction : last.churn);
       return {
         text:
-          `In ${last.month}, MRR moved by ${money(net)} net. New business added ${money(last.newBiz)} ` +
+          `In ${fmt.month(last.month)}, MRR moved by ${money(net)} net. New business added ${money(last.newBiz)} ` +
           `and expansion another ${money(last.expansion)}, but ${worst} took ${money(worstValue)} back out. ` +
-          `Against ${prev.month} the swing came mostly from ${worst}, which went from ` +
+          `Against ${fmt.month(prev.month)} the swing came mostly from ${worst}, which went from ` +
           `${money(Math.abs(worst === 'contraction' ? prev.contraction : prev.churn))} to ${money(worstValue)}. ` +
           `Worth pulling the 12-month view to see whether that is a trend or a single bad month.`,
         toolCall: { name: 'setRange', args: { range: '12m' } },
@@ -86,6 +87,22 @@ export class MockTransport implements AssistantTransport {
           `${users ? `Active users are at ${Math.round(users.value).toLocaleString()} (${signed(users.delta)}). ` : ''}` +
           `${churn ? `Churn is running at ${pct(churn.value)}. ` : ''}` +
           `${snap.planMix.length ? `${topPlan(snap)} remains the largest plan by revenue.` : ''}`,
+      };
+    }
+
+    // --- a rate, not a list ------------------------------------------------
+    // "What is our churn rate?" is a question about a tile, but the at-risk
+    // branch below owns the word "churn" — so the reading has to be settled
+    // here or the answer comes back as a list of accounts nobody asked for.
+    if (/churn|retention|nrr/.test(q) && /rate|currently|right now|what is|what's|how much/.test(q)) {
+      const churn = snap.kpis.find((k) => k.id === 'churn');
+      const nrr = snap.kpis.find((k) => k.id === 'nrr');
+      const lost = snap.monthly.at(-1)?.churn;
+      return {
+        text:
+          `${churn ? `Revenue churn is running at ${pct(churn.value)}, ${signed(churn.delta)} on the previous period. ` : ''}` +
+          `${nrr ? `Net revenue retention is ${pct(nrr.value)}. ` : ''}` +
+          `${lost !== undefined ? `In ${fmt.month(snap.monthly.at(-1)!.month)} that was ${money(Math.abs(lost))} of MRR lost.` : ''}`,
       };
     }
 

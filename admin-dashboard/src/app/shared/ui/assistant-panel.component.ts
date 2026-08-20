@@ -10,6 +10,7 @@ import {
 } from '@angular/core';
 
 import { AssistantService } from '../../core/services/assistant.service';
+import { SpeechService } from '../../core/services/speech.service';
 import { IconComponent } from './icon.component';
 
 /**
@@ -106,6 +107,19 @@ import { IconComponent } from './icon.component';
           aria-label="Ask about this data"
           [disabled]="assistant.busy()"
         />
+        @if (speech.supported) {
+          <button
+            type="button"
+            class="send mic"
+            [class.is-listening]="speech.listening()"
+            [disabled]="assistant.busy()"
+            (click)="dictate()"
+            [attr.aria-pressed]="speech.listening()"
+            [attr.aria-label]="speech.listening() ? 'Stop dictation' : 'Ask by voice'"
+          >
+            <app-icon name="mic" [size]="13" [strokeWidth]="2" />
+          </button>
+        }
         @if (assistant.busy()) {
           <button type="button" class="send stop" (click)="assistant.stop()" aria-label="Stop">
             <app-icon name="pause" [size]="13" [strokeWidth]="2" />
@@ -358,14 +372,36 @@ import { IconComponent } from './icon.component';
       color: inherit;
     }
 
+    .send.mic {
+      background: var(--surface-active);
+      color: inherit;
+    }
+    .send.mic:disabled {
+      opacity: 0.45;
+      cursor: not-allowed;
+    }
+    .send.mic.is-listening {
+      background: #b91c1c;
+      color: #fee2e2;
+      animation: pulse 1.4s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      50% {
+        opacity: 0.62;
+      }
+    }
+
     @media (prefers-reduced-motion: reduce) {
       .panel { transition: none; }
       .caret { animation: none; }
+      .send.mic.is-listening { animation: none; }
     }
   `,
 })
 export class AssistantPanelComponent {
   protected readonly assistant = inject(AssistantService);
+  protected readonly speech = inject(SpeechService);
   private readonly injector = inject(Injector);
 
   private readonly log = viewChild<ElementRef<HTMLElement>>('log');
@@ -401,6 +437,25 @@ export class AssistantPanelComponent {
       .replace(/(^|\s)\*(?!\*)([^*]+?)\*(?=\s|$|[.,;:!?])/g, '$1$2')
       .replace(/`([^`]+?)`/g, '$1')
       .replace(/^#{1,6}\s+/gm, '');
+  }
+
+  /**
+   * Dictation fills the box rather than sending: what the microphone heard is
+   * shown for correction first, because "churn" and "turn" sound alike and a
+   * question sent on a mishearing wastes a turn.
+   */
+  protected async dictate(): Promise<void> {
+    if (this.speech.listening()) {
+      this.speech.stop();
+      return;
+    }
+
+    const heard = await this.speech.listen();
+    const el = this.input()?.nativeElement;
+    if (!el || !heard) return;
+
+    el.value = heard;
+    el.focus();
   }
 
   protected submit(event: Event): void {

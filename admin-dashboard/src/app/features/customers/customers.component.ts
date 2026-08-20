@@ -18,11 +18,10 @@ import {
   PlanId,
 } from '../../core/models/analytics.model';
 import { AnalyticsStore } from '../../core/services/analytics.store';
+import { CustomersView, type SortKey } from '../../core/services/customers-view';
 import { PerfService } from '../../core/services/perf.service';
 import { fmt } from '../../core/utils/format';
 import { IconComponent } from '../../shared/ui/icon.component';
-
-type SortKey = 'name' | 'plan' | 'seats' | 'mrr' | 'health' | 'lastSeen';
 
 interface Column {
   readonly key: SortKey | null;
@@ -540,10 +539,13 @@ export class CustomersComponent {
   protected readonly plans = PLANS;
   protected readonly rowHeight = 52;
 
-  protected readonly query = signal('');
-  protected readonly plan = signal<PlanId | null>(null);
-  protected readonly sort = signal<SortKey>('mrr');
-  protected readonly direction = signal<'asc' | 'desc'>('desc');
+  // Filter state is held by CustomersView so the assistant can operate the same
+  // controls the user does; the template binds to these exactly as before.
+  private readonly view = inject(CustomersView);
+  protected readonly query = this.view.query;
+  protected readonly plan = this.view.plan;
+  protected readonly sort = this.view.sort;
+  protected readonly direction = this.view.direction;
 
   private readonly viewport =
     viewChild.required<CdkVirtualScrollViewport>('viewport');
@@ -614,24 +616,19 @@ export class CustomersComponent {
   protected readonly filterMs = computed(() => this.result().ms);
 
   protected onQuery(event: Event): void {
-    this.query.set((event.target as HTMLInputElement).value);
+    this.view.setQuery((event.target as HTMLInputElement).value);
   }
 
   protected clearQuery(): void {
-    this.query.set('');
+    this.view.clearQuery();
   }
 
   protected setPlan(plan: PlanId | null): void {
-    this.plan.set(plan);
+    this.view.setPlan(plan);
   }
 
   protected toggleSort(key: SortKey): void {
-    if (this.sort() === key) {
-      this.direction.update((d) => (d === 'asc' ? 'desc' : 'asc'));
-    } else {
-      this.sort.set(key);
-      this.direction.set(key === 'name' ? 'asc' : 'desc');
-    }
+    this.view.toggleSort(key);
   }
 
   protected trackById(_: number, row: Customer): number {
